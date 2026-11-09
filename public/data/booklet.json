@@ -1,0 +1,174 @@
+[
+  {
+    "group": "Dasar Pewarna Alami",
+    "introduction": "Pewarna alami berasal dari tumbuhan, alga, mikroba, atau serangga dan dibuat melalui ekstraksi. Tiap kelompok pigmen punya sifat berbeda, sehingga pemilihan bergantung pada pH, proses, cahaya, dan kemasan produk.",
+    "colorCharacteristics": "Warna ditentukan oleh jenis pigmen dan dosis; dosis lebih tinggi umumnya memperbaiki ketahanan warna.",
+    "solubility": "Pewarna terformulasi dapat larut air, terdispersi (keruh), atau larut minyak.",
+    "stabilityFactors": "Merah/pink/ungu (antosianin) paling nyaman pada pH di bawah sekitar 3,5; kuning-oranye (karotenoid) relatif tidak dipengaruhi pH. Spirulina dan bit peka panas; kunyit peka cahaya. Asam askorbat sekitar 300 ppm melindungi karotenoid tetapi memudarkan antosianin. Kemasan opak atau label pelindung cahaya membantu.",
+    "foodApplications": "Minuman, susu dan olahannya, es krim, permen, produk bakeri, saus, dan makanan siap saji.",
+    "prosAndCons": "Pilih kelompok yang sesuai dengan pH dan proses produk, lalu sesuaikan dosis pada formula yang sebenarnya.",
+    "refs": [
+      "R1",
+      "R2",
+      "R3",
+      "R21"
+    ]
+  },
+  {
+    "group": "Karotenoid",
+    "introduction": "Pigmen kuning, oranye, hingga merah dari tumbuhan, alga, atau mikroba, misalnya beta-karoten, likopen, annatto, apokarotenal, dan kantaksantin.",
+    "colorCharacteristics": "Kuning cerah hingga oranye kemerahan; bentuk terformulasi biasanya keruh tipis.",
+    "solubility": "Pada dasarnya larut minyak; bentuk komersial (WS, beadlet, emulsi) terdispersi dalam air.",
+    "stabilityFactors": "Relatif tidak dipengaruhi pH dan tahan panas. Peka oksidasi dan cahaya: antioksidan seperti asam askorbat (sekitar 300 ppm pada minuman) dan penghindaran logam membantu.",
+    "foodApplications": "Minuman, susu dan olahannya, es krim, permen, roti, saus, dan produk siap saji.",
+    "prosAndCons": "Tahan panas dan rentang pH luas. Perlu pengelolaan endapan atau cincin leher botol pada minuman; jangan dicampur dengan antosianin untuk membuat oranye.",
+    "refs": [
+      "R1",
+      "R2",
+      "R3",
+      "R21"
+    ]
+  },
+  {
+    "group": "Antosianin",
+    "introduction": "Pigmen merah, pink, hingga ungu dari ubi ungu, wortel ungu/hitam, lobak, dan buah beri.",
+    "colorCharacteristics": "Merah cerah pada pH asam; bergeser ke ungu dan biru lalu memudar saat pH naik.",
+    "solubility": "Larut air.",
+    "stabilityFactors": "Paling merah dan stabil pada pH di bawah sekitar 3,5. Antosianin sayur terasilasi memiliki ketahanan panas dan cahaya yang baik. Sensitif terhadap asam askorbat, SO2, alkohol, dan logam.",
+    "foodApplications": "Minuman asam, permen gummy, yoghurt, es krim, dan produk bakeri.",
+    "prosAndCons": "Efektif pada dosis rendah dan tahan panas pada produk asam. Warna bergantung pH dan peka terhadap vitamin C.",
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13",
+      "R21"
+    ]
+  },
+  {
+    "group": "Kurkuminoid",
+    "introduction": "Pigmen kuning dari kunyit (kurkumin).",
+    "colorCharacteristics": "Kuning cerah; bergeser ke jingga-merah pada pH basa.",
+    "solubility": "Sulit larut air kecuali terformulasi (emulsi atau dispersi).",
+    "stabilityFactors": "Tahan panas dan relatif tidak peka pH asam hingga netral, tetapi sangat peka cahaya sehingga membutuhkan kemasan opak.",
+    "foodApplications": "Minuman, es krim dan yoghurt, permen, produk bakeri, acar, saus, dan snack.",
+    "prosAndCons": "Kuning cerah alami dan tahan panas. Mudah pudar oleh cahaya.",
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "group": "Betalain",
+    "introduction": "Pigmen pink hingga merah dari bit (betanin).",
+    "colorCharacteristics": "Pink-merah; hue bergeser pada pH di bawah 3.",
+    "solubility": "Larut air.",
+    "stabilityFactors": "Stabil pada pH sekitar 3-7 (optimum 4-6). Peka panas, cahaya, dan oksigen; kehilangan warna pada proses panas sehingga produk panggang butuh dosis tinggi.",
+    "foodApplications": "Produk dingin dan beku, es krim, yoghurt, permen, minuman serbuk, dan bakeri dengan dosis tinggi.",
+    "prosAndCons": "Pink alami untuk produk dingin. Terbatas pada proses panas dan paparan cahaya.",
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20",
+      "R21"
+    ]
+  },
+  {
+    "group": "Antrakuinon (karmin)",
+    "introduction": "Pigmen merah dari karmin dan asam karminat yang berasal dari serangga cochineal.",
+    "colorCharacteristics": "Merah, pink, hingga ungu; oranye pada pH asam (asam karminat) dan keunguan pada pH tinggi.",
+    "solubility": "Larut air (bentuk larutan alkali atau terformulasi).",
+    "stabilityFactors": "Sangat stabil terhadap panas, cahaya, dan oksidasi. Bentuk larutan alkali dapat mengendap pada pH rendah (di bawah sekitar 3,5) kecuali varian tahan asam.",
+    "foodApplications": "Susu dan olahannya, minuman, permen, produk bakeri, dan produk daging.",
+    "prosAndCons": "Sangat stabil. Bersumber hewani sehingga perlu dipertimbangkan untuk produk halal dan vegetarian.",
+    "refs": [
+      "R8",
+      "R13",
+      "R17"
+    ]
+  },
+  {
+    "group": "Klorofil / klorofilin",
+    "introduction": "Pigmen hijau dari klorofil; bentuk klorofilin tembaga lebih stabil daripada klorofil alami.",
+    "colorCharacteristics": "Hijau cerah hingga hijau tua.",
+    "solubility": "Larut air (klorofilin tembaga).",
+    "stabilityFactors": "Stabil terhadap panas dan cahaya pada pH netral, tetapi mengendap pada pH asam. Klorofil alami mudah berubah menjadi hijau zaitun/cokelat oleh asam dan panas.",
+    "foodApplications": "Es krim, permen, produk bakeri, saus, dan minuman ber-pH netral.",
+    "prosAndCons": "Hijau stabil pada pH netral. Tidak cocok untuk produk asam kecuali varian terstabilkan.",
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "group": "Fikosianin (spirulina)",
+    "introduction": "Pigmen biru dari mikroalga Spirulina.",
+    "colorCharacteristics": "Biru cerah; bila dicampur kuning menghasilkan hijau dan dengan merah menghasilkan ungu.",
+    "solubility": "Larut air.",
+    "stabilityFactors": "Berupa protein: terdenaturasi pada pemanasan di atas sekitar 45 °C dan mengendap pada pH asam untuk spirulina umum. Varian terstabilkan dapat nyaman pada pH 2,7-2,9 dan baik hingga sekitar 4, tetapi tetap peka panas di atas 70 °C; tambahkan setelah pemanasan.",
+    "foodApplications": "Permen, es krim, dairy non-UHT, dan minuman dingin.",
+    "prosAndCons": "Biru alami yang cerah. Peka panas dan dipengaruhi pH.",
+    "refs": [
+      "R3",
+      "R4",
+      "R5",
+      "R15",
+      "R21"
+    ]
+  },
+  {
+    "group": "Iridoid / genipin",
+    "introduction": "Pigmen biru yang terbentuk dari genipin (gardenia dan jagua) bereaksi dengan asam amino.",
+    "colorCharacteristics": "Biru cenderung gelap atau abu-biru.",
+    "solubility": "Larut air.",
+    "stabilityFactors": "Lebih stabil terhadap panas, cahaya, dan pH dibanding spirulina.",
+    "foodApplications": "Permen, produk bakeri, minuman, dan dairy.",
+    "prosAndCons": "Biru yang lebih tahan proses. Rona cenderung lebih gelap.",
+    "refs": [
+      "R5",
+      "R6",
+      "R7",
+      "R15"
+    ]
+  },
+  {
+    "group": "Flavonoid (carthamus)",
+    "introduction": "Pigmen kuning dari safflower (carthamus).",
+    "colorCharacteristics": "Kuning.",
+    "solubility": "Larut air.",
+    "stabilityFactors": "Relatif tahan panas dan cahaya pada pH asam hingga netral.",
+    "foodApplications": "Minuman, permen, fondant/icing, dan dairy.",
+    "prosAndCons": "Kuning yang relatif stabil dibanding kuning alami lain; rona dapat cenderung kecokelatan pada beberapa produk.",
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "group": "Karbon",
+    "introduction": "Pigmen hitam dari karbon nabati.",
+    "colorCharacteristics": "Hitam hingga abu pekat; tidak transparan.",
+    "solubility": "Tidak larut: dibuat dispersi.",
+    "stabilityFactors": "Sangat stabil terhadap panas, cahaya, dan pH.",
+    "foodApplications": "Permen, produk bakeri, es krim, dan snack.",
+    "prosAndCons": "Hitam yang sangat stabil. Perlu dispersi homogen dan dapat tampak buram.",
+    "refs": [
+      "R0"
+    ]
+  },
+  {
+    "group": "Melanin (tinta cumi)",
+    "introduction": "Pigmen hitam dari tinta cumi.",
+    "colorCharacteristics": "Hitam.",
+    "solubility": "Terdispersi dalam air.",
+    "stabilityFactors": null,
+    "foodApplications": "Pasta, saus, dan produk gurih.",
+    "prosAndCons": "Hitam alami untuk produk gurih. Bersumber hewani (seafood) sehingga perlu dipertimbangkan untuk halal dan alergen.",
+    "refs": [
+      "R0"
+    ]
+  }
+]

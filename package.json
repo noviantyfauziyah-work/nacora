@@ -1,0 +1,13 @@
+{
+  "name": "nacora",
+  "private": true,
+  "version": "1.0.0",
+  "description": "NACORA — Natural Color Recommendation Assistant",
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/convert-data.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "code": "01.0",
+    "name": "Produk susu dan analognya",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "02.0",
+    "name": "Lemak, minyak, dan emulsi minyak",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "03.0",
+    "name": "Es untuk dimakan (edible ice), termasuk es serut dan es lilin",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "04.0",
+    "name": "Buah dan sayur (termasuk jamur, umbi, kacang, rumput laut, dan biji-bijian)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "05.0",
+    "name": "Kembang gula/permen dan cokelat",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "06.0",
+    "name": "Serealia dan produk serealia (turunan gandum, beras, jagung, oat)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "07.0",
+    "name": "Produk bakeri (roti, biskuit, kue, pastry)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "08.0",
+    "name": "Daging dan produk daging",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "09.0",
+    "name": "Ikan dan produk perikanan (termasuk moluska, krustase, dan ekinodermata)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "10.0",
+    "name": "Telur dan produk olahan telur",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "11.0",
+    "name": "Gula, pemanis, dan produk madu",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "12.0",
+    "name": "Garam, rempah, sup, saus, salad, dan produk protein",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "13.0",
+    "name": "Pangan olahan untuk keperluan gizi khusus",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "14.0",
+    "name": "Minuman (tidak termasuk produk susu)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "15.0",
+    "name": "Makanan ringan siap santap (snack)",
+    "level": 1,
+    "parentCode": null
+  },
+  {
+    "code": "16.0",
+    "name": "Pangan siap saji terkemas",
+    "level": 1,
+    "parentCode": null
+  }
+]

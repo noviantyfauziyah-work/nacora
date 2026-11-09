@@ -1,0 +1,4543 @@
+[
+  {
+    "id": "NC-001",
+    "name": "Beta Caroten 1% WS (Yunnan Futere Biotech)",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#D3AA01",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": null,
+      "concentration": null,
+      "physical": null,
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-001_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-002",
+    "name": "Curcumin 2,5%",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#B3AD01",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
+      "concentration": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
+      "physical": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
+      "phNote": null,
+      "notes": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa"
+    },
+    "photos": [
+      "NC-002_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-003",
+    "name": "W-Carotene Liq 79-00",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#C19613",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning muda atau kuning cerah seperti warna matahari",
+      "concentration": "Konsentrasi rendah (0,001 g/100 ml): menghasilkan warna kuning muda, lembut, dan dominan kuning\nKonsentrasi tinggi (0,01 g/100 ml): menghasilkan warna kuning pekat dengan sedikit garis oranye",
+      "physical": "Memiliki transparansi\nMenyebabkan kekeruhan pada larutan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-003_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-004",
+    "name": "Beta-Carotene 1% Powder PF",
+    "group": "Karotenoid",
+    "source": "Alga / mikroba",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#AFA600",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning cerah hingga kuning lemon (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi kuning sangat pucat/hampir bening; intensitas turun nyata",
+      "physical": "- Larutan tampak relatif jernih hingga sedikit kekeruhan\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-004_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-005",
+    "name": "Natural Beta Carotene 10% Beadlets CO204662",
+    "group": "Karotenoid",
+    "source": "Alga / mikroba",
+    "form": "Beadlet",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#CB6D00",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Orange pekat dengan kesan keruh/opaque (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi kuning lebih terang; intensitas turun dan hue bergeser dari orange ke kuning",
+      "physical": "- Larutan tampak keruh dan tidak sepenuhnya transparan\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-005_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-006",
+    "name": "429340 Shade Mandarin (Exberry)",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#F1A043",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan bening dapat dipakai; kemasan opak menambah perlindungan",
+    "storage": "Simpan sejuk dan terlindung cahaya",
+    "dosage": "Soft drink 0,15% w/v (pH 2,9-3,8); sirup 1+4: 0,33-0,7% w/v; smoothie 0,2-0,8%; keju 0,33%, dessert 0,5%, susu UHT 0,2%, yoghurt 0,25% (w/w)",
+    "pros": "Karotenoid dari wortel dan apel; tahan panas sangat baik, cahaya baik, tidak dipengaruhi pH",
+    "cons": "Tampilan keruh; perlu antioksidan (asam askorbat sekitar 300 ppm pada minuman siap minum) dan hidrokoloid/homogenisasi untuk mencegah endapan dan cincin leher botol. Jangan dicampur dengan merah/pink antosianin untuk membuat oranye karena efek askorbatnya berlawanan.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "warna orange kemerahan pekat, seperti batu bata.",
+      "concentration": "- 0.05g/100ml: warna orange muda sangat pucat, sedikit transparan\n- 0.1g/100ml: warna orange agak tua, keruh",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": null,
+      "notes": "- semakin tinggi konsentrasi, semakin keruh."
+    },
+    "photos": [
+      "NC-006_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-007",
+    "name": "76001402 Yellow Carotene (Exberry)",
+    "group": "Karotenoid",
+    "source": "Alga / mikroba",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#E7C314",
+    "solubility": "Larut air",
+    "categories": [
+      "05.0",
+      "06.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan bening dapat dipakai bila ada asam askorbat",
+    "storage": "Simpan sejuk dan terlindung cahaya",
+    "dosage": "Soft drink 0,02% w/v; sirup 1+4: 0,04-0,08% w/v; gummies dan high boilings 0,04% w/w; marshmallow dan panning 0,8% w/w; pasta 0,10%, saus/dips 0,05%, biskuit gurih 0,6% w/w",
+    "pros": "Karotenoid dari alga; tahan panas sangat baik, cahaya sangat baik (dengan asam askorbat), tidak dipengaruhi pH, stabil dengan emulsi tanpa hidrokoloid",
+    "cons": "Tampilan keruh tipis; perlu antioksidan (asam askorbat sekitar 300 ppm di minuman); stabil pada alkohol di bawah 30% ABV bila ada antioksidan. Jangan dicampur dengan antosianin untuk membuat oranye.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "- orange tua",
+      "concentration": "- 0.01g/100ml: warna kuning cerah, transparan, seperti warna minyak\n- 0.05g/100ml: warna kuning tua ada hint orange.",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": null,
+      "notes": "- butuh sedikit saja sudah keluar warnanya."
+    },
+    "photos": [
+      "NC-007_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-008",
+    "name": "Apocarotenal 10% WS/N 0487376",
+    "group": "Karotenoid",
+    "source": "Nature-identical / sintetik",
+    "form": null,
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#B9573D",
+    "solubility": null,
+    "categories": [
+      "01.0",
+      "05.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan kemasan barrier cahaya",
+    "storage": "Hindari cahaya; simpan sejuk",
+    "dosage": null,
+    "pros": "Warna oranye-merah kuat dan konsisten",
+    "cons": "Status \"natural\" perlu dikonfirmasi (umumnya nature-identical); formulasi dispersi perlu pengadukan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye kemerahan terang.",
+      "concentration": "- 0,001 g/100 mL: Hampir bening dengan semburat oranye pucat; partikel tampak mengendap.\n- 0,01 g/100 mL: Warna oranye mulai terlihat namun belum merata, tampak butiran tidak larut.\n- 0,01 g/100 mL dengan air panas: Warna menjadi oranye-merah cerah, homogen, dan stabil  menunjukkan peningkatan kelarutan signifikan.",
+      "physical": "- Paling sulit larut di antara ketiganya pada suhu ruang, dengan banyak endapan di dasar wadah.\n- Pelarutan membutuhkan suhu tinggi untuk mencapai warna seragam.",
+      "phNote": null,
+      "notes": "Kurang cocok untuk sistem tanpa pemanasan, namun ideal untuk produk yang melalui proses panas seperti minuman instan atau granulasi. Menghasilkan warna oranye-merah kuat saat terlarut sempurna."
+    },
+    "photos": [
+      "NC-008_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "NC-009",
+    "name": "Canthaxanthin 10% CWS/S 5005256",
+    "group": "Karotenoid",
+    "source": "Nature-identical / sintetik",
+    "form": null,
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#B9543A",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan kemasan barrier cahaya",
+    "storage": "Hindari cahaya; simpan sejuk",
+    "dosage": null,
+    "pros": "Warna oranye-merah kuat dan konsisten",
+    "cons": "Status \"natural\" perlu dikonfirmasi (umumnya nature-identical); formulasi dispersi perlu pengadukan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Jingga kemerahan (orange-merah).",
+      "concentration": "0,001 g/100 mL: Warna oranye sangat muda dan transparan, intensitas rendah.\n0,01 g/100 mL: Warna berubah menjadi jingga kemerahan yang lebih pekat, solid, dan menarik secara visual.",
+      "physical": "Sulit larut sempurna pada suhu ruang, meskipun dispersi warnanya masih cukup baik.\nLarutan tampak agak keruh dan dapat menunjukkan sedikit partikel tidak larut bila tidak diaduk sempurna.",
+      "phNote": null,
+      "notes": "Memberikan warna merah-jingga kuat pada konsentrasi tinggi, namun butuh suhu hangat atau pengadukan intensif agar homogen."
+    },
+    "photos": [
+      "NC-009_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "NC-010",
+    "name": "BC-200 WSS GIN 502987",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#BE9B00",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning keemasan hingga kuning-oranye; intensitas cukup pekat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml warna menjadi kuning muda/pucat; intensitas turun nyata, hue tetap kuning",
+      "physical": "- Tampak relatif homogen\n- Sedikit kesan keruh\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-010_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-011",
+    "name": "BC-2000R-WSP",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#DA7533",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye gelap kecokelatan seperti bata",
+      "concentration": "- 0,001 g/100 mL: Oranye sedikit keruh\n- 0,01 g/100 mL: Oranye tua keruh",
+      "physical": "Kekeruhan meningkat seiring bertambahnya konsentrasi, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Lebih cocok untuk aplikasi produk non-jernih"
+    },
+    "photos": [
+      "NC-011_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-012",
+    "name": "Capcolors Red ID 500 WSS",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#AB492B",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye kemerahan, mirip dengan warna buah jeruk atau tomat",
+      "concentration": "- Konsentrasi rendah (0,001 g/100 ml): menghasilkan warna oranye muda, lembut, transparan, dan memberikan kesan segar serta ringan\n- Konsentrasi tinggi (0,01 g/100 ml): menghasilkan warna oranye pekat, lebih tegas, solid, dan mencolok",
+      "physical": "- Memiliki tingkat kekeruhan tinggi (keruh)\n- Warna dapat mempengaruhi kejernihan larutan",
+      "phNote": null,
+      "notes": "Pada konsentrasi tinggi, warna cenderung mendominasi pewarna lain dalam campuran"
+    },
+    "photos": [
+      "NC-012_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-013",
+    "name": "Carthamus Liquid 703503",
+    "group": "Flavonoid (kalkon/safflower)",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#A9AF7A",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan barrier cahaya disarankan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Relatif tahan panas dan cahaya dibanding kuning alami lain pada uji model minuman",
+    "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning sangat muda dengan sedikit nuansa kehijauan (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi hampir bening; warna sangat tipis",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-013_1.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-014",
+    "name": "Carthamus WS-P GIN 703503",
+    "group": "Flavonoid (kalkon/safflower)",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#C3C235",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan barrier cahaya disarankan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Relatif tahan panas dan cahaya dibanding kuning alami lain pada uji model minuman",
+    "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning-oranye dengan sedikit kecenderungan ke arah kehijauan pada konsentrasi rendah.\n\nKuning sangat muda, sedikit kehijauan (dosis 0,01 g/100 ml)",
+      "concentration": "- 0,1 g/100 mL: kuning pekat agak oranye, terlihat kuat dan menarik.\n- 0,01 g/100 mL: kuning muda pucat, cenderung kekuningan alami.\n- 0,001 g/100 mL: warna hampir bening, namun menampilkan rona kuning kehijauan sangat lembut.\n\nPada 0,001 g/100 ml menjadi hampir bening; intensitas turun nyata",
+      "physical": "- Larutan jernih, stabil, tanpa endapan.\n- Mudah larut dalam air, menghasilkan warna seragam.\n- Tidak menunjukkan kekeruhan meskipun pada konsentrasi tinggi.\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "Memberikan efek warna alami dan lembut\nRekomendasi produk: Minuman buah tropis, minuman serbuk yang menonjolkan warna kuning hangat."
+    },
+    "photos": [
+      "NC-014_1.jpg",
+      "NC-014_2.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-015",
+    "name": "ColorFruit Orange 010 WSS (Liquid)",
+    "group": "Karotenoid",
+    "source": "Nature-identical / sintetik",
+    "form": "Cair",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#C04901",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan kemasan barrier cahaya",
+    "storage": "Hindari cahaya; simpan sejuk",
+    "dosage": null,
+    "pros": "Warna oranye-merah kuat dan konsisten",
+    "cons": "Status \"natural\" perlu dikonfirmasi (umumnya nature-identical); formulasi dispersi perlu pengadukan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": null,
+      "concentration": null,
+      "physical": null,
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-015_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "NC-016",
+    "name": "ColorFruit Yellow 003 WS 715719",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#C39101",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning keemasan pekat, sedikit mengarah ke orange (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi kuning muda; intensitas turun, arah warna tetap kuning",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-016_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-017",
+    "name": "FruitMax Starfruit Bright WS 704059",
+    "group": "Flavonoid (kalkon/safflower)",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#A1A901",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan barrier cahaya disarankan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Relatif tahan panas dan cahaya dibanding kuning alami lain pada uji model minuman",
+    "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning kehijauan cerah, cenderung lime yellow (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi kuning kehijauan sangat muda/pucat; intensitas turun nyata",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-017_1.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-018",
+    "name": "I-Colors Orange 1308 WSP",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#ABA601",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna kuning terang\n\nKuning cerah dengan nuansa kuning-oranye Terdapat hint hijau selewat (dosis 0,01 g/100 ml)",
+      "concentration": "- 0.01g/100ml: warna kuning sangat muda, jernih\n- 0.1g/100ml: warna kuning gelap, ada hint warna hijau, keruh\n\nPada 0,001 g/100 ml menjadi sangat pucat, hampir bening dengan sedikit rona kuning; hue relatif tetap",
+      "physical": "Warna cepat larut\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "- Semakin tinggi konsentrasi, semakin keruh"
+    },
+    "photos": [
+      "NC-018_1.jpg",
+      "NC-018_2.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-019",
+    "name": "T-10-WS-P GIN 614922",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#A6AD01",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning cerah dengan rona keemasan (lemon yellow)\n\nKuning lemon cerah, sedikit nuansa kehijauan (dosis 0,01 g/100 ml)",
+      "concentration": "- 0,01 g/100 mL: kuning cerah kuat dan jernih, tampak merata tanpa endapan.\n- 0,001 g/100 mL: kuning sangat muda, hampir transparan namun masih terlihat rona kekuningannya.\n\nPada 0,001 g/100 ml menjadi kuning sangat muda/pucat, hampir bening; hue tetap kuning",
+      "physical": "Larutan jernih dan homogen, tidak ada partikel mengendap.\nCepat larut dalam air pada suhu ruang.\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "Warna ini sangat efektif untuk memberikan kesan “fresh” atau citrusy.\nRekomendasi produk Minuman rasa lemon, lime, nanas, atau produk dengan tema tropis cerah."
+    },
+    "photos": [
+      "NC-019_1.jpg",
+      "NC-019_2.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-020",
+    "name": "409197 True Mandarin Orange 10P-WD",
+    "group": "Karotenoid",
+    "source": "Alga / mikroba",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#CA8A32",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna dasar oranye mandarin dengan nuansa hangat\nLebih “natural” dibanding oranye sintetis\nTone cenderung creamy‑orange",
+      "concentration": "0,01 gr/100 mL Oranye cukup pekat, menyerupai jus mandarin0,001 gr/100 mL Kuning‑oranye muda, soft dan ringan\nWarna melemah secara signifikan di konsentrasi rendah, namun tetap mempertahankan hue oranye.",
+      "physical": "Larutan homogen\nSedikit lebih keruh dibanding TM Yellow (masih normal)\nTidak terlihat endapan",
+      "phNote": null,
+      "notes": "Kelebihan\nWarna terlihat lebih natural\nKekurangan\nDaya warna lebih rendah dibanding TM Yellow, perlu dosis lebih tinggi untuk warna kuat, dan cloudy"
+    },
+    "photos": [
+      "NC-020_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-021",
+    "name": "409820 Sunny Mandarine Orange 10P-WS",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#CF8E31",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Orange kemerahan (reddish orange)\nLebih “deep” dan bold dibanding yang lain (keruh)",
+      "concentration": "0,01 g/100 mL: orange pekat, strong, sangat visible dan keruh\n0,001 g/100 mL: turun jadi kuning-orange, tapi masih hangat\nintensitas tinggi, tapi shifting hue saat dilute",
+      "physical": "Relatif jernih (kalau dosis rendah),  lebih “body” dibanding yellow dan cloudy\nTidak tampak pemisahan fase",
+      "phNote": null,
+      "notes": "Hue berubah cukup signifikan saat dilute (orange → yellowish)\nPerlu kontrol dosis kalau target warna harus konsisten"
+    },
+    "photos": [
+      "NC-021_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-022",
+    "name": "9027 Intense Yellow 75L-WS",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#CBBE22",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning cerah, cenderung lemon yellow\nTone cukup “clean” dan tidak keruh",
+      "concentration": "0,01 g/100 mL: kuning terang, vivid\n0,001 g/100 mL: masih terlihat jelas kuning (tidak terlalu pucat)\npunya tinting strength cukup baik, masih terlihat walau diencerkan 10x",
+      "physical": "Larutan terlihat jernih (clear)\nTidak ada indikasi kekeruhan atau endapan\nStabil secara visual (tidak berubah hue)",
+      "phNote": null,
+      "notes": "Shade cukup “pure yellow”, tidak ke arah orange atau green\nCocok sebagai base color / blending color\nJika didiamkan terhadap cahaya mudah luntur"
+    },
+    "photos": [
+      "NC-022_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-023",
+    "name": "97CB0929 TM Yellow 80CLWS",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#C7B924",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna dasar berupa kuning cerah (bright yellow).\nTone cenderung clean, jernih, dan tidak keruh.\nTidak terlihat nuansa coklat atau kehijauan.",
+      "concentration": "0,01 gr/100 mL: Kuning pekat, vivid, eye‑catching\n0,001 gr/100 mL: Kuning muda (pale yellow), tetap homogen\nKarakter perubahan warna bersifat linear: penurunan konsentrasi menghasilkan penurunan intensitas tanpa perubahan hue.",
+      "physical": "Larutan jelas & homogen\nTidak terlihat endapan, flokulasi, atau partikel\nTransparansi baik (light‑passing)",
+      "phNote": null,
+      "notes": "Kelebihan : Intensitas warna tinggi, mudah diencerkan, stabil secara visual di low dosage dan memberi kesan “fresh & clean”\nKekurangan\nKurang memberikan kedalaman warna (flat jika berdiri sendiri)"
+    },
+    "photos": [
+      "NC-023_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-024",
+    "name": "BC Red 4CLWD 97CB1152",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#AC653C",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye terang alami",
+      "concentration": "- 0,001 g/100 mL: Hampir bening, dengan semburat warna sangat samar (transparansi tinggi)\n- 0,005 g/100 mL: Rona oranye muda pucat, lembut dan tidak mencolok\n- 0,01 g/100 mL: Oranye terang lebih pekat dan solid, tampilan warna lebih kuat dan menarik",
+      "physical": "- Larutan agak keruh pada konsentrasi tinggi\n- Larut dalam air dengan hasil warna lembut (tidak terlalu mencolok)",
+      "phNote": null,
+      "notes": "- Pada konsentrasi tinggi, larutan tampak agak keruh dan warna tidak dominan\n-Ketika dikombinasikan dengan pewarna lain, efek perubahan warna tidak terlalu signifikan"
+    },
+    "photos": [
+      "NC-024_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-025",
+    "name": "Cardea Banana Yellow PWS",
+    "group": "Flavonoid (kalkon/safflower)",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#AFA33F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan barrier cahaya disarankan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Relatif tahan panas dan cahaya dibanding kuning alami lain pada uji model minuman",
+    "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning gelap dengan sedikit hint cokelat seperti kunyit bubuk",
+      "concentration": "- 0,01 g/100 mL: Kuning muda pudar yang agak gelap dengan sedikit hint hijau\n- 0,1 g/100 mL: Kuning gelap/redup sedikit keruh",
+      "physical": "Transparan, agak sulit larut (harus diaduk hingga benar-benar homogen), tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Partikel bahan agak menyatu (tidak terpisah-pisah)"
+    },
+    "photos": [
+      "NC-025_1.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-026",
+    "name": "Fusion Lemon Yellow LWS (Liquid) Code: 409695",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Yellow",
+      "Orange"
+    ],
+    "hex": "#BAA31D",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning-oranye muda seperti jeruk",
+      "concentration": "- 0,01 g/100 mL: Kuning dengan intensitas warna sedikit tinggi\n- 0,05 g/100 mL: Kuning cenderung oranye muda jernih",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Kekeruhan bertambah seiring meningkatnya konsentrasi (mulai terlihat di konsentrasi 0,2 g/100 mL)"
+    },
+    "photos": [
+      "NC-026_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-027",
+    "name": "Fusion Lemon Yellow LWS (Liquid) Code: 506009",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Orange",
+      "Yellow"
+    ],
+    "hex": "#D17E01",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning-oranye dengan hint cokelat seperti warna betadine",
+      "concentration": "- 0,01 g/100 mL: Kuning seperti lemon yang agak gelap memberikan kesan hangat\n- 0,05 g/100 mL: Oranye muda seperti jeruk",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Perlu dilihat jika kekeruhan bertambah pada konsentrasi yang lebih tinggi"
+    },
+    "photos": [
+      "NC-027_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-028",
+    "name": "GY Yellow 1200SPWS",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#AE9E01",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cukup tahan cahaya pada pH netral hingga basa ringan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Tahan panas dan relatif tidak berubah oleh pH pada rentang netral-basa",
+    "cons": "Paling stabil pada pH netral hingga basa ringan; rona dapat cenderung oranye bata pada dosis tinggi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye bata dengan sedikit hint kuning",
+      "concentration": "- 0,005 g/100 mL: Kuning dengan intensitas warna yang agak tinggi\n- 0,01 g/100 mL: Kuning cenderung oranye muda",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Pemilihan konsentrasi dapat disesuaikan dengan target warna akhir dan pertimbangan harga"
+    },
+    "photos": [
+      "NC-028_1.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R14"
+    ]
+  },
+  {
+    "id": "NC-029",
+    "name": "Intense Yellow 65P-WS",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#B3A928",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning standar yang sedikit tua",
+      "concentration": "- 0,01 g/100 mL: Kuning muda pudar dengan sedikit hint hijau\n- 0,05 g/100 mL: Kuning jernih dengan sedikit hint hijau\n- 0,07 g/100 mL: Kuning jernih sedikit tua",
+      "physical": "Transparan, agak sulit larut (harus diaduk hingga benar-benar homogen), tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Partikel bahan agak menyatu (tidak terpisah-pisah)"
+    },
+    "photos": [
+      "NC-029_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-030",
+    "name": "Orange Liquid Color AET 030921720",
+    "group": "Karotenoid",
+    "source": "Nature-identical / sintetik",
+    "form": "Cair",
+    "colors": [
+      "Orange",
+      "Yellow"
+    ],
+    "hex": "#CD8400",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Orange keemasan/kuning-oranye dengan intensitas cukup kuat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi kuning-oranye sangat muda; intensitas turun nyata",
+      "physical": "- Larutan tampak sedikit keruh, tapi tetap homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-030_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-031",
+    "name": "Orange Microfine",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Orange"
+    ],
+    "hex": "#B09701",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Cukup stabil terhadap cahaya; hindari cahaya intens",
+    "storage": "Simpan sejuk dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; oranye-kuning hangat (warna keju)",
+    "cons": "Bentuk larut air (norbixin) mengendap atau memucat pada pH asam; untuk produk asam pilih emulsi bixin atau varian tahan asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Oranye agak muda",
+      "concentration": "- 0,01 g/100 mL: Kuning dengan sedikit sekali hint oranye yang memberikan kesan hangat\n- 0,05 g/100 mL: Oranye sedikit agak muda yang memberikan kesan hangat seperti kulit buah jeruk",
+      "physical": "Transparan, agak sulit larut, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Aplikasi pada produk dengan pH rendah (asam) dapat menyebabkan separasi/pemisahan dan pengapungan partikel bahan pewarna sehingga fase larutan menjadi tidak homogen"
+    },
+    "photos": [
+      "NC-031_1.jpg"
+    ],
+    "refs": [
+      "R16",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-032",
+    "name": "Yellow MF (produksi china)",
+    "group": "Flavonoid (kalkon/safflower)",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Yellow"
+    ],
+    "hex": "#C4C12F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Kemasan barrier cahaya disarankan",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Relatif tahan panas dan cahaya dibanding kuning alami lain pada uji model minuman",
+    "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning kecokelatan seperti bubuk kunyit yang dominan warna cokelat",
+      "concentration": "0,01 g/100 mL: Kuning standar\n0,05 g/100 mL: Kuning yang sangat intens dengan warna dominan cokelat seperti minyak goreng (sedikit hint oranye)",
+      "physical": "Jernih (transparan), fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-032_1.jpg"
+    ],
+    "refs": [
+      "R12",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-033",
+    "name": "Yellow Microfine 04377 (produksi US)",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow",
+      "Orange"
+    ],
+    "hex": "#D2BB11",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning sedikit oranye",
+      "concentration": "0,01 g/100 mL: Kuning keruh dengan hint oranye yang lebih banyak daripada produksi China (lebih tua dan gelap)\n0,05 g/100 mL: Oranye muda keruh yang sedikit tua daripada produksi China",
+      "physical": "Keruh, fase larutan tidak homogen, sulit larut dalam air (lebih sulit larut dibandingkan dengan produksi China), partikel warna tidak dapat larut sempurna sehingga menempel pada dinding gelas beaker",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-033_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-034",
+    "name": "Yellow Microfine 20MF301 (produksi china)",
+    "group": "Kurkuminoid",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Yellow",
+      "Orange"
+    ],
+    "hex": "#D7C420",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0",
+      "16.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Sangat peka cahaya; wajib kemasan opak atau barrier cahaya",
+    "storage": "Hindari cahaya",
+    "dosage": null,
+    "pros": "Tahan panas; kuning cerah alami",
+    "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Kuning-oranye muda cerah",
+      "concentration": "0,01 g/100 mL: Kuning keruh mirip ns yuzu\n0,05 g/100 mL: Oranye muda cerah keruh",
+      "physical": "Keruh, fase larutan tidak homogen, sulit larut dalam air, partikel warna tidak dapat larut sempurna sehingga menempel pada dinding gelas beaker",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-034_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R3",
+      "R13",
+      "R19"
+    ]
+  },
+  {
+    "id": "NC-035",
+    "name": "Beetroot Concentrate YL-03 (CV 3%)",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red",
+      "Purple"
+    ],
+    "hex": "#97455A",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah maroon cenderung sedikit ungu",
+      "concentration": "- 0,01 g/100 mL: Pink halus yang agak pudar\n- 0,05 g/100 mL: Pink muda cerah\n- 0,1 g/100 mL (Kontrol): Pink tua yang agak pekat seperti rasberry",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Pink lebih pekat dari kontrol dan cenderung sedikit merah tapi masih dominan pink, pH 2,76\n- Basa: Pink dengan sedikit hint ungu, pH 7,41",
+      "notes": "Dapat dipilih jika menginginkan warna merah muda–tua yang alami"
+    },
+    "photos": [
+      "NC-035_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-036",
+    "name": "Beetroot Juice Concentrate Powder (C.V 3.6)",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Red",
+      "Purple"
+    ],
+    "hex": "#870336",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah-ungu tua",
+      "concentration": "- 0,05 g/100 mL: Pink cerah dengan hint ungu\n- 0,1 g/100 mL (Kontrol): Pink tua dengan intensitas tinggi seperti warna buah naga",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Magenta (ungu muda cerah dengan hint pink), pH 2,73\n- Basa: Ungu muda dengan hint pink yang lebih gelap daripada perlakuan penambahan asam, pH 7,55",
+      "notes": "Dapat dipilih jika menginginkan warna pink–ungu alami"
+    },
+    "photos": [
+      "NC-036_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-037",
+    "name": "W-Beet Red 65-00",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#AF4F7E",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Magenta atau merah muda keunguan",
+      "concentration": "- 0,001 g/100 ml: menghasilkan warna merah muda, tampak lembut dan tidak dominan\n- 0,01 g/100 ml: menghasilkan warna merah dengan garis warna magenta yang masih terlihat",
+      "physical": "- Dapat berubah sesuai dengan konsentrasi pewarna\n- Memiliki sifat transparan (tidak terlalu keruh)\n- Tidak terlalu dominan, namun menghasilkan warna yang lebih gelap dibandingkan pewarna lain",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-037_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-038",
+    "name": "W-Carmine 70-00",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#C6778D",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Merah muda cerah (pink) dengan tampilan bersih dan jernih.",
+      "concentration": "- 0,01 g/100 mL: Warna merah muda cukup kuat dan tegas, tampak merata pada seluruh larutan.\n- 0,001 g/100 mL: Warna menjadi lebih muda dan transparan, memberikan kesan lembut seperti merah muda pucat.",
+      "physical": "- Larutan terlihat jernih, homogen, dan tanpa endapan.\n- Bahan tampak larut sempurna dalam air dan tidak menunjukkan kekeruhan.\n- Agak sedikit sulit dilarutkan apabila digunakan dengan dosis yang tinggi.",
+      "phNote": null,
+      "notes": "Warna ini cocok digunakan untuk produk dengan tema   minuman rasa buah beri, stroberi, rosella, atau rasa bunga pink."
+    },
+    "photos": [
+      "NC-038_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-039",
+    "name": "Shade Fiesta",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#C8418A",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "06.0",
+      "07.0",
+      "12.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Sedang",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Simpan sejuk dan terlindung cahaya",
+    "dosage": "Roti 5,0%, kue 4,0%, cookies dan pastry 3,0%, cream filling 0,05-1,0%; keju 1,0%, dessert/susu UHT/yoghurt/es krim 0,5%; pasta 0,4%, dressing 0,53%, saus 0,33%, biskuit gurih 0,5% (w/w)",
+    "pros": "Pink dari bit (betanin); cahaya baik; berguna di dairy, bakery, dan produk siap saji",
+    "cons": "Kehilangan warna saat dipanaskan sehingga butuh dosis jauh lebih tinggi pada produk panggang; sensitif panas pada proses UHT/pasteurisasi.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "merah muda terang",
+      "concentration": "- 0.01g/100ml: warna pink muda pucat, jernih\n- 0.05g/100ml: warna pink sedikit tua, jernih",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": "- Asam: 2.55, warna pink sedikit lebih tua dari kontrol, ada hint ungu\n- Basa: 7.31, warna pink sedikit lebih tua dari kontrol, ada hint ungu",
+      "notes": null
+    },
+    "photos": [
+      "NC-039_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-040",
+    "name": "Redvivo (Lycopene) 10% CWS/S-TG 5003792",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red",
+      "Orange"
+    ],
+    "hex": "#BB5B45",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Peka oksigen dan cahaya; gunakan kemasan barrier",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Rona merah-oranye alami untuk produk bernuansa tomat atau semangka",
+    "cons": "Mudah teroksidasi dan bergeser dari merah ke oranye/pucat; hindari ion logam (Fe, Cu)",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah oranye lembut (cenderung lebih ke arah merah dibanding Canthaxanthin).",
+      "concentration": "- 0,001 g/100 mL: Warna merah muda sangat pucat, hampir transparan.\n- 0,01 g/100 mL: Warna merah-oranye lembut mulai terlihat jelas, dengan tampilan alami yang tidak terlalu mencolok.",
+      "physical": "- Kelarutan di air suhu ruang rendah; sebagian partikel tetap terlihat menggumpal halus.\n- Warna lebih stabil dalam medium asam dibanding netral.",
+      "phNote": null,
+      "notes": "Lycopene memberikan warna merah lembut alami yang cocok untuk produk seperti stroberi atau semangka. Dibanding Canthaxanthin, warnanya lebih lembut."
+    },
+    "photos": [
+      "NC-040_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "NC-041",
+    "name": "CC-1000-WS",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#DE4A74",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "merah seperti merah bubuk cabai",
+      "concentration": "- 0.01g/100ml: warna pink agak tua, jernih\n- 0.05g/100ml: merah terang mendekati maroon",
+      "physical": "Transparan, cepat larut",
+      "phNote": "- Asam: 2.55, warna merah sedikit lebih muda dari kontrol, terdapat endapan ketika dibiarkan.\n- Basa: 8.21, warna sedikit lebih tua dari kontrol, warna merah marun.",
+      "notes": "- saat penambahan pH asam dan dibiarkan agak lama pada konsentrasi 0.05%, terdapat endapan warna, sehingga untuk ke warna semula perlu diaduk kembali"
+    },
+    "photos": [
+      "NC-041_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-042",
+    "name": "CC-500-WS",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#A6292F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "merah agak terang",
+      "concentration": "- 0.01g/100ml: warna pink muda jernih\n- 0.05g/100ml: merah terang",
+      "physical": "Transparan, cepat larut",
+      "phNote": "- Asam: 2.66, warna merah sedikit lebih muda dari kontrol, ada hint pink.\n- Basa: 7.85, warna sedikit lebih tua dari kontrol",
+      "notes": null
+    },
+    "photos": [
+      "NC-042_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-043",
+    "name": "CO-2000-WS-P 723788",
+    "group": "Karotenoid",
+    "source": "Nature-identical / sintetik",
+    "form": "Bubuk",
+    "colors": [
+      "Red"
+    ],
+    "hex": "#BA7BA2",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "02.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 8
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cenderung peka cahaya dan oksigen; pilih kemasan barrier cahaya/oksigen (antioksidan seperti asam askorbat dapat membantu)",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Stabil terhadap panas dan rentang pH luas pada bentuk terformulasi",
+    "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah pink/fuchsia pekat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi pink muda; intensitas turun cukup nyata, hue tetap pink",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-043_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  },
+  {
+    "id": "NC-044",
+    "name": "Fruitmax Red Beet Red WSP",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Red"
+    ],
+    "hex": "#A4373E",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah muda (pink) dengan karakteristik alami dan fleksibel\n\nPink sangat muda dengan sedikit nuansa merah; intensitas rendah (dosis 0,01 g/100 ml)",
+      "concentration": "- Konsentrasi rendah (0,001 g/100 ml): menghasilkan merah muda pucat, sangat transparan, dan lembut\n- Konsentrasi tinggi (0,01 g/100 ml): menghasilkan merah terang dengan intensitas kuat, menyerupai merah muda pekat\n\nPada 0,001 g/100 ml warna menjadi hampir bening dengan sedikit rona pink; intensitas sangat rendah",
+      "physical": "- Memiliki transparansi tinggi\n- Memberikan kesan lembut, natural, dan tidak mencolok\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "Warna tidak terlalu dominan ketika dipadukan dengan pewarna lain\nCocok digunakan untuk hasil warna alami dan lembut."
+    },
+    "photos": [
+      "NC-044_1.jpg",
+      "NC-044_2.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-045",
+    "name": "Vegex Tangerine 520 WS 703750",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red",
+      "Purple"
+    ],
+    "hex": "#AC3978",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 7
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Larut air dan cocok memberi oranye jernih pada produk asam",
+    "cons": "Rona oranye pada pH asam dan bergeser ke merah-ungu pada pH lebih tinggi; hewani, perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Pink cerah/fuchsia dengan sedikit nuansa ungu (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi pink muda; intensitas turun tetapi warna masih terdapat jelas",
+      "physical": "- Larutan tampak relatif jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-045_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17"
+    ]
+  },
+  {
+    "id": "NC-046",
+    "name": "Beetroot C15F002",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#B896AC",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Pink muda/pastel dengan intensitas rendah (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi hampir bening; warna pink sangat tipis",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-046_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-047",
+    "name": "Berry Microfine (produksi china)",
+    "group": "Betalain",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#AE2E7C",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Peka cahaya dan oksigen; kemasan opak/barrier",
+    "storage": "Simpan dingin dan terlindung cahaya; lebih baik pada aktivitas air rendah (bubuk)",
+    "dosage": null,
+    "pros": "Pink-merah alami untuk produk dingin, beku, dan bubuk",
+    "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu-pink",
+      "concentration": "0,01 g/100 mL: Pink muda yang agak tipis\n0,05 g/100 mL: Pink keunguan (magenta sedikit dengan hint ungu yang cenderung dominan)",
+      "physical": "Jernih (transparan), fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-047_1.jpg"
+    ],
+    "refs": [
+      "R2",
+      "R10",
+      "R14",
+      "R20"
+    ]
+  },
+  {
+    "id": "NC-048",
+    "name": "Carmine Red 5%",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#8D4765",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Pink tua dengan sedikit sekali hint ungu (pink fanta)",
+      "concentration": "- 0,01 g/100 mL: Pink muda sedikit gelap (di kamera terlihat ada sedikit hint ungu)\n- 0,1 g/100 mL: Merah dengan hint pink yang agak keruh",
+      "physical": "Fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Dapat dipilih untuk intensi warna merah cerah"
+    },
+    "photos": [
+      "NC-048_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-049",
+    "name": "Carmine WS Red Blue 50%",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#C5729C",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Merah yang sangat tua-kehitaman seperti wine\n\nMerah tua menuju merah pekat; intensitas warna cukup tinggi (dosis 0,01 g/100 ml)",
+      "concentration": "- 0,01 g/100 mL: Merah jernih dengan sedikit hint pink\n- 0,05 g/100 mL: Merah pekat seperti warna wine yang dominan merah (red wine)\n\nPada 0,001 g/100 ml warna menjadi merah muda (pink); intensitas turun nyata, warna lebih muda",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah\n\n- Larutan relatif jernih, transparan, serta homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "Dapat dipilih untuk intensi warna merah pekat"
+    },
+    "photos": [
+      "NC-049_1.jpg",
+      "NC-049_2.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-050",
+    "name": "Carmine WS Red Yellow 52% 11100102",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#C55C8F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Merah pekat dengan sedikit nuansa ungu (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml berubah menjadi pink cerah; intensitas turun dan warna tampak lebih muda",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-050_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-051",
+    "name": "Watermelon Rose Liquid 04527",
+    "group": "Karotenoid",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Red"
+    ],
+    "hex": "#AF685F",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "12.0",
+      "14.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 7
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Peka oksigen dan cahaya; gunakan kemasan barrier",
+    "storage": "Hindari cahaya dan oksigen; simpan sejuk",
+    "dosage": null,
+    "pros": "Rona merah-oranye alami untuk produk bernuansa tomat atau semangka",
+    "cons": "Mudah teroksidasi dan bergeser dari merah ke oranye/pucat; hindari ion logam (Fe, Cu)",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah muda dengan kesan lembut dan natural",
+      "concentration": "- 0,001 g/100 ml: warna sangat pucat, hampir transparan dengan semburat merah muda ringan\n- 0,005 g/100 ml: warna merah muda mulai terlihat lebih jelas, masih lembut dan transparan\n- 0,01 g/100 ml: warna lebih pekat dan stabil, memberikan tampilan yang menarik",
+      "physical": "- Memiliki transparansi tinggi\n- Sedikit keruh jika digunakan pada konsentrasi tinggi",
+      "phNote": null,
+      "notes": "Cocok untuk produk dengan nuansa merah muda lembut\nDapat dikombinasikan dengan pewarna lain untuk memperoleh warna merah muda yang lebih tegas"
+    },
+    "photos": [
+      "NC-051_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "NC-052",
+    "name": "Sodium Copper Chlorophyllin SM-149 (WS) (Zhongda)",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Green"
+    ],
+    "hex": "#4A953B",
+    "solubility": "Larut air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau standar",
+      "concentration": "- 0,005 g/100 mL: Hijau muda halus\n- 0,01 g/100 mL: Hijau sedikit muda yang cerah",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Stabil terhadap panas dan cahaya sehingga cocok untuk minuman dengan aplikasi panas"
+    },
+    "photos": [
+      "NC-052_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-053",
+    "name": "Copper Chlorophyl (10-12%) OS 223390",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Green"
+    ],
+    "hex": null,
+    "solubility": "Larut minyak",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": null,
+      "max": null
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": null,
+      "concentration": null,
+      "physical": null,
+      "phNote": null,
+      "notes": "Bahan pewarna sangat sukar larut saat dilarutkan; foto menunjukkan bahan dalam bentuk padatan/serbuk."
+    },
+    "photos": [
+      "NC-053_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-054",
+    "name": "Velvet Aventurine Green 637738",
+    "group": "Fikosianin (spirulina)",
+    "source": "Alga / mikroba",
+    "form": null,
+    "colors": [
+      "Green"
+    ],
+    "hex": "#96A891",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 4.5,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Sangat peka cahaya; kemasan opak",
+    "storage": "Simpan dingin dan gelap",
+    "dosage": null,
+    "pros": "Warna alami berbasis fikosianin (biru; dalam campuran dapat menghasilkan hijau)",
+    "cons": "Protein: terdenaturasi di atas sekitar 45 °C dan mengendap/memudar pada pH asam (di bawah sekitar 4,5)",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau muda pastel dengan sedikit nuansa mint (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi hampir bening dengan sedikit rona hijau; intensitas turun nyata",
+      "physical": "- Larutan tampak relatif jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-054_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R4",
+      "R5",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-055",
+    "name": "23600002 Shade Lime Green (Exberry)",
+    "group": "Fikosianin (spirulina)",
+    "source": "Alga / mikroba",
+    "form": null,
+    "colors": [
+      "Green"
+    ],
+    "hex": "#95A841",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan kemasan opak",
+    "storage": "Simpan sejuk dan gelap",
+    "dosage": "Smoothie 0,5-1,5%; keju 3,0%, dessert 0,6%, susu UHT 1,0%, yoghurt 0,3%, es krim 1,0% (w/w)",
+    "pros": "Hijau dari spirulina dan kuning (safflower/kunyit); panas baik",
+    "cons": "Cahaya sedang sehingga pakai kemasan opak; sensitif panas dan asam, tambahkan setelah pemanasan bila memungkinkan; panas dan asam menggeser hue.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "- Warna hijau gelap",
+      "concentration": "- 0.05g/100ml: warna hijau muda, transparan\n- 0.1g/100ml: warna hijau lebih tua, warna seperti teh hijau",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": null,
+      "notes": "- semakin banyak pewarna, semakin keruh."
+    },
+    "photos": [
+      "NC-055_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R3",
+      "R4",
+      "R5",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-056",
+    "name": "C-10.000P-WS-AP (Liquid)",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Green"
+    ],
+    "hex": "#557E48",
+    "solubility": "Larut air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau seperti lumut/matcha",
+      "concentration": "- 0,01 g/100 mL: Hijau muda sedikit halus\n- 0,05 g/100 mL: Hijau daun tua",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Perlu diperhatikan kompatibilitas dengan produk berlemak (emulsi). Jika digunakan dalam produk berbasis minyak/lemak, gunakan surfaktan atau stabilizer untuk mencegah pelepasan warna"
+    },
+    "photos": [
+      "NC-056_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-057",
+    "name": "ColorFruit Green 1312 WSP 7266611",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Green"
+    ],
+    "hex": "#385001",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau lumut pekat, dengan sedikit nuansa kekuningan/olive (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi hijau sangat muda hingga hampir tidak berwarna; intensitas turun nyata",
+      "physical": "- Larutan tampak keruh, tapi tetap homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-057_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-058",
+    "name": "CT-7020-WS-AP (Liquid)",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Green"
+    ],
+    "hex": "#789627",
+    "solubility": "Larut air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau daun",
+      "concentration": "- 0,001 g/100 mL: Hijau limau pucat (Bening dengan sedikit hint hijau, nyaris pudar)\n- 0,01 g/100 mL: Hijau muda terang seperti hijau limau",
+      "physical": "Jernih (transparan), fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Perlu diperhatikan kompatibilitas dengan produk berlemak (emulsi). Jika digunakan dalam produk berbasis minyak/lemak, gunakan surfaktan atau stabilizer untuk mencegah pelepasan warna"
+    },
+    "photos": [
+      "NC-058_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-059",
+    "name": "Green Powder 984 CAT",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Green"
+    ],
+    "hex": "#74B075",
+    "solubility": "Larut air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna hijau muda dengan tone green-soft.",
+      "concentration": "- 0,01 g/100 mL: Warna hijau cukup jelas, lembut namun tetap terlihat.\n- 0,001 g/100 mL: Hampir tidak memberikan warna; larutan terlihat seperti bening dengan sedikit hint hijau.",
+      "physical": "- Larutan jernih, kelarutan baik.\n- Tidak tampak adanya partikel tersuspensi.",
+      "phNote": null,
+      "notes": "- Memiliki intensitas warna sedang–rendah.\n- Cocok untuk aplikasi yang menginginkan warna hijau soft atau natural-look.\n- Tidak cocok untuk produk yang membutuhkan hijau pekat kecuali konsentrasi ditingkatkan."
+    },
+    "photos": [
+      "NC-059_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-060",
+    "name": "Mint Green 97P-WS 979007",
+    "group": "Klorofil / klorofilin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Green"
+    ],
+    "hex": "#3F8D32",
+    "solubility": "Larut air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 6,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hijau stabil terhadap panas dan cahaya pada pH netral",
+    "cons": "Mengendap pada pH asam (sekitar di bawah 4) kecuali varian tahan asam/terstabilkan; klorofil alami (non-tembaga) mudah berubah olive/cokelat; status \"natural\" klorofilin tembaga perlu dikonfirmasi",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hijau sangat gelap hingga tampak kehitaman; intensitas warna sangat pekat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml warna menjadi hijau lebih muda dan terang; intensitas turun nyata, hue tetap hijau",
+      "physical": "- Larutan sangat pekat, tapi tetap homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-060_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R9"
+    ]
+  },
+  {
+    "id": "NC-061",
+    "name": "Blue Spirulina Extract (Binmei Technology)",
+    "group": "Fikosianin (spirulina)",
+    "source": "Alga / mikroba",
+    "form": null,
+    "colors": [
+      "Blue"
+    ],
+    "hex": "#4F7DD1",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 4.5,
+      "max": 7
+    },
+    "heat": "Rendah",
+    "light": "Rendah",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Sangat peka cahaya; kemasan opak",
+    "storage": "Simpan dingin dan gelap",
+    "dosage": null,
+    "pros": "Warna alami berbasis fikosianin (biru; dalam campuran dapat menghasilkan hijau)",
+    "cons": "Protein: terdenaturasi di atas sekitar 45 °C dan mengendap/memudar pada pH asam (di bawah sekitar 4,5)",
+    "animal": false,
+    "evaluation": {
+      "baseColor": null,
+      "concentration": null,
+      "physical": null,
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-061_1.jpg"
+    ],
+    "refs": [
+      "R3",
+      "R4",
+      "R5",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-062",
+    "name": "60000202 Shade Blue - HP (Exberry)",
+    "group": "Fikosianin (spirulina)",
+    "source": "Alga / mikroba",
+    "form": null,
+    "colors": [
+      "Blue"
+    ],
+    "hex": "#315EB0",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2.5,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Cahaya sangat baik; kemasan bening dapat dipakai",
+    "storage": "Simpan sejuk",
+    "dosage": "Soft drink 0,45% w/v (pH 2,9); smoothie 0,5-1,5%; gummies 0,5% dan marshmallow 2,0% (maks.); hard panned 7,0%; keju 1,5%, dessert 0,6%, yoghurt 0,5%, es krim 1,0% (w/w)",
+    "pros": "Biru dari spirulina (fikosianin); cahaya sangat baik; biru + kuning = hijau, biru + pink/merah = ungu",
+    "cons": "Paling nyaman pada pH 2,7-2,9 dan baik hingga sekitar pH 4; performa turun di atas pH 4,0. Sensitif panas di atas 70 °C (naikkan dosis atau proses non-termal); tidak untuk high boilings dan susu UHT; kadar alkohol tinggi dan kandungan jus tinggi membatasi performa. Tambahkan pada base dingin setelah asam tercampur rata; butuh stabilisasi khusus.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna biru agak gelap",
+      "concentration": "- 0.05g/100ml : warna biru muda terang pucat, transparan\n- 0.1g/100ml : warna biru tua, transparan",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": null,
+      "notes": "- Butuh banyak pewarna untuk bisa mendapatkan warna yang keluar"
+    },
+    "photos": [
+      "NC-062_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R3",
+      "R4",
+      "R5",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-063",
+    "name": "Acai 300 WSP",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Blue"
+    ],
+    "hex": "#4A95C4",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 3.5
+    },
+    "heat": "Rendah",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Warna ungu-biru alami untuk produk asam",
+    "cons": "Kurang stabil dibanding antosianin sayur; memudar oleh panas, oksigen, dan kenaikan pH",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna biru muda–sedang dengan tone yang cenderung cerah.",
+      "concentration": "- 0,01 g/100 mL: Warna biru terlihat jelas, cerah, dan merata.\n- 0,001 g/100 mL: Warna hampir tidak tampak (sangat pucat), mendekati bening.",
+      "physical": "- Larutan tampak jernih, tidak ada penggumpalan atau suspensi mengendap.\n- Kelarutan baik sehingga warna terdistribusi merata.",
+      "phNote": null,
+      "notes": "- Pigmen ini memiliki intensitas warna yang tidak terlalu kuat, sehingga memerlukan konsentrasi lebih tinggi untuk menampilkan warna yang signifikan.\n- Cocok untuk produk yang membutuhkan warna soft/pastel.\n- Kurang cocok jika menginginkan warna pekat pada konsentrasi rendah."
+    },
+    "photos": [
+      "NC-063_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R11"
+    ]
+  },
+  {
+    "id": "NC-064",
+    "name": "ColorFruit Blue 900 WSP",
+    "group": "Iridoid / genipin (gardenia, jagua)",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Blue"
+    ],
+    "hex": "#7798B2",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cukup stabil terhadap cahaya; hindari cahaya intens",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Biru lebih stabil terhadap panas, cahaya, dan pH dibanding spirulina",
+    "cons": "Biru cenderung gelap/navy atau abu-biru; status regulasi dan penerimaan perlu dicek",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna biru tua dengan intensitas tinggi.",
+      "concentration": "- 0,01 g/100 mL: Warna biru pekat dan sangat jelas.\n- 0,001 g/100 mL: Warna tetap tampak biru walaupun lebih soft, tetapi masih jauh lebih terlihat dibanding Acai 300.",
+      "physical": "- Larutan agak keruh dan homogen.\n- Kelarutan sangat baik; bahkan pada konsentrasi rendah, warna tetap terlarut dengan baik.",
+      "phNote": null,
+      "notes": "- Memiliki kekuatan pewarna tinggi (high tint strength).\n- Sangat efisien untuk produk yang menginginkan tampilan warna cerah meskipun dengan dosis rendah.\n- Rekomendasi untuk aplikasi minuman atau produk cair yang membutuhkan warna stabil dan intens."
+    },
+    "photos": [
+      "NC-064_1.jpg"
+    ],
+    "refs": [
+      "R5",
+      "R6",
+      "R7",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-065",
+    "name": "GB Blue 260SPWS 97CB0896",
+    "group": "Iridoid / genipin (gardenia, jagua)",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Blue"
+    ],
+    "hex": "#2A4A82",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cukup stabil terhadap cahaya; hindari cahaya intens",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Biru lebih stabil terhadap panas, cahaya, dan pH dibanding spirulina",
+    "cons": "Biru cenderung gelap/navy atau abu-biru; status regulasi dan penerimaan perlu dicek",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Biru cerah cenderung ke arah biru langit.",
+      "concentration": "- 0,01 g/100 mL: warna biru tua kuat dan tegas.\n- 0,001 g/100 mL: biru muda transparan menyerupai warna langit muda.",
+      "physical": "- Larutan tampak jernih, tanpa endapan.\n- Stabil dalam air dan menunjukkan sifat larut air sempurna.",
+      "phNote": null,
+      "notes": "Rekomendasi produk: Cocok untuk produk bertema “cooling” seperti rasa mint atau blueberry.\nBisa menjadi opsi digunakan untuk menghasilkan warna anggur dan cincau. Harganya lebih murah dibandingkan dengan W-Spirulina"
+    },
+    "photos": [
+      "NC-065_1.jpg"
+    ],
+    "refs": [
+      "R5",
+      "R6",
+      "R7",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-066",
+    "name": "Purple Carrot Juice Concentrate Powder (C.V.12) (KangHua)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#76658F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu tua yang sangat pekat cenderung kecokelatan",
+      "concentration": "- 0,01 g/100 mL: Ungu muda yang sangat halus tapi gelap (cenderung keabu-abuan)\n- 0,05 g/100 mL: Ungu tua jernih seperti warna berry",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Hasil warna pada konsentrasi 0,05 g/100 mL mirip dengan warna NS anggur"
+    },
+    "photos": [
+      "NC-066_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-067",
+    "name": "Purple Sweet Potato Juice Concentrate Powder (C.V.10) (KangHua)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#6079D3",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu muda pekat seperti ubi ungu",
+      "concentration": "- 0,01 g/100 mL: Biru mute yang sedikit gelap seperti warna cornflower\n- 0,05 g/100 mL: Ungu kebiruan\n- 0,1 g/100 mL: Ungu tua sedikit hint biru",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": null,
+      "notes": "Diasumsikan lebih tahan terhadap panas dan perubahan pH daripada antosianin berry"
+    },
+    "photos": [
+      "NC-067_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-068",
+    "name": "15330021 Shade Vivid Red (Exberry)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#726086",
+    "solubility": "Larut air",
+    "categories": [
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 3.5
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Label full sleeve atau kemasan pelindung cahaya bila dosis rendah",
+    "storage": "Simpan sejuk dan gelap",
+    "dosage": "Soft drink 0,04% w/v (pH 2,9-3,4) dan 0,06% (pH 3,5-3,8); smoothie 0,1-0,4%; gummies 0,07%, high boilings 0,08%; hard panned 3,0%, soft panned 2,0% (w/w)",
+    "pros": "Antosianin dari wortel dan blackcurrant; tahan panas dan cahaya sangat baik; efektif pada dosis rendah",
+    "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah tua gelap",
+      "concentration": "- 0.01 g/100ml : Ungu muda cerah\n- 0.05 g/100ml: Ungu tua burgundy",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": "- Asam: pH 2.75 Warna merah cerah, ada hint orange sedikit\n- Basa: pH 7.04, Warna ungu tua masih ada hint merah sedikit",
+      "notes": null
+    },
+    "photos": [
+      "NC-068_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-069",
+    "name": "18240040 Shade Purple Plum (Exberry)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#5C476D",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 3.5
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Label full sleeve atau kemasan pelindung cahaya bila dosis rendah",
+    "storage": "Simpan sejuk dan gelap",
+    "dosage": "Soft drink 0,04% w/v (pH 2,9-3,4); smoothie 0,1-0,4%; dairy 0,13-0,20% w/w (efektif pada dosis sangat rendah)",
+    "pros": "Antosianin dari wortel hitam dan blueberry; tahan panas dan cahaya sangat baik; efektif pada dosis rendah",
+    "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah tua gelap",
+      "concentration": "- 0.01 g/100ml : warna ungu agak gelap, seperti lavender\n- 0.05 g/100ml (kontrol) : warna gelap pekat hampir tidak tembus cahaya",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": "- Asam: pH 2.74, warna merah gelap mendekati warna merah marun/\n- Basa: pH 7,11. Warna ungu gelap pekat, hampir tidak tembus cahaya.",
+      "notes": null
+    },
+    "photos": [
+      "NC-069_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-070",
+    "name": "79180001 Shade Rubescent Red (Exberry)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#9B609C",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "12.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 3.5
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Label full sleeve atau kemasan pelindung cahaya bila dosis rendah",
+    "storage": "Simpan sejuk dan gelap",
+    "dosage": "Soft drink 0,06% w/v (pH 2,9-3,4) dan 0,09% (pH 3,5-3,8); gummies 0,10%; roti 1,0%; keju 0,30%, yoghurt 0,20%, es krim 0,30%; saus 0,13% (w/w)",
+    "pros": "Antosianin dari ubi jalar dan wortel; tahan panas dan cahaya sangat baik; efektif pada dosis rendah",
+    "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "warna merah muda, pekat seperti bubuk cabai",
+      "concentration": "- 0.01g/100ml: ungu muda cerah transparan\n- 0.05g/100ml (kontrol): warna pink tua ada hint ungu sedikit.",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": "- Asam: pH 2.62. warna orange tua transparan\n- Basa: pH 6.81. Warna pink tua keunguan.",
+      "notes": null
+    },
+    "photos": [
+      "NC-070_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-071",
+    "name": "84180007 Shade Veggie Red (Exberry)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Red"
+    ],
+    "hex": "#D13A84",
+    "solubility": "Larut air",
+    "categories": [
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 3.5
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Label full sleeve atau kemasan pelindung cahaya bila dosis rendah",
+    "storage": "Simpan sejuk dan gelap",
+    "dosage": "Gummies 0,07% dan high boilings 0,08% w/w; soft drink sekitar 0,04-0,06% w/v (mengacu merah antosianin)",
+    "pros": "Antosianin dari lobak dan wortel; tahan panas dan cahaya sangat baik; efektif pada dosis rendah",
+    "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah pekat seperti merah cabai",
+      "concentration": "- 0.01 g/100ml : Ungu muda cerah\n- 0.05 g/100ml (kontrol) : pink cerah transparan",
+      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "phNote": "- Asam: pH 6.81, warna pink tua keunguan.\n- Basa: pH 6.60, warna pink, seperti fuschia, ada hint ungu sedikit",
+      "notes": null
+    },
+    "photos": [
+      "NC-071_1.jpg"
+    ],
+    "refs": [
+      "R21",
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-072",
+    "name": "ColorFruit Purple 01303 WSP",
+    "group": "Iridoid / genipin (gardenia, jagua)",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#8751BE",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "05.0",
+      "07.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan"
+    ],
+    "packaging": "Cukup stabil terhadap cahaya; hindari cahaya intens",
+    "storage": "Simpan terlindung cahaya",
+    "dosage": null,
+    "pros": "Biru lebih stabil terhadap panas, cahaya, dan pH dibanding spirulina",
+    "cons": "Biru cenderung gelap/navy atau abu-biru; status regulasi dan penerimaan perlu dicek",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu dengan sedikit hint merah seperti kulit dalam buah manggis",
+      "concentration": "- 0,005 g/100 mL (Kontrol): Ungu yang agak halus seperti lavender\n- 0,01 g/100 mL: Ungu tua standar",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Pink muda cerah, pH 2,62\n- Basa: Warna ungu dengan shade yang sama dengan kontrol hanya sedikit tua dan agak gelap, pH 7,41",
+      "notes": "Tidak disarankan untuk aplikasi pada pH ≤ 2,6 jika ingin mempertahankan warna ungu"
+    },
+    "photos": [
+      "NC-072_1.jpg"
+    ],
+    "refs": [
+      "R5",
+      "R6",
+      "R7",
+      "R15"
+    ]
+  },
+  {
+    "id": "NC-073",
+    "name": "ColorFruit Red 108 WSP 720109",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#B0211E",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu tua/ungu anggur dengan intensitas pekat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi lavender/ungu muda; intensitas turun, hue tetap ungu",
+      "physical": "- Larutan tampak sedikit keruh, tapi tetap homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": "Setelah penambahan 0,1 g citric acid pada larutan 0,01 g/100 ml, warna pada berubah nyata menjadi merah/merah-oranye\n(Foto 2/3 = larutan setelah ditambah citric acid)"
+    },
+    "photos": [
+      "NC-073_1.jpg",
+      "NC-073_2.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-074",
+    "name": "ColorFruit Red 122 WSP",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#6F6B83",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah keunguan yang gelap",
+      "concentration": "- 0,01 g/100 mL: Ungu muda yang sangat halus tapi gelap (cenderung keabu-abuan)\n- 0,05 g/100 mL (Kontrol): Ungu standar yang gelap seperti terong\n- 0,1 g/100 mL: Ungu yang sangat pekat sekilas hampir terlihat seperti hitam",
+      "physical": "Sedikit buram/keruh, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Merah agak condong ke oranye, pH 2,52\n- Basa: Ungu pekat hampir hitam seperti black currant, pH 7,59",
+      "notes": "Sedikit buram/keruh saat larut sehingga kurang cocok untuk aplikasi yang memerlukan kejernihan maksimal"
+    },
+    "photos": [
+      "NC-074_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-075",
+    "name": "ColorFruit Violet 108 WS (Liquid)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#41303E",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Pink gelap keunguan",
+      "concentration": "- 0,01 g/100 mL: Biru muda gelap dengan sedikit hint ungu\n- 0,05 g/100 mL (Kontrol): Ungu tua dengan hint kebiruan",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Pink terang, pH 2,53\n- Basa: Ungu tua cenderung biru seperti bunga telang, pH 7,59",
+      "notes": "Sangat sesuai untuk minuman dan produk yang menginginkan ungu intens"
+    },
+    "photos": [
+      "NC-075_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-076",
+    "name": "FruitMax Pink 101 WS (Liquid)",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Cair",
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#A63E50",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Pink-ungu muda seperti pink berry",
+      "concentration": "- 0,01 g/100 mL: Biru muda yang sangat halus\n- 0,05 g/100 mL (Kontrol): Ungu standar yang terang\n- 0,1 g/100 mL: Ungu muda terang",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Pink terang, pH 2,55\n- Basa: Ungu kebiruan, pH 7,28",
+      "notes": "Penggunaan sangat baik untuk produk yang ingin memanfaatkan perubahan warna pH"
+    },
+    "photos": [
+      "NC-076_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-077",
+    "name": "Fruitmax Red 167 WSP",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": "Bubuk",
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#6C548D",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Merah maroon cenderung sedikit ungu\n\nUngu violet/lavender dengan intensitas sedang hingga pekat (dosis 0,01 g/100 ml)",
+      "concentration": "- 0,01 g/100 mL: Pink halus yang agak pudar\n- 0,05 g/100 mL: Pink muda cerah\n- 0,1 g/100 mL (Kontrol): Pink tua yang agak pekat seperti rasberry\n\nPada 0,001 g/100 ml menjadi ungu muda/lavender pucat; intensitas turun, hue dasar masih ungu",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah\n\n- Larutan tampak sangat jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": "- Asam: Pink lebih pekat dari kontrol dan cenderung sedikit merah tapi masih dominan pink, pH 2,76\n- Basa: Pink dengan sedikit hint ungu, pH 7,41",
+      "notes": "Dapat dipilih jika menginginkan warna merah muda–tua yang alami\n\nPada penambahan 0,1 g citric acid ke larutan 0,01 g/100 ml, warna tampak bergeser ke pink-ungu\n(Foto 2/3 = larutan setelah ditambah citric acid)"
+    },
+    "photos": [
+      "NC-077_1.jpg",
+      "NC-077_2.jpg",
+      "NC-077_3.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-078",
+    "name": "Black Carrot P",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#6A6083",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu gelap seperti berry/bagian tengah black carrot",
+      "concentration": "- 0,01 g/100 mL: Ungu yang halus seperti lavender tapi sedikit pudar dengan hint cenderung biru daripada pink\n- 0,1 g/100 mL (Kontrol): Ungu tua jernih seperti warna berry (sedikit pink dibandingkan dengan perlakuan penambahan basa)",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Merah dengan sedikit hint oranye, pH 2,67\n- Basa: Ungu tua jernih, pH 7,01",
+      "notes": "Bagus untuk aplikasi produk dengan intensi warna yang alami"
+    },
+    "photos": [
+      "NC-078_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-079",
+    "name": "Black Carrot P C14P.002",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#D87E8A",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu dengan gradasi biru atau merah tergantung pH dan konsentrasi",
+      "concentration": null,
+      "physical": "- Memiliki transparansi sedang hingga tinggi\n- Warna dapat tampak lebih pekat seiring peningkatan konsentrasi",
+      "phNote": "Warna berubah sesuai pH — cenderung merah dalam kondisi asam, ungu pada netral, dan kebiruan dalam kondisi basa",
+      "notes": "Pada konsentrasi tinggi, warna menjadi lebih intens dan dominan\nCocok untuk produk dengan tema alami atau pH-sensitive, namun kurang stabil pada perubahan pH ekstrem"
+    },
+    "photos": [
+      "NC-079_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-080",
+    "name": "Liquid Carmine Purple 2G 11100444",
+    "group": "Antrakuinon (karmin)",
+    "source": "Hewan",
+    "form": "Cair",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#A18FA2",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "07.0",
+      "08.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 3.5,
+      "max": 9
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Baking / pemanggangan",
+      "Pembekuan",
+      "Ekstrusi"
+    ],
+    "packaging": "Tidak spesifik (stabil terhadap cahaya)",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Sangat stabil terhadap panas, cahaya, dan oksidasi",
+    "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Ungu muda/lilac dengan intensitas relatif rendah (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml menjadi hampir bening dengan sedikit rona ungu; intensitas turun nyata",
+      "physical": "- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-080_1.jpg"
+    ],
+    "refs": [
+      "R8",
+      "R17",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-081",
+    "name": "Radish Juice Concentrate",
+    "group": "Antosianin",
+    "source": "Tumbuhan",
+    "form": null,
+    "colors": [
+      "Purple",
+      "Red"
+    ],
+    "hex": "#7A519F",
+    "solubility": "Larut air",
+    "categories": [
+      "01.0",
+      "03.0",
+      "04.0",
+      "05.0",
+      "14.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 4
+    },
+    "heat": "Sedang",
+    "light": "Sedang",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "Pembekuan"
+    ],
+    "packaging": "Gunakan barrier oksigen dan cahaya; hindari asam askorbat berlebih",
+    "storage": "Simpan dingin dan terlindung cahaya",
+    "dosage": null,
+    "pros": "Merah-ungu alami untuk produk asam (minuman, permen, yogurt)",
+    "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Ungu kemerahan dengan hint pink seperti berry",
+      "concentration": "- 0,01 g/100 mL: Ungu muda yang halus dengan hint pink\n- 0,1 g/100 mL (Kontrol): Ungu muda terang hint pink",
+      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "phNote": "- Asam: Oranye jernih dengan sedikit sekali hint merah, pH 2,67\n- Basa: Ungu dengan sedikit sekali hint pink, pH 7,45",
+      "notes": "Penggunaan sangat baik untuk produk yang ingin memanfaatkan perubahan warna pH"
+    },
+    "photos": [
+      "NC-081_1.jpg"
+    ],
+    "refs": [
+      "R1",
+      "R3",
+      "R11",
+      "R13"
+    ]
+  },
+  {
+    "id": "NC-082",
+    "name": "Cuttle Fish Ink Extract (Binmei Technology)",
+    "group": "Melanin",
+    "source": "Hewan",
+    "form": null,
+    "colors": [
+      "Black"
+    ],
+    "hex": "#282D2B",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "06.0",
+      "12.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": null,
+      "max": null
+    },
+    "heat": null,
+    "light": null,
+    "processes": [],
+    "packaging": null,
+    "storage": null,
+    "dosage": null,
+    "pros": "Hitam alami untuk produk gurih",
+    "cons": "Bersumber hewani (seafood) sehingga perlu dipertimbangkan untuk halal dan alergen; tampil opak",
+    "animal": true,
+    "evaluation": {
+      "baseColor": "Warna dasar hitam keabu‑abuan pekat\nSangat gelap, mendekati opaque",
+      "concentration": "0,1 gr/100 mL: Hitam sangat pekat, hampir opaque\n0,01 gr/100 mL: Hitam gelap, masih sangat dominan\nPerubahan intensitas kecil meskipun konsentrasi diturunkan, menandakan pigment strength sangat tinggi.",
+      "physical": "Larutan tampak opaque\nTidak tembus cahaya\nHomogen, tanpa partikel besar terlihat",
+      "phNote": null,
+      "notes": "Kelebihan : Pewarnaan sangat kuat, memberi warna unik & premium, sedikit dosis sudah memberi efek visual signifikan\nKekurangan : Tidak cocok untuk produk clear, potensi isu aroma/rasa jika dosis tinggi"
+    },
+    "photos": [
+      "NC-082_1.jpg"
+    ],
+    "refs": [
+      "R0"
+    ]
+  },
+  {
+    "id": "NC-083",
+    "name": "Necol Black 787981",
+    "group": "Karbon",
+    "source": "Mineral / karbon",
+    "form": null,
+    "colors": [
+      "Black"
+    ],
+    "hex": "#444545",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Sterilisasi / retort",
+      "Baking / pemanggangan",
+      "Ekstrusi",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hitam sangat stabil terhadap panas, cahaya, dan pH (sifat umum karbon inert)",
+    "cons": "Pigmen tidak larut: perlu dispersi homogen, dapat mengendap atau tampak buram/abu; tidak memberi warna transparan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hitam/abu-abu sangat gelap, tampak sebagai dispersi pekat (dosis 0,01 g/100 ml)",
+      "concentration": "Pada 0,001 g/100 ml warna jauh lebih pucat/abu-abu; terdapat partikel atau residu di bagian bawah wadah",
+      "physical": "- Tidak membentuk larutan yang homogen dan jernih\n- Adanya dispersi yang kurang sempurna\n- Terdapat partikel yang mengendap",
+      "phNote": null,
+      "notes": null
+    },
+    "photos": [
+      "NC-083_1.jpg"
+    ],
+    "refs": [
+      "R0"
+    ]
+  },
+  {
+    "id": "NC-084",
+    "name": "ColorFruit Black 900 WSP 722348",
+    "group": "Karbon",
+    "source": "Mineral / karbon",
+    "form": "Bubuk",
+    "colors": [
+      "Black"
+    ],
+    "hex": "#262529",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Sterilisasi / retort",
+      "Baking / pemanggangan",
+      "Ekstrusi",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hitam sangat stabil terhadap panas, cahaya, dan pH (sifat umum karbon inert)",
+    "cons": "Pigmen tidak larut: perlu dispersi homogen, dapat mengendap atau tampak buram/abu; tidak memberi warna transparan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Hitam pekat",
+      "concentration": "- 0,005 g/100 mL: Abu-abu tua keruh dengan hint hitam seperti arang\n- 0,01 g/100 mL: Hitam sedikit keabu-abuan",
+      "physical": "Keruh, fase larutan tidak homogen, partikel powder sulit larut dalam air, meninggalkan kerak warna pada dinding gelas beaker, ada lapisan terpisah yang mengapung setelah didiamkan beberapa saat",
+      "phNote": null,
+      "notes": "Tidak direkomendasikan untuk aplikasi yang memerlukan kejernihan"
+    },
+    "photos": [
+      "NC-084_1.jpg"
+    ],
+    "refs": [
+      "R0"
+    ]
+  },
+  {
+    "id": "NC-085",
+    "name": "ColorFruit Bordeaux 104 WSP",
+    "group": "Karbon",
+    "source": "Mineral / karbon",
+    "form": "Bubuk",
+    "colors": [
+      "Purple"
+    ],
+    "hex": "#3D2A3B",
+    "solubility": "Dispersi dalam air",
+    "categories": [
+      "03.0",
+      "05.0",
+      "07.0",
+      "15.0"
+    ],
+    "ph": {
+      "min": 2,
+      "max": 10
+    },
+    "heat": "Tinggi",
+    "light": "Tinggi",
+    "processes": [
+      "Tanpa pemanasan",
+      "Pasteurisasi",
+      "UHT",
+      "Sterilisasi / retort",
+      "Baking / pemanggangan",
+      "Ekstrusi",
+      "Pembekuan"
+    ],
+    "packaging": "Tidak spesifik",
+    "storage": "Tidak ada catatan khusus",
+    "dosage": null,
+    "pros": "Hitam sangat stabil terhadap panas, cahaya, dan pH (sifat umum karbon inert)",
+    "cons": "Pigmen tidak larut: perlu dispersi homogen, dapat mengendap atau tampak buram/abu; tidak memberi warna transparan",
+    "animal": false,
+    "evaluation": {
+      "baseColor": "Warna dapat bergeser ke ungu pada pH tertentu",
+      "concentration": "Warna dapat bergeser ke ungu pada pH tertentu",
+      "physical": "Warna dapat bergeser ke ungu pada pH tertentu",
+      "phNote": null,
+      "notes": "Warna dapat bergeser ke ungu pada pH tertentu"
+    },
+    "photos": [
+      "NC-085_1.jpg"
+    ],
+    "refs": [
+      "R0"
+    ]
+  }
+]
