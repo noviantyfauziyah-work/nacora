@@ -5,6 +5,11 @@ import {
   resolveBookletGroupName,
 } from '../data-store.js';
 import { formatNumberId } from '../engine/recommend.js';
+import {
+  getBookletGranulationGuide,
+  getMaterialExtensionStatus,
+} from '../engine/process-extensions.js';
+import { getCalibratedMaterialHex } from '../engine/color-science.js';
 import { renderReferencesList } from './detail.js';
 
 function getMaterialsForBookletGroup(materials, bookletGroup) {
@@ -22,7 +27,7 @@ function getRepresentativeHex(materials, bookletGroup) {
   }
   const groupMats = getMaterialsForBookletGroup(materials, bookletGroup);
   const firstWithHex = groupMats.find((m) => Boolean(m.hex));
-  return firstWithHex ? firstWithHex.hex : '#008040';
+  return firstWithHex ? getCalibratedMaterialHex(firstWithHex) : '#008040';
 }
 
 export function renderBookletIndexPage(data) {
@@ -105,6 +110,7 @@ export function renderBookletGroupPage(data, requestedGroup) {
     materials,
     currentEntry.group
   );
+  const granulationGuide = getBookletGranulationGuide(currentEntry.group);
 
   // Tujuh bagian kolom Booklet (Bagian yang kosong disembunyikan — Bagian 10)
   const contentSections = [
@@ -166,6 +172,11 @@ export function renderBookletGroupPage(data, requestedGroup) {
               )
               .join('')}
             ${
+              granulationGuide
+                ? `<option value="sec-granulasi">Panduan Proses Granulasi</option>`
+                : ''
+            }
+            ${
               groupMaterials.length > 0
                 ? `<option value="sec-contoh-bahan">Contoh Bahan Perusahaan (${groupMaterials.length})</option>`
                 : ''
@@ -199,6 +210,17 @@ export function renderBookletGroupPage(data, requestedGroup) {
             `
               )
               .join('')}
+            ${
+              granulationGuide
+                ? `
+              <li>
+                <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="sec-granulasi" class="booklet-nav-link booklet-section-jump">
+                  Panduan Proses Granulasi
+                </a>
+              </li>
+            `
+                : ''
+            }
             ${
               groupMaterials.length > 0
                 ? `
@@ -271,6 +293,55 @@ export function renderBookletGroupPage(data, requestedGroup) {
           )
           .join('')}
 
+        ${
+          granulationGuide
+            ? `
+          <section id="sec-granulasi" class="card">
+            <h2 class="detail-section-title">Panduan Teknis Proses Granulasi &amp; Serbuk Instan</h2>
+            <p style="margin: 0 0 12px 0; white-space: pre-line;">${escapeHtml(granulationGuide.summary)}</p>
+            ${
+              granulationGuide.keyParameters
+                ? `
+              <div class="info-box" style="margin: 0;">
+                <strong>Parameter Kritis Formulasi &amp; Granulasi:</strong><br />
+                ${escapeHtml(granulationGuide.keyParameters)}
+              </div>
+            `
+                : ''
+            }
+            ${
+              Array.isArray(granulationGuide.methodsComparison)
+                ? `
+              <table class="clean-table" style="margin-top: 12px;">
+                <thead>
+                  <tr>
+                    <th scope="col">Metode Granulasi</th>
+                    <th scope="col">Mekanisme Proses</th>
+                    <th scope="col">Kesesuaian Pigmen Alami</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${granulationGuide.methodsComparison
+                    .map(
+                      (m) => `
+                    <tr>
+                      <th scope="row">${escapeHtml(m.method)}</th>
+                      <td>${escapeHtml(m.mechanism)}</td>
+                      <td>${escapeHtml(m.suitability)}</td>
+                    </tr>
+                  `
+                    )
+                    .join('')}
+                </tbody>
+              </table>
+            `
+                : ''
+            }
+          </section>
+        `
+            : ''
+        }
+
         <!-- Contoh Bahan Perusahaan pada Kelompok Ini (Bagian 10) -->
         ${
           groupMaterials.length > 0
@@ -292,11 +363,12 @@ export function renderBookletGroupPage(data, requestedGroup) {
                     mat.ph?.min !== null && mat.ph?.max !== null
                       ? `pH ${formatNumberId(mat.ph.min)}–${formatNumberId(mat.ph.max)}`
                       : null;
+                  const granStatus = getMaterialExtensionStatus(mat.id, 'Granulasi');
 
                   return `
                     <article class="card card-interactive" style="padding: 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
                       <div style="display: flex; align-items: flex-start; gap: 12px;">
-                        <div class="swatch-box" style="background-color: ${escapeHtml(mat.hex || '#F3F4F6')};">
+                        <div class="swatch-box" style="background-color: ${escapeHtml(mat.hex ? getCalibratedMaterialHex(mat) : '#F3F4F6')};">
                           ${mat.hex ? '' : '—'}
                         </div>
                         <div style="flex: 1; min-width: 0;">
@@ -307,6 +379,7 @@ export function renderBookletGroupPage(data, requestedGroup) {
                           <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                             ${colorChips}
                             ${phStr ? `<span class="chip">${escapeHtml(phStr)}</span>` : ''}
+                            ${granStatus ? `<span class="chip">Granulasi: ${escapeHtml(granStatus.status)}</span>` : ''}
                             ${mat.animal ? `<span class="chip chip-animal"><span aria-hidden="true">▲</span> Bahan hewani</span>` : ''}
                           </div>
                         </div>

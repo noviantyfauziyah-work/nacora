@@ -10,6 +10,14 @@ import {
   parsePhValue,
   isCategoryMatched,
 } from '../src/engine/recommend.js';
+import {
+  getMaterialExtensionStatus,
+  EXTENSION_COMPATIBILITY_RECORDS,
+} from '../src/engine/process-extensions.js';
+import {
+  hexToHsl,
+  computeInteractiveMix,
+} from '../src/engine/color-science.js';
 import { validatePhInput, renderFormPage } from '../src/pages/form.js';
 import { renderResultsPage } from '../src/pages/results.js';
 import { renderHomePage } from '../src/pages/home.js';
@@ -419,20 +427,31 @@ export const testSuite = [
           'kat=14.0&proses=Pasteurisasi&ph=3.5&kemasan=Botol%20PET%20bening&simpan=Suhu%20ruang&warna=Orange'
         )
       );
+      const resultsGranulasiHtml = renderResultsPage(
+        mockDataStore,
+        new URLSearchParams(
+          'kat=14.0&proses=Granulasi&ph=3.5&kemasan=Botol%20PET%20bening&simpan=Suhu%20ruang&warna=Red'
+        )
+      );
       const aboutHtml = renderAboutPage(mockDataStore);
       const detailHtml = renderDetailPage(mockDataStore, 'NC-006');
-      const mixHtml = renderMixPage(mockDataStore, new URLSearchParams('warna=Orange'));
+      const detailUnknownHtml = renderDetailPage(mockDataStore, 'NC-003');
+      const mixHtml = renderMixPage(mockDataStore, new URLSearchParams('warna=Orange&proses=Granulasi'));
       const bookletIdxHtml = renderBookletIndexPage(mockDataStore);
+      const bookletBasicHtml = renderBookletGroupPage(mockDataStore, 'Dasar Pewarna Alami');
       const bookletGrpHtml = renderBookletGroupPage(mockDataStore, 'Karotenoid');
 
       const combinedUiText = [
         homeHtml,
         formHtml,
         resultsHtml,
+        resultsGranulasiHtml,
         aboutHtml,
         detailHtml,
+        detailUnknownHtml,
         mixHtml,
         bookletIdxHtml,
+        bookletBasicHtml,
         bookletGrpHtml,
       ]
         .join('\n')
@@ -508,10 +527,26 @@ export const testSuite = [
     },
   },
   {
-    name: 'Kasus Uji Process Compatibility Extension (Granulasi): Status Compatible, Incompatible, dan Unknown bekerja konsisten',
+    name: 'Kasus Uji Process Compatibility Extension (Granulasi): Profil teknis 85 bahan & status Compatible, Incompatible, Unknown bekerja konsisten',
     fn: () => {
-      // 1. Default: seluruh bahan berstatus Unknown untuk Granulasi -> tidak ada yang boleh masuk Sangat sesuai
-      const resDefault = getRecommendations(
+      // 1. Pastikan seluruh 85 bahan (NC-001 s.d. NC-085) memiliki profil teknis granulasi lengkap
+      for (const mat of materials) {
+        const ext = getMaterialExtensionStatus(mat.id, 'Granulasi');
+        assert.ok(ext, `Profil granulasi harus ada untuk ${mat.id}`);
+        assert.ok(
+          ['Compatible', 'Incompatible', 'Unknown'].includes(ext.status),
+          `Status granulasi ${mat.id} harus valid`
+        );
+        assert.ok(ext.recommendedMethod, `recommendedMethod harus terisi untuk ${mat.id}`);
+        assert.ok(ext.maxProductTemp, `maxProductTemp harus terisi untuk ${mat.id}`);
+        assert.ok(ext.moistureAwLimit, `moistureAwLimit harus terisi untuk ${mat.id}`);
+        assert.ok(ext.binderAndMatrix, `binderAndMatrix harus terisi untuk ${mat.id}`);
+        assert.ok(ext.specklingRisk, `specklingRisk harus terisi untuk ${mat.id}`);
+        assert.ok(ext.evidence, `evidence harus terisi untuk ${mat.id}`);
+      }
+
+      // 2. Uji evaluasi Granulasi pada warna Orange (Kategori 14.0, pH 3,5, Botol PET bening)
+      const resOrange = getRecommendations(
         materials,
         {
           kat: '14.0',
@@ -523,50 +558,140 @@ export const testSuite = [
         },
         { categoryMap, packagingExposureMap }
       );
-      assert.equal(
-        resDefault.sangatSesuai.length,
-        0,
-        'Bahan dengan status Unknown tidak boleh tampil di Sangat sesuai untuk Granulasi'
+      // NC-006 berstatus Compatible dan memenuhi seluruh kriteria lain -> masuk Sangat sesuai
+      assert.ok(
+        resOrange.sangatSesuai.some((x) => x.material.id === 'NC-006'),
+        'NC-006 (Compatible) harus masuk Sangat sesuai pada proses Granulasi'
       );
-      const nc006InCatatan = resDefault.sesuaiDenganCatatan.find(
-        (x) => x.material.id === 'NC-006'
+      // Pastikan tidak ada bahan berstatus Unknown yang masuk ke Sangat sesuai
+      for (const item of resOrange.sangatSesuai) {
+        assert.equal(
+          item.extensionProfile?.status,
+          'Compatible',
+          `Kandidat Sangat sesuai (${item.material.id}) wajib berstatus Compatible`
+        );
+      }
+
+      // Bahan berstatus Unknown pada Orange (mis. NC-026 atau NC-030) harus berada di Sesuai dengan catatan
+      const nc026InCatatan = resOrange.sesuaiDenganCatatan.find(
+        (x) => x.material.id === 'NC-026'
       );
       assert.ok(
-        nc006InCatatan,
-        'NC-006 (Unknown) harus masuk ke Sesuai dengan catatan'
+        nc026InCatatan,
+        'NC-026 (Unknown) harus masuk ke Sesuai dengan catatan, bukan Sangat sesuai'
       );
-      const procCrit = nc006InCatatan.criteria.find((c) => c.key === 'process');
-      assert.equal(procCrit.extensionStatus, 'Unknown');
+      const procCrit026 = nc026InCatatan.criteria.find((c) => c.key === 'process');
+      assert.equal(procCrit026.extensionStatus, 'Unknown');
       assert.ok(
-        procCrit.reason.includes('Data kompatibilitas granulasi belum tersedia'),
-        'Harus menampilkan keterangan bahwa data kompatibilitas granulasi belum tersedia'
+        procCrit026.reason.includes('Data kompatibilitas granulasi belum tersedia'),
+        'Alasan Unknown harus memuat keterangan bahwa data kompatibilitas granulasi belum tersedia'
       );
 
-      // 2. Uji status Compatible dan Incompatible melalui extensionRecords terpisah
-      const customRecords = {
-        Granulasi: {
-          'NC-006': { status: 'Compatible', evidence: 'Uji granulasi internal' },
-          'NC-005': { status: 'Incompatible', evidence: 'Degradasi saat granulasi' },
-        },
-      };
-      const resCustom = getRecommendations(
+      // 3. Uji bahan berstatus Incompatible (mis. NC-035 Beetroot pada warna Red) -> wajib masuk Tersaring
+      const resRed = getRecommendations(
         materials,
         {
           kat: '14.0',
           proses: 'Granulasi',
-          ph: '3,5',
-          kemasan: 'Botol PET bening',
+          ph: '4,5',
+          kemasan: 'Aluminium foil / metalized',
           simpan: 'Suhu ruang',
-          warna: 'Orange',
+          warna: 'Red',
         },
-        { categoryMap, packagingExposureMap, extensionRecords: customRecords }
+        { categoryMap, packagingExposureMap }
       );
-      assert.equal(resCustom.sangatSesuai.length, 1);
-      assert.equal(resCustom.sangatSesuai[0].material.id, 'NC-006');
+      const nc035Filtered = resRed.tersaring.find((x) => x.material.id === 'NC-035');
       assert.ok(
-        resCustom.tersaring.some((x) => x.material.id === 'NC-005'),
-        'Bahan Incompatible harus masuk ke daftar Tersaring'
+        nc035Filtered,
+        'NC-035 (Betalain / Incompatible pada granulasi basah termal) harus masuk daftar Tersaring'
       );
+      assert.equal(nc035Filtered.extensionProfile?.status, 'Incompatible');
+
+      // 4. Uji Explore Color Mix dengan filter proses Granulasi
+      const granCombos = filterCombinations(combinations, {
+        materials,
+        resultColor: 'Orange',
+        ph: '3,5',
+        process: 'Granulasi',
+      });
+      assert.ok(granCombos.length > 0, 'Harus ada pasangan kombinasi Compatible untuk Granulasi');
+      for (const c of granCombos) {
+        const stA = EXTENSION_COMPATIBILITY_RECORDS.Granulasi[c.a.id]?.status;
+        const stB = EXTENSION_COMPATIBILITY_RECORDS.Granulasi[c.b.id]?.status;
+        assert.equal(stA, 'Compatible', `Bahan A (${c.a.id}) pada kombinasi harus Compatible`);
+        assert.equal(stB, 'Compatible', `Bahan B (${c.b.id}) pada kombinasi harus Compatible`);
+      }
+    },
+  },
+  {
+    name: 'Kasus Uji Kalibrasi Warna & Explore Color Mix: Yellow dan seluruh Target Color memiliki shade akurat (bukan hitam/abu-abu)',
+    fn: () => {
+      const matMap = new Map(materials.map((m) => [m.id, m]));
+      const allTargetColors = [
+        'Yellow',
+        'Orange',
+        'Red',
+        'Pink',
+        'Purple',
+        'Blue',
+        'Green',
+        'Brown',
+        'Black',
+      ];
+
+      for (const col of allTargetColors) {
+        const list = filterCombinations(combinations, {
+          materials,
+          resultColor: col,
+        });
+        assert.ok(list.length > 0, `Target Color ${col} harus memiliki kombinasi yang valid`);
+
+        for (const c of list) {
+          assert.equal(c.resultColor, col);
+          assert.ok(c.shadeName, `Kombinasi ${c.id} pada ${col} harus memiliki nama shade`);
+          const hsl = hexToHsl(c.resultHex);
+          const colsA = matMap.get(c.a.id)?.colors || [];
+          const colsB = matMap.get(c.b.id)?.colors || [];
+
+          if (col === 'Yellow') {
+            assert.ok(
+              hsl.h >= 42 && hsl.h <= 62 && hsl.s >= 80 && hsl.l >= 50,
+              `Shade Yellow (${c.resultHex}) harus kuning cerah/hangat, bukan abu-abu/hitam`
+            );
+            assert.ok(
+              !colsA.includes('Blue') &&
+                !colsB.includes('Blue') &&
+                !colsA.includes('Green') &&
+                !colsB.includes('Green') &&
+                !colsA.includes('Black') &&
+                !colsB.includes('Black'),
+              `Kombinasi Yellow (${c.id}) tidak boleh mencampur bahan Blue/Green/Black`
+            );
+          } else if (col === 'Orange') {
+            assert.ok(
+              hsl.h >= 15 && hsl.h <= 41 && hsl.s >= 75 && hsl.l >= 45,
+              `Shade Orange (${c.resultHex}) harus oranye cerah`
+            );
+          } else if (col === 'Green') {
+            assert.ok(
+              hsl.h >= 80 && hsl.h <= 155 && hsl.s >= 55 && hsl.l >= 38,
+              `Shade Green (${c.resultHex}) harus hijau segar, bukan abu-abu`
+            );
+          } else if (col === 'Purple') {
+            assert.ok(
+              hsl.h >= 265 && hsl.h <= 310 && hsl.s >= 55 && hsl.l >= 38,
+              `Shade Purple (${c.resultHex}) harus ungu jelas, bukan abu-abu`
+            );
+          }
+        }
+      }
+
+      // Uji fungsi eksplorasi langsung (Interactive Mix Calculator)
+      const matYellow1 = matMap.get('NC-007');
+      const matYellow2 = matMap.get('NC-014');
+      const liveMix = computeInteractiveMix(matYellow1, matYellow2, 60);
+      assert.equal(liveMix.resultColor, 'Yellow');
+      assert.ok(liveMix.shadeName.includes('Yellow'));
     },
   },
 ];

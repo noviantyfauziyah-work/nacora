@@ -7,6 +7,10 @@ import {
   isExtensionProcess,
   getMaterialExtensionStatus,
 } from './process-extensions.js';
+import {
+  registerMaterialsForColorScience,
+  ensureEnhancedCombinations,
+} from './color-science.js';
 
 export const HEAT_PROCESSES = new Set([
   'Pasteurisasi',
@@ -174,23 +178,26 @@ export function evaluateMaterial(material, input, options = {}) {
   }
 
   // 4. Kriteria Proses
+  let extensionProfile = null;
   if (processName && isExtensionProcess(processName)) {
     // Jalur Process Compatibility Extension (mis. Granulasi):
-    // Tidak menyimpulkan dari proses lain atau Stabilitas Panas.
+    // Menggunakan profil teknis granulasi spesifik per bahan dari process-extensions.js.
     const extInfo = getMaterialExtensionStatus(
       material.id,
       processName,
       options.extensionRecords
     );
+    extensionProfile = extInfo;
     if (extInfo.status === 'Compatible') {
       criteria.push({
         key: 'process',
         label: 'Proses',
         status: 'Sesuai',
         extensionStatus: 'Compatible',
+        extensionProfile: extInfo,
         icon: '✓',
         reason: extInfo.evidence
-          ? `${extInfo.meta.compatibleReason} (${extInfo.evidence})`
+          ? `${extInfo.meta.compatibleReason} — ${extInfo.evidence}`
           : extInfo.meta.compatibleReason,
       });
     } else if (extInfo.status === 'Incompatible') {
@@ -199,9 +206,10 @@ export function evaluateMaterial(material, input, options = {}) {
         label: 'Proses',
         status: 'Kurang sesuai',
         extensionStatus: 'Incompatible',
+        extensionProfile: extInfo,
         icon: '✕',
         reason: extInfo.evidence
-          ? `${extInfo.meta.incompatibleReason} (${extInfo.evidence})`
+          ? `${extInfo.meta.incompatibleReason} — ${extInfo.evidence}`
           : extInfo.meta.incompatibleReason,
       });
     } else {
@@ -211,8 +219,9 @@ export function evaluateMaterial(material, input, options = {}) {
         label: 'Proses',
         status: 'Perlu perhatian',
         extensionStatus: 'Unknown',
+        extensionProfile: extInfo,
         icon: '▲',
-        reason: extInfo.meta.unknownReason,
+        reason: extInfo.evidence || extInfo.meta.unknownReason,
       });
     }
   } else if (Array.isArray(material.processes) && material.processes.length > 0 && processName) {
@@ -290,6 +299,7 @@ export function evaluateMaterial(material, input, options = {}) {
     material,
     group,
     criteria,
+    extensionProfile,
     sesuaiCount,
     perhatianCount,
     kurangSesuaiCount,
@@ -319,6 +329,7 @@ export function compareEvaluatedMaterials(itemA, itemB) {
  * Menjalankan mesin rekomendasi untuk seluruh daftar bahan
  */
 export function getRecommendations(materials, input, options = {}) {
+  registerMaterialsForColorScience(materials);
   const sangatSesuai = [];
   const sesuaiDenganCatatan = [];
   const tersaring = [];
@@ -357,6 +368,13 @@ export function getRecommendations(materials, input, options = {}) {
  * - Urutkan berdasarkan Skor (menurun)
  */
 export function filterCombinations(combinations, filters = {}) {
+  if (filters.materials) {
+    registerMaterialsForColorScience(filters.materials);
+  }
+  const activeCombinations = ensureEnhancedCombinations(
+    combinations,
+    filters.materials
+  );
   const targetColor = filters.resultColor ? String(filters.resultColor).trim() : '';
   const materialId = filters.materialId ? String(filters.materialId).trim() : '';
   const processName = filters.process ? normalizeProcessInput(filters.process) : '';
@@ -366,7 +384,7 @@ export function filterCombinations(combinations, filters = {}) {
     String(filters.ph).trim() !== '';
   const phVal = hasPh ? parsePhValue(filters.ph) : NaN;
 
-  const filtered = combinations.filter((combo) => {
+  const filtered = activeCombinations.filter((combo) => {
     if (targetColor && combo.resultColor !== targetColor) {
       return false;
     }

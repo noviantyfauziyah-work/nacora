@@ -14,9 +14,44 @@ import {
   isExtensionProcess,
   getExtensionProcessMeta,
 } from '../engine/process-extensions.js';
+import { getCalibratedMaterialHex } from '../engine/color-science.js';
+
+function renderGranulationTechBlock(extProfile) {
+  if (!extProfile || !extProfile.recommendedMethod) return '';
+  const badgeClass =
+    extProfile.status === 'Compatible'
+      ? 'status-ok'
+      : extProfile.status === 'Incompatible'
+        ? 'status-err'
+        : 'status-warn';
+  const badgeIcon =
+    extProfile.status === 'Compatible'
+      ? '✓'
+      : extProfile.status === 'Incompatible'
+        ? '✕'
+        : '▲';
+
+  return `
+    <div class="result-meta-block" style="background-color: var(--color-surface-subtle, #F9FAFB); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin-top: 10px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+        <strong style="font-size: 0.875rem; color: var(--color-heading);">Parameter Teknis Proses Granulasi</strong>
+        <span class="status-badge ${badgeClass}" style="font-size: 0.75rem; padding: 2px 8px;">
+          <span aria-hidden="true">${badgeIcon}</span> ${escapeHtml(extProfile.status)}
+        </span>
+      </div>
+      <div style="display: grid; gap: 6px; font-size: 0.85rem;">
+        <div><strong>Metode Disarankan:</strong> ${escapeHtml(extProfile.recommendedMethod)}</div>
+        ${extProfile.maxProductTemp ? `<div><strong>Batas Suhu Produk:</strong> ${escapeHtml(extProfile.maxProductTemp)}</div>` : ''}
+        ${extProfile.moistureAwLimit ? `<div><strong>Batas Kelembapan (a_w):</strong> ${escapeHtml(extProfile.moistureAwLimit)}</div>` : ''}
+        ${extProfile.binderAndMatrix ? `<div><strong>Sistem Binder &amp; Matriks:</strong> ${escapeHtml(extProfile.binderAndMatrix)}</div>` : ''}
+        ${extProfile.specklingRisk ? `<div><strong>Risiko Speckling / Mottling:</strong> ${escapeHtml(extProfile.specklingRisk)}</div>` : ''}
+      </div>
+    </div>
+  `;
+}
 
 function renderSingleResultCard(evaluated, data) {
-  const { material, criteria } = evaluated;
+  const { material, criteria, extensionProfile } = evaluated;
   const { booklet, materialIdsInCombos } = data;
 
   const bookletGroup = resolveBookletGroupName(material.group, booklet);
@@ -26,8 +61,9 @@ function renderSingleResultCard(evaluated, data) {
 
   const hasCombos = materialIdsInCombos.has(material.id);
 
-  const swatchStyle = material.hex
-    ? `background-color: ${escapeHtml(material.hex)};`
+  const calibratedHex = material.hex ? getCalibratedMaterialHex(material) : null;
+  const swatchStyle = calibratedHex
+    ? `background-color: ${escapeHtml(calibratedHex)};`
     : 'background-color: #F3F4F6;';
   const swatchContent = material.hex ? '' : '<span>—</span>';
 
@@ -98,6 +134,8 @@ function renderSingleResultCard(evaluated, data) {
       `
           : ''
       }
+
+      ${renderGranulationTechBlock(extensionProfile)}
 
       <div class="result-meta-block">
         ${
@@ -329,6 +367,16 @@ export function renderResultsPage(data, queryParams) {
                   )
                   .join('')}
               </ul>
+              ${
+                item.extensionProfile?.recommendedMethod
+                  ? `
+                <div style="margin-top: 6px; font-size: 0.8125rem; color: var(--color-text); background-color: #F9FAFB; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--color-border);">
+                  <div><strong>Solusi Alternatif Granulasi:</strong> ${escapeHtml(item.extensionProfile.recommendedMethod)}</div>
+                  ${item.extensionProfile.binderAndMatrix ? `<div style="margin-top: 2px;"><strong>Penanganan Matriks:</strong> ${escapeHtml(item.extensionProfile.binderAndMatrix)}</div>` : ''}
+                </div>
+              `
+                  : ''
+              }
             </div>
           `
             )

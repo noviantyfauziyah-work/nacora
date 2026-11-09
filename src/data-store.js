@@ -1,16 +1,23 @@
+import {
+  buildEnhancedCombinations,
+  getCalibratedMaterialHex,
+} from './engine/color-science.js';
+
 let cachedData = null;
 
 export const DISCLAIMER_TEXT =
   'Hasil NACORA adalah rekomendasi awal berdasarkan data evaluasi internal dan literatur, bukan jaminan. Setiap kandidat perlu dicoba dan diuji oleh R&D pada produk Anda.';
 
 export const TARGET_COLOR_HEX = {
-  Yellow: '#F1C90F',
+  Yellow: '#F5D016',
   Orange: '#F28C28',
-  Red: '#D32548',
-  Green: '#8DC442',
-  Blue: '#08ACDF',
-  Purple: '#7B4B94',
-  Black: '#515055',
+  Red: '#D92534',
+  Pink: '#EE6B9E',
+  Green: '#38B649',
+  Blue: '#1E78D2',
+  Purple: '#8238B0',
+  Brown: '#7E4B26',
+  Black: '#2B2D32',
 };
 
 export function escapeHtml(str) {
@@ -88,15 +95,29 @@ export async function loadAllData() {
     }
   }
 
+  // Kalibrasi dan lengkapi kombinasi warna secara otomatis di memori tanpa mengubah file JSON asli
+  const enhancedCombinations = buildEnhancedCombinations(combinations, materials);
+
   const materialIdsInCombos = new Set();
-  for (const combo of combinations) {
+  for (const combo of enhancedCombinations) {
     if (combo.a?.id) materialIdsInCombos.add(combo.a.id);
     if (combo.b?.id) materialIdsInCombos.add(combo.b.id);
   }
 
+  // Tambahkan properti displayHex terkalibrasi secara non-enumerable agar daftar kunci daftar putih tetap murni
+  for (const mat of materials) {
+    Object.defineProperty(mat, 'displayHex', {
+      value: getCalibratedMaterialHex(mat),
+      enumerable: false,
+      configurable: true,
+      writable: true,
+    });
+  }
+
   cachedData = {
     materials,
-    combinations,
+    combinations: enhancedCombinations,
+    rawCombinations: combinations,
     booklet,
     categories,
     options,

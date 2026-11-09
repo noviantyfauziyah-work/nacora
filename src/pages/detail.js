@@ -8,6 +8,7 @@ import {
   EXTENSION_PROCESSES,
   getMaterialExtensionStatus,
 } from '../engine/process-extensions.js';
+import { getCalibratedMaterialHex } from '../engine/color-science.js';
 import { renderCombinationCard } from './mix.js';
 
 export function renderReferencesList(refCodes, refMap) {
@@ -54,10 +55,11 @@ export function renderDetailPage(data, materialId) {
     ? `#/booklet/${encodeURIComponent(bookletGroup)}`
     : '#/booklet';
 
-  const swatchStyle = material.hex
-    ? `background-color: ${escapeHtml(material.hex)};`
+  const calibratedHex = material.hex ? getCalibratedMaterialHex(material) : null;
+  const swatchStyle = calibratedHex
+    ? `background-color: ${escapeHtml(calibratedHex)};`
     : 'background-color: #F3F4F6;';
-  const swatchContent = material.hex ? escapeHtml(material.hex) : '—';
+  const swatchContent = calibratedHex ? escapeHtml(calibratedHex) : '—';
 
   const colorChips = (material.colors || [])
     .map((c) => {
@@ -104,14 +106,16 @@ export function renderDetailPage(data, materialId) {
       material.processes.map((p) => escapeHtml(p)).join(' · '),
     ]);
   }
+  const granulationProfile = getMaterialExtensionStatus(material.id, 'Granulasi');
   if (EXTENSION_PROCESSES.length > 0) {
     const extItemsHtml = EXTENSION_PROCESSES.map((extProc) => {
       const extInfo = getMaterialExtensionStatus(material.id, extProc.value);
       const statusText = extInfo ? extInfo.status : 'Unknown';
       const detailNote =
-        statusText === 'Unknown'
+        extInfo?.evidence ||
+        (statusText === 'Unknown'
           ? 'Data kompatibilitas granulasi belum tersedia'
-          : extInfo?.evidence || statusText;
+          : statusText);
       return `<div><strong>${escapeHtml(extProc.label)}:</strong> <span class="chip">${escapeHtml(statusText)}</span> — ${escapeHtml(detailNote)}</div>`;
     }).join('');
     techRows.push(['Kompatibilitas Proses Tambahan', extItemsHtml]);
@@ -152,6 +156,7 @@ export function renderDetailPage(data, materialId) {
 
   // Hingga lima kombinasi teratas yang memuat bahan ini (Bagian 8.2)
   const allRelatedCombos = filterCombinations(combinations, {
+    materials,
     materialId: material.id,
   });
   const top5Combos = allRelatedCombos.slice(0, 5);
@@ -224,6 +229,99 @@ export function renderDetailPage(data, materialId) {
             `
               )
               .join('')}
+          </tbody>
+        </table>
+      </section>
+    `
+        : ''
+    }
+
+    <!-- Profil Kompatibilitas Proses Granulasi (Ekstensi Teknis) -->
+    ${
+      granulationProfile && granulationProfile.recommendedMethod
+        ? `
+      <section class="card detail-section" id="sec-profil-granulasi">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <h2 class="detail-section-title" style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">
+            Profil Kompatibilitas Proses Granulasi (Ekstensi Teknis)
+          </h2>
+          <span class="status-badge ${
+            granulationProfile.status === 'Compatible'
+              ? 'status-ok'
+              : granulationProfile.status === 'Incompatible'
+                ? 'status-err'
+                : 'status-warn'
+          }">
+            <span aria-hidden="true">${
+              granulationProfile.status === 'Compatible'
+                ? '✓'
+                : granulationProfile.status === 'Incompatible'
+                  ? '✕'
+                  : '▲'
+            }</span>
+            Granulasi: ${escapeHtml(granulationProfile.status)}
+          </span>
+        </div>
+        <table class="clean-table">
+          <tbody>
+            <tr>
+              <th scope="row">Status Kompatibilitas</th>
+              <td><strong>${escapeHtml(granulationProfile.status)}</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Metode Granulasi yang Disarankan</th>
+              <td>${escapeHtml(granulationProfile.recommendedMethod)}</td>
+            </tr>
+            ${
+              granulationProfile.maxProductTemp
+                ? `
+              <tr>
+                <th scope="row">Batas Suhu Produk &amp; Pengeringan</th>
+                <td>${escapeHtml(granulationProfile.maxProductTemp)}</td>
+              </tr>
+            `
+                : ''
+            }
+            ${
+              granulationProfile.moistureAwLimit
+                ? `
+              <tr>
+                <th scope="row">Sensitivitas Kelembapan (a_w) &amp; Oksidasi</th>
+                <td>${escapeHtml(granulationProfile.moistureAwLimit)}</td>
+              </tr>
+            `
+                : ''
+            }
+            ${
+              granulationProfile.binderAndMatrix
+                ? `
+              <tr>
+                <th scope="row">Sistem Pengikat (Binder) &amp; Matriks</th>
+                <td>${escapeHtml(granulationProfile.binderAndMatrix)}</td>
+              </tr>
+            `
+                : ''
+            }
+            ${
+              granulationProfile.specklingRisk
+                ? `
+              <tr>
+                <th scope="row">Risiko Bercak Warna (Speckling / Mottling)</th>
+                <td>${escapeHtml(granulationProfile.specklingRisk)}</td>
+              </tr>
+            `
+                : ''
+            }
+            ${
+              granulationProfile.evidence
+                ? `
+              <tr>
+                <th scope="row">Mekanisme Stabilitas &amp; Catatan R&amp;D</th>
+                <td>${escapeHtml(granulationProfile.evidence)}</td>
+              </tr>
+            `
+                : ''
+            }
           </tbody>
         </table>
       </section>
