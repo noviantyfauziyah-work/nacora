@@ -152,6 +152,7 @@ export function renderDetailPage(data, materialId) {
   if (ev.notes) evalRows.push(['Catatan Evaluasi', ev.notes]);
 
   const photos = Array.isArray(material.photos) ? material.photos : [];
+  const photoBase = data.photoBasePath || './foto';
   const altText = `Foto larutan ${material.name}`;
 
   // Hingga lima kombinasi teratas yang memuat bahan ini (Bagian 8.2)
@@ -404,13 +405,13 @@ export function renderDetailPage(data, materialId) {
             <button
               type="button"
               class="photo-thumb-btn"
-              data-lightbox-src="./foto/${escapeHtml(photoFile)}"
+              data-lightbox-src="${escapeHtml(photoBase)}/${escapeHtml(photoFile)}"
               data-lightbox-alt="${escapeHtml(altText)}"
               data-lightbox-caption="${escapeHtml(`${material.name} (${photoFile})`)}"
               aria-label="Perbesar ${escapeHtml(altText)} (${idx + 1})"
             >
               <img
-                src="./foto/${escapeHtml(photoFile)}"
+                src="${escapeHtml(photoBase)}/${escapeHtml(photoFile)}"
                 alt="${escapeHtml(altText)}"
                 loading="lazy"
                 class="photo-thumb-img"

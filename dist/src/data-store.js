@@ -62,18 +62,42 @@ export function doesMaterialMatchBookletGroup(materialGroup, bookletGroup) {
   return false;
 }
 
+async function fetchJsonAuto(fileName) {
+  try {
+    const r = await fetch(`./data/${fileName}`);
+    if (r.ok) {
+      return { json: await r.json(), photoBasePath: './foto' };
+    }
+  } catch {
+    // Lanjut ke fallback ./public/data/
+  }
+  const rPub = await fetch(`./public/data/${fileName}`);
+  if (rPub.ok) {
+    return { json: await rPub.json(), photoBasePath: './public/foto' };
+  }
+  throw new Error(`Gagal memuat data ${fileName}`);
+}
+
 export async function loadAllData() {
   if (cachedData) return cachedData;
 
-  const [materials, combinations, booklet, categories, options, references] =
+  const [matRes, comboRes, bookletRes, catRes, optRes, refRes] =
     await Promise.all([
-      fetch('./data/materials.json').then((r) => r.json()),
-      fetch('./data/combinations.json').then((r) => r.json()),
-      fetch('./data/booklet.json').then((r) => r.json()),
-      fetch('./data/categories.json').then((r) => r.json()),
-      fetch('./data/options.json').then((r) => r.json()),
-      fetch('./data/references.json').then((r) => r.json()),
+      fetchJsonAuto('materials.json'),
+      fetchJsonAuto('combinations.json'),
+      fetchJsonAuto('booklet.json'),
+      fetchJsonAuto('categories.json'),
+      fetchJsonAuto('options.json'),
+      fetchJsonAuto('references.json'),
     ]);
+
+  const materials = matRes.json;
+  const combinations = comboRes.json;
+  const booklet = bookletRes.json;
+  const categories = catRes.json;
+  const options = optRes.json;
+  const references = refRes.json;
+  const photoBasePath = matRes.photoBasePath;
 
   const categoryMap = new Map();
   for (const cat of categories) {
@@ -126,6 +150,7 @@ export async function loadAllData() {
     refMap,
     packagingExposureMap,
     materialIdsInCombos,
+    photoBasePath,
   };
 
   return cachedData;
