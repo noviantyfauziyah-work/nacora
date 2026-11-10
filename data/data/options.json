@@ -1,0 +1,152 @@
+[
+  {
+    "type": "Proses Pengolahan",
+    "value": "Tanpa pemanasan",
+    "description": "Label form: \"Tanpa pemanasan setelah pencampuran\"",
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "Pasteurisasi",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "UHT",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "Sterilisasi / retort",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "Baking / pemanggangan",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "Ekstrusi",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Proses Pengolahan",
+    "value": "Pembekuan",
+    "description": null,
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Botol kaca bening",
+    "description": "Paparan cahaya: Tinggi",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Botol PET bening",
+    "description": "Paparan cahaya: Tinggi",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Botol PET berwarna / opak",
+    "description": "Paparan cahaya: Sedang",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Kaleng",
+    "description": "Paparan cahaya: Tidak ada",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Aluminium foil / metalized",
+    "description": "Paparan cahaya: Tidak ada",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Pouch transparan",
+    "description": "Paparan cahaya: Tinggi",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Karton aseptik",
+    "description": "Paparan cahaya: Rendah",
+    "hex": null
+  },
+  {
+    "type": "Jenis Kemasan",
+    "value": "Cup plastik bening",
+    "description": "Paparan cahaya: Tinggi",
+    "hex": null
+  },
+  {
+    "type": "Kondisi Penyimpanan",
+    "value": "Suhu ruang",
+    "description": "sekitar 25-30 °C",
+    "hex": null
+  },
+  {
+    "type": "Kondisi Penyimpanan",
+    "value": "Chiller",
+    "description": "sekitar 2-8 °C",
+    "hex": null
+  },
+  {
+    "type": "Kondisi Penyimpanan",
+    "value": "Beku",
+    "description": "-18 °C atau lebih rendah",
+    "hex": null
+  },
+  {
+    "type": "Target Color",
+    "value": "Yellow",
+    "description": "Warna penanda UI",
+    "hex": "#F1C90F"
+  },
+  {
+    "type": "Target Color",
+    "value": "Orange",
+    "description": "Warna penanda UI",
+    "hex": "#F28C28"
+  },
+  {
+    "type": "Target Color",
+    "value": "Red",
+    "description": "Warna penanda UI",
+    "hex": "#D32548"
+  },
+  {
+    "type": "Target Color",
+    "value": "Green",
+    "description": "Warna penanda UI",
+    "hex": "#8DC442"
+  },
+  {
+    "type": "Target Color",
+    "value": "Blue",
+    "description": "Warna penanda UI",
+    "hex": "#08ACDF"
+  },
+  {
+    "type": "Target Color",
+    "value": "Purple",
+    "description": "Warna penanda UI",
+    "hex": "#7B4B94"
+  },
+  {
+    "type": "Target Color",
+    "value": "Black",
+    "description": "Warna penanda UI",
+    "hex": "#515055"
+  }
+]
