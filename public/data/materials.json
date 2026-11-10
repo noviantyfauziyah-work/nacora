@@ -40,10 +40,10 @@
     "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
     "animal": false,
     "evaluation": {
-      "baseColor": null,
-      "concentration": null,
-      "physical": null,
-      "phNote": null,
+      "baseColor": "Kuning muda hingga kuning keemasan cerah.",
+      "concentration": "- 0,01 g/100 mL: kuning pucat, tampak keruh tipis.\n- 0,1 g/100 mL: kuning keemasan cerah, tampak keruh (dispersi karotenoid).",
+      "physical": "Terdispersi merata dalam air (water-dispersible), sedikit keruh tanpa endapan di dasar gelas.",
+      "phNote": "Stabil pada pH asam hingga netral.",
       "notes": null
     },
     "photos": [
@@ -97,11 +97,11 @@
     "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
     "animal": false,
     "evaluation": {
-      "baseColor": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
-      "concentration": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
-      "physical": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa",
-      "phNote": null,
-      "notes": "Pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa"
+      "baseColor": "Kuning lemon cerah.",
+      "concentration": "- 0,01 g/100 mL: kuning cerah agak keruh tipis.\n- 0,05 g/100 mL: kuning pekat cerah.\n- 0,1 g/100 mL: kuning-oranye sangat pekat dan keruh.",
+      "physical": "Terdispersi dalam air, tampak semakin keruh (cloudy) seiring kenaikan konsentrasi.",
+      "phNote": "Stabil pada pH asam hingga netral; pergeseran warna ke jingga/cokelat dapat terjadi pada pH basa.",
+      "notes": "Peka terhadap paparan cahaya langsung dalam jangka panjang."
     },
     "photos": [
       "NC-002_1.jpg"
@@ -372,11 +372,11 @@
     "cons": "Tampilan keruh tipis; perlu antioksidan (asam askorbat sekitar 300 ppm di minuman); stabil pada alkohol di bawah 30% ABV bila ada antioksidan. Jangan dicampur dengan antosianin untuk membuat oranye.",
     "animal": false,
     "evaluation": {
-      "baseColor": "- orange tua",
-      "concentration": "- 0.01g/100ml: warna kuning cerah, transparan, seperti warna minyak\n- 0.05g/100ml: warna kuning tua ada hint orange.",
-      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "baseColor": "Kuning cerah dalam larutan (konsentrat awal berwarna oranye tua).",
+      "concentration": "- 0,01 g/100 mL: kuning cerah.\n- 0,05 g/100 mL: kuning pekat dengan sedikit rona hangat.",
+      "physical": "Tampak sedikit keruh (cloudy) dan ada sedikit cincin tipis di permukaan pada konsentrasi tinggi.",
       "phNote": null,
-      "notes": "- butuh sedikit saja sudah keluar warnanya."
+      "notes": null
     },
     "photos": [
       "NC-007_1.jpg"
@@ -736,11 +736,11 @@
     "cons": "Rona dapat kuning kecokelatan pada beberapa produk (lihat evaluasi); data literatur terbatas",
     "animal": false,
     "evaluation": {
-      "baseColor": "Kuning-oranye dengan sedikit kecenderungan ke arah kehijauan pada konsentrasi rendah.\n\nKuning sangat muda, sedikit kehijauan (dosis 0,01 g/100 ml)",
-      "concentration": "- 0,1 g/100 mL: kuning pekat agak oranye, terlihat kuat dan menarik.\n- 0,01 g/100 mL: kuning muda pucat, cenderung kekuningan alami.\n- 0,001 g/100 mL: warna hampir bening, namun menampilkan rona kuning kehijauan sangat lembut.\n\nPada 0,001 g/100 ml menjadi hampir bening; intensitas turun nyata",
-      "physical": "- Larutan jernih, stabil, tanpa endapan.\n- Mudah larut dalam air, menghasilkan warna seragam.\n- Tidak menunjukkan kekeruhan meskipun pada konsentrasi tinggi.\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "baseColor": "Kuning cerah bersih dengan sedikit rona kehijauan tipis.",
+      "concentration": "- 0,001 g/100 mL: kuning sangat pucat dan jernih.\n- 0,01 g/100 mL: kuning muda jernih.\n- 0,1 g/100 mL: kuning keemasan pekat dan jernih.",
+      "physical": "Larut sempurna dalam air, larutan bening/jernih tanpa endapan.",
       "phNote": null,
-      "notes": "Memberikan efek warna alami dan lembut\nRekomendasi produk: Minuman buah tropis, minuman serbuk yang menonjolkan warna kuning hangat."
+      "notes": null
     },
     "photos": [
       "NC-014_1.jpg",
@@ -786,10 +786,10 @@
     "cons": "Status \"natural\" perlu dikonfirmasi (umumnya nature-identical); formulasi dispersi perlu pengadukan",
     "animal": false,
     "evaluation": {
-      "baseColor": null,
-      "concentration": null,
-      "physical": null,
-      "phNote": null,
+      "baseColor": "Kuning keemasan hingga oranye cerah.",
+      "concentration": "- 0,01 g/100 mL: kuning keemasan cerah dan jernih.\n- 0,05 g/100 mL: oranye terang dan jernih.",
+      "physical": "Larut baik dalam air, menghasilkan larutan yang jernih dan homogen.",
+      "phNote": "Stabil pada rentang pH asam hingga netral.",
       "notes": null
     },
     "photos": [
@@ -945,11 +945,11 @@
     "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
     "animal": false,
     "evaluation": {
-      "baseColor": "Warna kuning terang\n\nKuning cerah dengan nuansa kuning-oranye Terdapat hint hijau selewat (dosis 0,01 g/100 ml)",
-      "concentration": "- 0.01g/100ml: warna kuning sangat muda, jernih\n- 0.1g/100ml: warna kuning gelap, ada hint warna hijau, keruh\n\nPada 0,001 g/100 ml menjadi sangat pucat, hampir bening dengan sedikit rona kuning; hue relatif tetap",
-      "physical": "Warna cepat larut\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "baseColor": "Kuning muda hingga kuning tua keemasan (amber).",
+      "concentration": "- 0,01 g/100 mL: kuning muda, jernih.\n- 0,1 g/100 mL: kuning tua keemasan (amber) dengan sedikit hint oranye, agak keruh.",
+      "physical": "Pada konsentrasi rendah tampak jernih; pada konsentrasi 0,1 g/100 mL tampak sedikit keruh dengan sedikit partikel tidak larut di permukaan.",
       "phNote": null,
-      "notes": "- Semakin tinggi konsentrasi, semakin keruh"
+      "notes": null
     },
     "photos": [
       "NC-018_1.jpg",
@@ -1003,11 +1003,11 @@
     "cons": "Mudah pudar oleh cahaya; berubah merah-oranye dan terdegradasi pada pH di atas sekitar 8; bentuk tanpa formulasi sulit larut atau mengendap pada pH asam",
     "animal": false,
     "evaluation": {
-      "baseColor": "Kuning cerah dengan rona keemasan (lemon yellow)\n\nKuning lemon cerah, sedikit nuansa kehijauan (dosis 0,01 g/100 ml)",
-      "concentration": "- 0,01 g/100 mL: kuning cerah kuat dan jernih, tampak merata tanpa endapan.\n- 0,001 g/100 mL: kuning sangat muda, hampir transparan namun masih terlihat rona kekuningannya.\n\nPada 0,001 g/100 ml menjadi kuning sangat muda/pucat, hampir bening; hue tetap kuning",
-      "physical": "Larutan jernih dan homogen, tidak ada partikel mengendap.\nCepat larut dalam air pada suhu ruang.\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "baseColor": "Oranye kekuningan hingga oranye kemerahan pekat.",
+      "concentration": "- 0,001 g/100 mL: kuning-oranye sangat pucat.\n- 0,01 g/100 mL: oranye kekuningan cerah.\n- 0,1 g/100 mL: oranye kemerahan pekat.",
+      "physical": "Terdispersi baik dalam air, tampak keruh (cloudy) khas karotenoid tanpa endapan kasar.",
       "phNote": null,
-      "notes": "Warna ini sangat efektif untuk memberikan kesan “fresh” atau citrusy.\nRekomendasi produk Minuman rasa lemon, lime, nanas, atau produk dengan tema tropis cerah."
+      "notes": null
     },
     "photos": [
       "NC-019_1.jpg",
@@ -1061,11 +1061,11 @@
     "cons": "Dapat memudar oleh cahaya/oksidasi; pada produk cair pastikan dispersi/emulsi tidak mengendap atau membentuk cincin",
     "animal": false,
     "evaluation": {
-      "baseColor": "Warna dasar oranye mandarin dengan nuansa hangat\nLebih “natural” dibanding oranye sintetis\nTone cenderung creamy‑orange",
-      "concentration": "0,01 gr/100 mL Oranye cukup pekat, menyerupai jus mandarin0,001 gr/100 mL Kuning‑oranye muda, soft dan ringan\nWarna melemah secara signifikan di konsentrasi rendah, namun tetap mempertahankan hue oranye.",
-      "physical": "Larutan homogen\nSedikit lebih keruh dibanding TM Yellow (masih normal)\nTidak terlihat endapan",
+      "baseColor": "Oranye mandarin cerah.",
+      "concentration": "- 0,001 g/100 mL: oranye muda lembut.\n- 0,01 g/100 mL: oranye cerah.\n- 0,1 g/100 mL: oranye kemerahan sangat pekat.",
+      "physical": "Terdispersi dalam air (water-dispersible), tampak keruh (opak) tanpa cincin minyak berlebih.",
       "phNote": null,
-      "notes": "Kelebihan\nWarna terlihat lebih natural\nKekurangan\nDaya warna lebih rendah dibanding TM Yellow, perlu dosis lebih tinggi untuk warna kuat, dan cloudy"
+      "notes": null
     },
     "photos": [
       "NC-020_1.jpg"
@@ -1503,11 +1503,11 @@
     "cons": "Paling stabil pada pH netral hingga basa ringan; rona dapat cenderung oranye bata pada dosis tinggi",
     "animal": false,
     "evaluation": {
-      "baseColor": "Oranye bata dengan sedikit hint kuning",
-      "concentration": "- 0,005 g/100 mL: Kuning dengan intensitas warna yang agak tinggi\n- 0,01 g/100 mL: Kuning cenderung oranye muda",
-      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah",
+      "baseColor": "Kuning cerah hingga kuning keemasan hangat dalam larutan (serbuk awal berwarna oranye bata).",
+      "concentration": "- 0,005 g/100 mL: kuning cerah bersih.\n- 0,01 g/100 mL: kuning keemasan hangat.",
+      "physical": "Larut sempurna dalam air, larutan jernih tanpa endapan.",
       "phNote": null,
-      "notes": "Pemilihan konsentrasi dapat disesuaikan dengan target warna akhir dan pertimbangan harga"
+      "notes": null
     },
     "photos": [
       "NC-028_1.jpg"
@@ -2369,11 +2369,11 @@
     "cons": "Cepat pudar oleh panas, cahaya, dan oksigen; tidak cocok untuk proses panas tinggi; hue bergeser pada pH di bawah 3",
     "animal": false,
     "evaluation": {
-      "baseColor": "Merah muda (pink) dengan karakteristik alami dan fleksibel\n\nPink sangat muda dengan sedikit nuansa merah; intensitas rendah (dosis 0,01 g/100 ml)",
-      "concentration": "- Konsentrasi rendah (0,001 g/100 ml): menghasilkan merah muda pucat, sangat transparan, dan lembut\n- Konsentrasi tinggi (0,01 g/100 ml): menghasilkan merah terang dengan intensitas kuat, menyerupai merah muda pekat\n\nPada 0,001 g/100 ml warna menjadi hampir bening dengan sedikit rona pink; intensitas sangat rendah",
-      "physical": "- Memiliki transparansi tinggi\n- Memberikan kesan lembut, natural, dan tidak mencolok\n\n- Larutan tampak jernih dan homogen\n- Tidak terdapat endapan",
+      "baseColor": "Pink muda hingga merah bit keunguan (magenta).",
+      "concentration": "- 0,001 g/100 mL: pink sangat muda dan jernih.\n- 0,01 g/100 mL: pink-merah rubi cerah.\n- 0,1 g/100 mL: merah bit tua keunguan pekat.",
+      "physical": "Larut sempurna dalam air, larutan jernih dan homogen tanpa endapan.",
       "phNote": null,
-      "notes": "Warna tidak terlalu dominan ketika dipadukan dengan pewarna lain\nCocok digunakan untuk hasil warna alami dan lembut."
+      "notes": null
     },
     "photos": [
       "NC-044_1.jpg",
@@ -2640,11 +2640,11 @@
     "cons": "Bentuk larutan alkali mengendap pada pH rendah (di bawah sekitar 3,5); hewani (serangga), tidak cocok untuk vegetarian dan perlu telaah halal",
     "animal": true,
     "evaluation": {
-      "baseColor": "Merah yang sangat tua-kehitaman seperti wine\n\nMerah tua menuju merah pekat; intensitas warna cukup tinggi (dosis 0,01 g/100 ml)",
-      "concentration": "- 0,01 g/100 mL: Merah jernih dengan sedikit hint pink\n- 0,05 g/100 mL: Merah pekat seperti warna wine yang dominan merah (red wine)\n\nPada 0,001 g/100 ml warna menjadi merah muda (pink); intensitas turun nyata, warna lebih muda",
-      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah\n\n- Larutan relatif jernih, transparan, serta homogen\n- Tidak terdapat endapan",
-      "phNote": null,
-      "notes": "Dapat dipilih untuk intensi warna merah pekat"
+      "baseColor": "Merah muda keunguan hingga merah anggur (red-blue shade).",
+      "concentration": "- 0,001 g/100 mL: pink keunguan lembut.\n- 0,01 g/100 mL: merah-pink keunguan jernih.\n- 0,05 g/100 mL: merah anggur (wine red) pekat.",
+      "physical": "Larut sempurna dalam air, larutan jernih tanpa endapan pada kondisi netral.",
+      "phNote": "Dapat mengendap pada pH sangat asam (< 3,5) karena merupakan varian karmin larut air standar.",
+      "notes": null
     },
     "photos": [
       "NC-049_1.jpg",
@@ -2716,7 +2716,7 @@
     "id": "NC-051",
     "name": "Watermelon Rose Liquid 04527",
     "group": "Karotenoid",
-    "source": "Tumbuhan",
+    "source": "Tumbuhan (Likopen / Lycopene)",
     "form": "Cair",
     "colors": [
       "Red"
@@ -2745,15 +2745,15 @@
     "packaging": "Peka oksigen dan cahaya; gunakan kemasan barrier",
     "storage": "Hindari cahaya dan oksigen; simpan sejuk",
     "dosage": null,
-    "pros": "Rona merah-oranye alami untuk produk bernuansa tomat atau semangka",
+    "pros": "Pigmen jenis Likopen (Lycopene) dengan rona merah muda (rose-pink) hingga merah semangka alami; tahan terhadap pemanasan dan stabil pada rentang pH luas.",
     "cons": "Mudah teroksidasi dan bergeser dari merah ke oranye/pucat; hindari ion logam (Fe, Cu)",
     "animal": false,
     "evaluation": {
-      "baseColor": "Merah muda dengan kesan lembut dan natural",
-      "concentration": "- 0,001 g/100 ml: warna sangat pucat, hampir transparan dengan semburat merah muda ringan\n- 0,005 g/100 ml: warna merah muda mulai terlihat lebih jelas, masih lembut dan transparan\n- 0,01 g/100 ml: warna lebih pekat dan stabil, memberikan tampilan yang menarik",
-      "physical": "- Memiliki transparansi tinggi\n- Sedikit keruh jika digunakan pada konsentrasi tinggi",
-      "phNote": null,
-      "notes": "Cocok untuk produk dengan nuansa merah muda lembut\nDapat dikombinasikan dengan pewarna lain untuk memperoleh warna merah muda yang lebih tegas"
+      "baseColor": "Jenis pigmen: Likopen (Lycopene). Larutan menghasilkan warna merah muda (pink rose) hingga merah semangka.",
+      "concentration": "- 0,01 g/100 mL: pink muda lembut, tampak sedikit keruh (dispersi likopen).\n- 0,05 g/100 mL: pink kemerahan (watermelon rose) lebih pekat.",
+      "physical": "Cairan agak kental; terdispersi merata dalam air tanpa endapan kasar.",
+      "phNote": "Stabil pada pH asam hingga netral (karakteristik pigmen karotenoid/likopen tidak bergeser drastis oleh pH).",
+      "notes": "Merupakan pewarna alami berbasis Likopen (Lycopene) yang cocok untuk rona pink-merah semangka pada minuman, dairy, dan permen."
     },
     "photos": [
       "NC-051_1.jpg"
@@ -2824,7 +2824,7 @@
     "colors": [
       "Green"
     ],
-    "hex": null,
+    "hex": "#274E1B",
     "solubility": "Larut minyak",
     "categories": [
       "03.0",
@@ -2951,11 +2951,11 @@
     "cons": "Cahaya sedang sehingga pakai kemasan opak; sensitif panas dan asam, tambahkan setelah pemanasan bila memungkinkan; panas dan asam menggeser hue.",
     "animal": false,
     "evaluation": {
-      "baseColor": "- Warna hijau gelap",
-      "concentration": "- 0.05g/100ml: warna hijau muda, transparan\n- 0.1g/100ml: warna hijau lebih tua, warna seperti teh hijau",
-      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
+      "baseColor": "Hijau limau (lime green) kekuningan dalam larutan (konsentrat awal berwarna hijau gelap).",
+      "concentration": "- 0,01 g/100 mL: hijau muda kekuningan seperti seduhan teh hijau.\n- 0,05 g/100 mL: hijau lime cerah dan lebih pekat.",
+      "physical": "Larut baik dalam air, tampak jernih tanpa endapan.",
       "phNote": null,
-      "notes": "- semakin banyak pewarna, semakin keruh."
+      "notes": null
     },
     "photos": [
       "NC-055_1.jpg"
@@ -3262,10 +3262,10 @@
     "cons": "Protein: terdenaturasi di atas sekitar 45 °C dan mengendap/memudar pada pH asam (di bawah sekitar 4,5)",
     "animal": false,
     "evaluation": {
-      "baseColor": null,
-      "concentration": null,
-      "physical": null,
-      "phNote": null,
+      "baseColor": "Biru langit (sky blue) hingga biru sian cerah.",
+      "concentration": "- 0,005 g/100 mL: biru langit muda dan jernih.\n- 0,01 g/100 mL: biru sian cerah dan kuat.",
+      "physical": "Larut sempurna dalam air, menghasilkan larutan biru jernih tanpa endapan.",
+      "phNote": "Stabil pada pH 4,5–7,0; hindari pH asam kuat dan suhu tinggi (> 50 °C).",
       "notes": null
     },
     "photos": [
@@ -3738,10 +3738,10 @@
     "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
     "animal": false,
     "evaluation": {
-      "baseColor": "warna merah muda, pekat seperti bubuk cabai",
-      "concentration": "- 0.01g/100ml: ungu muda cerah transparan\n- 0.05g/100ml (kontrol): warna pink tua ada hint ungu sedikit.",
-      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
-      "phNote": "- Asam: pH 2.62. warna orange tua transparan\n- Basa: pH 6.81. Warna pink tua keunguan.",
+      "baseColor": "Pink keunguan (berry pink) hingga merah-magenta pekat dalam larutan.",
+      "concentration": "- 0,01 g/100 mL: pink-ungu muda dan jernih.\n- 0,05 g/100 mL: merah-ungu (magenta/rubescent) pekat.",
+      "physical": "Larut sempurna dalam air, larutan jernih tanpa endapan.",
+      "phNote": "Bergeser menjadi merah cerah pada pH asam (< 3,8) dan menjadi pink-keunguan pada pH mendekati netral.",
       "notes": null
     },
     "photos": [
@@ -3790,10 +3790,10 @@
     "cons": "Paling merah dan stabil pada pH di bawah 3,5; saat pH naik hue bergeser ke ungu-biru lalu pudar. Sensitif asam askorbat (pemudaran tak terbalik), SO2, alkohol, dan quinine. Dosis di bawah 0,04% menurunkan stabilitas: pakai kemasan pelindung cahaya.",
     "animal": false,
     "evaluation": {
-      "baseColor": "Merah pekat seperti merah cabai",
-      "concentration": "- 0.01 g/100ml : Ungu muda cerah\n- 0.05 g/100ml (kontrol) : pink cerah transparan",
-      "physical": "Transparan, cepat larut, tidak ada endapan partikel",
-      "phNote": "- Asam: pH 6.81, warna pink tua keunguan.\n- Basa: pH 6.60, warna pink, seperti fuschia, ada hint ungu sedikit",
+      "baseColor": "Pink-fuchsia hingga merah keunguan dalam larutan.",
+      "concentration": "- 0,01 g/100 mL: pink keunguan (fuchsia muda) jernih.\n- 0,05 g/100 mL: merah-keunguan (veggie red / magenta tua) pekat.",
+      "physical": "Larut sempurna dalam air, larutan bening tanpa endapan.",
+      "phNote": "- pH asam (< 3,5): bergeser ke merah-pink cerah.\n- pH mendekati netral (pH 6,6–6,8): berwarna pink-fuchsia dengan rona keunguan.",
       "notes": null
     },
     "photos": [
@@ -3870,7 +3870,7 @@
     "colors": [
       "Purple"
     ],
-    "hex": "#B0211E",
+    "hex": "#582B66",
     "solubility": "Dispersi dalam air",
     "categories": [
       "01.0",
@@ -4109,11 +4109,11 @@
     "cons": "Hue bergeser dari merah ke ungu/biru dan memudar saat pH naik (di atas sekitar 4-5); sensitif oksigen, ion logam, dan vitamin C",
     "animal": false,
     "evaluation": {
-      "baseColor": "Merah maroon cenderung sedikit ungu\n\nUngu violet/lavender dengan intensitas sedang hingga pekat (dosis 0,01 g/100 ml)",
-      "concentration": "- 0,01 g/100 mL: Pink halus yang agak pudar\n- 0,05 g/100 mL: Pink muda cerah\n- 0,1 g/100 mL (Kontrol): Pink tua yang agak pekat seperti rasberry\n\nPada 0,001 g/100 ml menjadi ungu muda/lavender pucat; intensitas turun, hue dasar masih ungu",
-      "physical": "Transparan, fase larutan homogen, tidak ada endapan partikel dan lapisan terpisah\n\n- Larutan tampak sangat jernih dan homogen\n- Tidak terdapat endapan",
-      "phNote": "- Asam: Pink lebih pekat dari kontrol dan cenderung sedikit merah tapi masih dominan pink, pH 2,76\n- Basa: Pink dengan sedikit hint ungu, pH 7,41",
-      "notes": "Dapat dipilih jika menginginkan warna merah muda–tua yang alami\n\nPada penambahan 0,1 g citric acid ke larutan 0,01 g/100 ml, warna tampak bergeser ke pink-ungu\n(Foto 2/3 = larutan setelah ditambah citric acid)"
+      "baseColor": "Ungu lavender hingga ungu violet pekat (bergeser ke merah-pink pada kondisi asam).",
+      "concentration": "- 0,001 g/100 mL: ungu lavender sangat muda dan jernih.\n- 0,01 g/100 mL: ungu violet pekat dan jernih.",
+      "physical": "Larut sempurna dalam air, larutan jernih tanpa cincin maupun endapan.",
+      "phNote": "- Kontrol (air netral): ungu violet.\n- Ditambah asam sitrat (pH ~2,26): warna bergeser menjadi pink-merah keunguan cerah.",
+      "notes": null
     },
     "photos": [
       "NC-077_1.jpg",
@@ -4527,11 +4527,11 @@
     "cons": "Pigmen tidak larut: perlu dispersi homogen, dapat mengendap atau tampak buram/abu; tidak memberi warna transparan",
     "animal": false,
     "evaluation": {
-      "baseColor": "Warna dapat bergeser ke ungu pada pH tertentu",
-      "concentration": "Warna dapat bergeser ke ungu pada pH tertentu",
-      "physical": "Warna dapat bergeser ke ungu pada pH tertentu",
-      "phNote": null,
-      "notes": "Warna dapat bergeser ke ungu pada pH tertentu"
+      "baseColor": "Merah anggur tua keunguan (bordeaux).",
+      "concentration": "- 0,001 g/100 mL: semburat merah-ungu sangat tipis.\n- 0,01 g/100 mL: ungu keabuan muda.\n- 0,1 g/100 mL: merah bordeaux keunguan pekat.",
+      "physical": "Larut sempurna dalam air, larutan jernih tanpa endapan.",
+      "phNote": "Warna merah bordeaux tampil optimal pada pH asam dan bergeser semakin ungu pada pH mendekati netral.",
+      "notes": null
     },
     "photos": [
       "NC-085_1.jpg"

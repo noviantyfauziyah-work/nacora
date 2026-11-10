@@ -724,8 +724,8 @@ export function computeInteractiveMix(matA, matB, ratioA = 50) {
     granA?.status === 'Compatible' && granB?.status === 'Compatible';
 
   return {
-    a: { id: matA.id, name: matA.name, hex: hexA, group: matA.group },
-    b: { id: matB.id, name: matB.name, hex: hexB, group: matB.group },
+    a: { id: matA.id, name: matA.name, hex: matA.hex || hexA, group: matA.group },
+    b: { id: matB.id, name: matB.name, hex: matB.hex || hexB, group: matB.group },
     ratio: ratioText,
     resultColor: matchedEval ? matchedEval.resultColor : (matA.colors?.[0] || 'Orange'),
     shadeName: matchedEval ? matchedEval.shadeName : 'Custom Blend Shade',
@@ -763,8 +763,8 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
     const ratioParts = String(combo.ratio || '50:50').split(':');
     const ratioA = parseInt(ratioParts[0], 10) || 50;
 
-    const hexA = getCalibratedMaterialHex(matA);
-    const hexB = getCalibratedMaterialHex(matB);
+    const hexA = matA.hex || getCalibratedMaterialHex(matA);
+    const hexB = matB.hex || getCalibratedMaterialHex(matB);
 
     // Cek apakah valid untuk warna hasil aslinya
     const checkOrig = evaluatePairForTargetColor(matA, matB, combo.resultColor, ratioA);
@@ -912,12 +912,12 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
           a: {
             id: matA.id,
             name: matA.name,
-            hex: getCalibratedMaterialHex(matA),
+            hex: matA.hex || getCalibratedMaterialHex(matA),
           },
           b: {
             id: matB.id,
             name: matB.name,
-            hex: getCalibratedMaterialHex(matB),
+            hex: matB.hex || getCalibratedMaterialHex(matB),
           },
           ratio: cfg.ratio,
           ratioRange: cfg.ratioRange,

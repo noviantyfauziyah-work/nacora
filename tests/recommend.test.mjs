@@ -583,8 +583,8 @@ export const testSuite = [
       const procCrit026 = nc026InCatatan.criteria.find((c) => c.key === 'process');
       assert.equal(procCrit026.extensionStatus, 'Unknown');
       assert.ok(
-        procCrit026.reason.includes('Data kompatibilitas granulasi belum tersedia'),
-        'Alasan Unknown harus memuat keterangan bahwa data kompatibilitas granulasi belum tersedia'
+        procCrit026.reason.includes('Fluid-Bed Top-Spray Granulation'),
+        'Alasan Unknown harus memuat keterangan kompatibilitas Fluid-Bed Top-Spray Granulation'
       );
 
       // 3. Uji bahan berstatus Incompatible (mis. NC-035 Beetroot pada warna Red) -> wajib masuk Tersaring
