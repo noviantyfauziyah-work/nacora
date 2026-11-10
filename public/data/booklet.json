@@ -8,10 +8,7 @@
     "foodApplications": "Minuman berbasis air, susu dan olahannya (dairy), es krim dan produk beku, permen dan confectionery, produk bakeri, saus dan kondimen, produk daging/olahan berprotein, serta sediaan granul/serbuk.",
     "prosAndCons": "Pilih kelompok pigmen dan bentuk kelarutan yang sesuai dengan jenis produk, pH, proses produksi, jenis kemasan, dan kondisi penyimpanan, lalu validasi dosis optimal pada matriks formula aktual.",
     "refs": [
-      "R1",
-      "R2",
-      "R3",
-      "R21"
+      "R1"
     ]
   },
   {
@@ -23,10 +20,7 @@
     "foodApplications": "Minuman berperisa, susu dan olahannya, es krim, permen dan gummy, produk bakeri, lemak/margarin, saus, serta makanan siap saji.",
     "prosAndCons": "Tahan panas dan stabil pada rentang pH luas. Pada minuman cair perlu manajemen berat jenis emulsi agar tidak timbul cincin di leher botol (neck-ringing).",
     "refs": [
-      "R1",
-      "R2",
-      "R3",
-      "R21"
+      "R1"
     ]
   },
   {
@@ -39,10 +33,7 @@
     "prosAndCons": "Memberikan warna merah-ungu jernih dengan ketahanan panas baik pada matriks asam. Rona warna berubah mengikuti pH produk dan sensitif terhadap interaksi dengan vitamin C.",
     "refs": [
       "R1",
-      "R3",
-      "R11",
-      "R13",
-      "R21"
+      "R11"
     ]
   },
   {
@@ -54,9 +45,6 @@
     "foodApplications": "Minuman serbuk, es krim, yoghurt, permen dan jelly, produk bakeri, saus, bumbu gurih, dan makanan ringan ekstrusi.",
     "prosAndCons": "Menghasilkan kuning cerah alami yang tahan pemanasan tinggi dengan dosis ekonomis. Sangat peka terhadap cahaya sehingga memerlukan kemasan pelindung.",
     "refs": [
-      "R2",
-      "R3",
-      "R13",
       "R19"
     ]
   },
@@ -69,11 +57,7 @@
     "foodApplications": "Es krim dan makanan beku, yoghurt, minuman serbuk instan, permen, sosis/olahan daging, serta isian krim dingin.",
     "prosAndCons": "Pilihan utama untuk warna pink-merah pada produk ber-pH netral (seperti susu/es krim) dan kompatibel dengan vitamin C. Kurang tahan terhadap pemanasan suhu tinggi berdurasi lama.",
     "refs": [
-      "R2",
-      "R10",
-      "R14",
-      "R20",
-      "R21"
+      "R10"
     ]
   },
   {
@@ -85,9 +69,7 @@
     "foodApplications": "Susu dan olahannya (UHT/pasteurisasi), es krim, permen, produk bakeri, selai, sosis dan produk daging olahan, serta minuman.",
     "prosAndCons": "Stabilitas panas, cahaya, dan umur simpan sangat unggul. Karena berasal dari serangga (hewani), penggunaannya harus memperhatikan kebijakan sertifikasi halal dan klaim vegan/vegetarian.",
     "refs": [
-      "R8",
-      "R13",
-      "R17"
+      "R8"
     ]
   },
   {
@@ -99,7 +81,6 @@
     "foodApplications": "Es krim, permen dan jelly, produk bakeri, saus, produk olahan susu, minyak/lemak, dan minuman.",
     "prosAndCons": "Memberikan warna hijau alami yang tahan panas. Varian larut air standar perlu dijaga dari pengendapan pada matriks ber-pH asam rendah.",
     "refs": [
-      "R3",
       "R9"
     ]
   },
@@ -112,11 +93,8 @@
     "foodApplications": "Permen dan gummy (ditambahkan pada suhu akhir), es krim dan makanan beku, lapisan gula (icing/coating), minuman serbuk, dan produk dairy dingin.",
     "prosAndCons": "Sumber biru alami cerah yang diizinkan secara luas. Sensitif terhadap suhu proses tinggi dan pH asam tanpa stabilisasi khusus.",
     "refs": [
-      "R3",
       "R4",
-      "R5",
-      "R15",
-      "R21"
+      "R5"
     ]
   },
   {
@@ -130,8 +108,7 @@
     "refs": [
       "R5",
       "R6",
-      "R7",
-      "R15"
+      "R7"
     ]
   },
   {
@@ -143,8 +120,7 @@
     "foodApplications": "Minuman bening, permen, jelly, es loli, fondant/icing, dan produk olahan susu.",
     "prosAndCons": "Larut air jernih dan jauh lebih tahan cahaya dibandingkan kunyit. Pada pH basa atau suhu sangat ekstrem rona dapat sedikit menggelap.",
     "refs": [
-      "R12",
-      "R13"
+      "R12"
     ]
   },
   {
@@ -155,9 +131,7 @@
     "stabilityFactors": "Merupakan pigmen unsur karbon murni yang bersifat inert secara kimia: sangat stabil dan tidak terpengaruh oleh perubahan pH (pH 1–14), suhu proses produksi setinggi apa pun (baking, ekstrusi, retort, UHT), paparan cahaya, maupun oksidasi selama penyimpanan. Faktor teknis yang perlu dijaga adalah kestabilan suspensi fisik agar partikel halus tidak mengendap pada matriks cair berviskositas rendah.",
     "foodApplications": "Produk bakeri (roti hitam, biskuit, macaron), permen (licorice, gummy), es krim, saus, mie/pasta, dan makanan ringan ekstrusi.",
     "prosAndCons": "Stabilitas pH, panas, dan cahaya sempurna untuk warna hitam pekat. Memerlukan pengadukan/sistem suspensi yang baik pada produk cair agar tidak mengendap.",
-    "refs": [
-      "R0"
-    ]
+    "refs": []
   },
   {
     "group": "Melanin (tinta cumi)",
@@ -167,8 +141,6 @@
     "stabilityFactors": null,
     "foodApplications": "Pasta (spaghetti/fettuccine nero), risotto, saus gurih, roti artisan, kerupuk, dan produk olahan boga bahari (seafood).",
     "prosAndCons": "Memberikan warna hitam alami sekaligus cita rasa umami khas laut untuk aplikasi kuliner gurih. Bersumber dari hasil laut (seafood) sehingga perlu deklarasi alergen moluska dan tidak cocok untuk produk manis.",
-    "refs": [
-      "R0"
-    ]
+    "refs": []
   }
 ]

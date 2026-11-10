@@ -124,6 +124,7 @@ export function renderBookletGroupPage(data, requestedGroup) {
     currentEntry.group
   );
   const granulationGuide = getBookletGranulationGuide(currentEntry.group);
+  const refsListHtml = renderReferencesList(currentEntry.refs, refMap);
 
   // Tujuh bagian kolom Booklet (Bagian yang kosong disembunyikan — Bagian 10)
   const contentSections = [
@@ -195,8 +196,8 @@ export function renderBookletGroupPage(data, requestedGroup) {
                 : ''
             }
             ${
-              currentEntry.refs?.length > 0
-                ? `<option value="sec-rujukan">Rujukan</option>`
+              refsListHtml
+                ? `<option value="sec-rujukan">Rujukan Jurnal</option>`
                 : ''
             }
           </select>
@@ -243,11 +244,11 @@ export function renderBookletGroupPage(data, requestedGroup) {
             `
       : ''
     }
-            ${currentEntry.refs?.length > 0
+            ${refsListHtml
       ? `
               <li>
                 <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="sec-rujukan" class="booklet-nav-link booklet-section-jump">
-                  Rujukan
+                  Rujukan Jurnal
                 </a>
               </li>
             `
@@ -402,11 +403,11 @@ export function renderBookletGroupPage(data, requestedGroup) {
     }
 
         <!-- Daftar Rujukan (Bagian 10) -->
-        ${Array.isArray(currentEntry.refs) && currentEntry.refs.length > 0
+        ${refsListHtml
       ? `
           <section id="sec-rujukan" class="card">
-            <h2 class="detail-section-title">Rujukan</h2>
-            ${renderReferencesList(currentEntry.refs, refMap)}
+            <h2 class="detail-section-title">Rujukan Jurnal</h2>
+            ${refsListHtml}
           </section>
         `
       : ''

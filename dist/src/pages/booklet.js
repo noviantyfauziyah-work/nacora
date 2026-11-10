@@ -9,8 +9,22 @@ import {
   getBookletGranulationGuide,
   getMaterialExtensionStatus,
 } from '../engine/process-extensions.js';
-import { getCalibratedMaterialHex } from '../engine/color-science.js';
 import { renderReferencesList } from './detail.js';
+
+const BOOKLET_GROUP_REPRESENTATIVE_HEX = {
+  'Dasar Pewarna Alami': '#008040',
+  Karotenoid: '#E7C314',
+  Antosianin: '#9B609C',
+  Kurkuminoid: '#CBBE22',
+  Betalain: '#C8418A',
+  'Antrakuinon (karmin)': '#DE4A74',
+  'Klorofil / klorofilin': '#4A953B',
+  'Fikosianin (spirulina)': '#4F7DD1',
+  'Iridoid / genipin': '#2A4A82',
+  'Flavonoid (carthamus)': '#C3C235',
+  Karbon: '#262529',
+  'Melanin (tinta cumi)': '#282D2B',
+};
 
 function getMaterialsForBookletGroup(materials, bookletGroup) {
   if (bookletGroup === 'Dasar Pewarna Alami') {
@@ -22,12 +36,12 @@ function getMaterialsForBookletGroup(materials, bookletGroup) {
 }
 
 function getRepresentativeHex(materials, bookletGroup) {
-  if (bookletGroup === 'Dasar Pewarna Alami') {
-    return '#008040';
+  if (BOOKLET_GROUP_REPRESENTATIVE_HEX[bookletGroup]) {
+    return BOOKLET_GROUP_REPRESENTATIVE_HEX[bookletGroup];
   }
   const groupMats = getMaterialsForBookletGroup(materials, bookletGroup);
   const firstWithHex = groupMats.find((m) => Boolean(m.hex));
-  return firstWithHex ? getCalibratedMaterialHex(firstWithHex) : '#008040';
+  return firstWithHex ? firstWithHex.hex : '#008040';
 }
 
 export function renderBookletIndexPage(data) {
@@ -43,16 +57,16 @@ export function renderBookletIndexPage(data) {
 
     <div class="booklet-index-grid">
       ${booklet
-        .map((item) => {
-          const isBasic = item.group === 'Dasar Pewarna Alami';
-          const groupMats = getMaterialsForBookletGroup(materials, item.group);
-          const swatchHex = getRepresentativeHex(materials, item.group);
-          const countLabel = isBasic
-            ? `${materials.length} total bahan di database`
-            : `${groupMats.length} bahan perusahaan`;
-          const href = `#/booklet/${encodeURIComponent(item.group)}`;
+      .map((item) => {
+        const isBasic = item.group === 'Dasar Pewarna Alami';
+        const groupMats = getMaterialsForBookletGroup(materials, item.group);
+        const swatchHex = getRepresentativeHex(materials, item.group);
+        const countLabel = isBasic
+          ? `${materials.length} total bahan di database`
+          : `${groupMats.length} bahan perusahaan`;
+        const href = `#/booklet/${encodeURIComponent(item.group)}`;
 
-          return `
+        return `
             <article class="card card-interactive booklet-index-card">
               <div>
                 <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 12px;">
@@ -68,11 +82,10 @@ export function renderBookletIndexPage(data) {
                     <span class="chip">${escapeHtml(countLabel)}</span>
                   </div>
                 </div>
-                ${
-                  item.introduction
-                    ? `<p style="margin: 0; font-size: 0.9375rem; color: var(--color-text);">${escapeHtml(item.introduction)}</p>`
-                    : ''
-                }
+                ${item.introduction
+            ? `<p style="margin: 0; font-size: 0.9375rem; color: var(--color-text);">${escapeHtml(item.introduction)}</p>`
+            : ''
+          }
               </div>
 
               <div>
@@ -82,8 +95,8 @@ export function renderBookletIndexPage(data) {
               </div>
             </article>
           `;
-        })
-        .join('')}
+      })
+      .join('')}
     </div>
   `;
 }
@@ -111,6 +124,7 @@ export function renderBookletGroupPage(data, requestedGroup) {
     currentEntry.group
   );
   const granulationGuide = getBookletGranulationGuide(currentEntry.group);
+  const refsListHtml = renderReferencesList(currentEntry.refs, refMap);
 
   // Tujuh bagian kolom Booklet (Bagian yang kosong disembunyikan — Bagian 10)
   const contentSections = [
@@ -150,14 +164,14 @@ export function renderBookletGroupPage(data, requestedGroup) {
           <label class="form-label" for="booklet-mobile-group-select">Pilih Kelompok Pigmen</label>
           <select id="booklet-mobile-group-select" class="form-control">
             ${booklet
-              .map(
-                (b) => `
+      .map(
+        (b) => `
               <option value="${escapeHtml(b.group)}" ${b.group === currentEntry.group ? 'selected' : ''}>
                 ${escapeHtml(b.group)}
               </option>
             `
-              )
-              .join('')}
+      )
+      .join('')}
           </select>
         </div>
 
@@ -165,15 +179,15 @@ export function renderBookletGroupPage(data, requestedGroup) {
           <label class="form-label" for="booklet-mobile-section-select">Lompat ke Bagian</label>
           <select id="booklet-mobile-section-select" class="form-control">
             ${contentSections
-              .map(
-                (sec) => `
+      .map(
+        (sec) => `
               <option value="${escapeHtml(sec.id)}">${escapeHtml(sec.title)}</option>
             `
               )
               .join('')}
             ${
               granulationGuide
-                ? `<option value="sec-granulasi">Panduan Proses Granulasi</option>`
+                ? `<option value="sec-granulasi">Panduan Proses Produksi</option>`
                 : ''
             }
             ${
@@ -182,8 +196,8 @@ export function renderBookletGroupPage(data, requestedGroup) {
                 : ''
             }
             ${
-              currentEntry.refs?.length > 0
-                ? `<option value="sec-rujukan">Rujukan</option>`
+              refsListHtml
+                ? `<option value="sec-rujukan">Rujukan Jurnal</option>`
                 : ''
             }
           </select>
@@ -200,49 +214,46 @@ export function renderBookletGroupPage(data, requestedGroup) {
           </h2>
           <ul class="booklet-nav-list">
             ${contentSections
-              .map(
-                (sec) => `
+      .map(
+        (sec) => `
               <li>
                 <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="${escapeHtml(sec.id)}" class="booklet-nav-link booklet-section-jump">
                   ${escapeHtml(sec.title)}
                 </a>
               </li>
             `
-              )
-              .join('')}
-            ${
-              granulationGuide
-                ? `
+      )
+      .join('')}
+            ${granulationGuide
+      ? `
               <li>
                 <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="sec-granulasi" class="booklet-nav-link booklet-section-jump">
-                  Panduan Proses Granulasi
+                  Panduan Proses Produksi
                 </a>
               </li>
             `
-                : ''
-            }
-            ${
-              groupMaterials.length > 0
-                ? `
+      : ''
+    }
+            ${groupMaterials.length > 0
+      ? `
               <li>
                 <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="sec-contoh-bahan" class="booklet-nav-link booklet-section-jump">
                   Contoh Bahan (${groupMaterials.length})
                 </a>
               </li>
             `
-                : ''
-            }
-            ${
-              currentEntry.refs?.length > 0
-                ? `
+      : ''
+    }
+            ${refsListHtml
+      ? `
               <li>
                 <a href="#/booklet/${encodeURIComponent(currentEntry.group)}" data-scroll-target="sec-rujukan" class="booklet-nav-link booklet-section-jump">
-                  Rujukan
+                  Rujukan Jurnal
                 </a>
               </li>
             `
-                : ''
-            }
+      : ''
+    }
           </ul>
         </div>
 
@@ -252,17 +263,17 @@ export function renderBookletGroupPage(data, requestedGroup) {
           </h2>
           <ul class="booklet-nav-list">
             ${booklet
-              .map((b) => {
-                const active = b.group === currentEntry.group;
-                return `
+      .map((b) => {
+        const active = b.group === currentEntry.group;
+        return `
                   <li>
                     <a href="#/booklet/${encodeURIComponent(b.group)}" class="booklet-nav-link ${active ? 'active' : ''}">
                       ${escapeHtml(b.group)}
                     </a>
                   </li>
                 `;
-              })
-              .join('')}
+      })
+      .join('')}
           </ul>
         </div>
       </aside>
@@ -274,101 +285,95 @@ export function renderBookletGroupPage(data, requestedGroup) {
           <div>
             <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-primary);">Color Learning Booklet</div>
             <h1 class="page-title" style="margin-bottom: 4px;">${escapeHtml(currentEntry.group)}</h1>
-            ${
-              groupMaterials.length > 0
-                ? `<span class="chip">${groupMaterials.length} bahan perusahaan pada kelompok ini</span>`
-                : `<span class="chip">Panduan Pengantar</span>`
-            }
+            ${groupMaterials.length > 0
+      ? `<span class="chip">${groupMaterials.length} bahan perusahaan pada kelompok ini</span>`
+      : `<span class="chip">Panduan Pengantar</span>`
+    }
           </div>
         </section>
 
         ${contentSections
-          .map(
-            (sec) => `
+      .map(
+        (sec) => `
           <section id="${escapeHtml(sec.id)}" class="card">
             <h2 class="detail-section-title">${escapeHtml(sec.title)}</h2>
             <p style="margin: 0; white-space: pre-line;">${escapeHtml(sec.text)}</p>
           </section>
         `
-          )
-          .join('')}
+      )
+      .join('')}
 
-        ${
-          granulationGuide
-            ? `
+        ${granulationGuide
+      ? `
           <section id="sec-granulasi" class="card">
-            <h2 class="detail-section-title">Panduan Teknis Proses Granulasi &amp; Serbuk Instan</h2>
+            <h2 class="detail-section-title">Panduan Teknis Proses Produksi &amp; Pengolahan</h2>
             <p style="margin: 0 0 12px 0; white-space: pre-line;">${escapeHtml(granulationGuide.summary)}</p>
-            ${
-              granulationGuide.keyParameters
-                ? `
-              <div class="info-box" style="margin: 0;">
-                <strong>Parameter Kritis Formulasi &amp; Granulasi:</strong><br />
-                ${escapeHtml(granulationGuide.keyParameters)}
+            ${granulationGuide.keyParameters
+        ? `
+              <div class="info-box" style="margin: 0; white-space: pre-line;">
+                <strong>Parameter Kritis Proses Produksi &amp; Fluid-Bed Top-Spray Granulation:</strong><br />${escapeHtml(granulationGuide.keyParameters)}
               </div>
             `
-                : ''
-            }
-            ${
-              Array.isArray(granulationGuide.methodsComparison)
-                ? `
+        : ''
+      }
+            ${Array.isArray(granulationGuide.methodsComparison)
+        ? `
               <table class="clean-table" style="margin-top: 12px;">
                 <thead>
                   <tr>
-                    <th scope="col">Metode Granulasi</th>
-                    <th scope="col">Mekanisme Proses</th>
-                    <th scope="col">Kesesuaian Pigmen Alami</th>
+                    <th scope="col">Proses Produksi</th>
+                    <th scope="col">Mekanisme &amp; Kondisi Proses</th>
+                    <th scope="col">Kesesuaian &amp; Penanganan Pigmen Alami</th>
                   </tr>
                 </thead>
                 <tbody>
                   ${granulationGuide.methodsComparison
-                    .map(
-                      (m) => `
+          .map(
+            (m) => `
                     <tr>
                       <th scope="row">${escapeHtml(m.method)}</th>
                       <td>${escapeHtml(m.mechanism)}</td>
                       <td>${escapeHtml(m.suitability)}</td>
                     </tr>
                   `
-                    )
-                    .join('')}
+          )
+          .join('')}
                 </tbody>
               </table>
             `
-                : ''
-            }
+        : ''
+      }
           </section>
         `
-            : ''
-        }
+      : ''
+    }
 
         <!-- Contoh Bahan Perusahaan pada Kelompok Ini (Bagian 10) -->
-        ${
-          groupMaterials.length > 0
-            ? `
+        ${groupMaterials.length > 0
+      ? `
           <section id="sec-contoh-bahan" class="card">
             <h2 class="detail-section-title">
               Contoh Bahan Perusahaan (${groupMaterials.length} bahan)
             </h2>
             <div class="booklet-materials-grid">
               ${groupMaterials
-                .map((mat) => {
-                  const colorChips = (mat.colors || [])
-                    .map((c) => {
-                      const dot = TARGET_COLOR_HEX[c] || '#CCCCCC';
-                      return `<span class="chip"><span class="chip-color-dot" style="background-color: ${escapeHtml(dot)};"></span>${escapeHtml(c)}</span>`;
-                    })
-                    .join('');
-                  const phStr =
-                    mat.ph?.min !== null && mat.ph?.max !== null
-                      ? `pH ${formatNumberId(mat.ph.min)}–${formatNumberId(mat.ph.max)}`
-                      : null;
-                  const granStatus = getMaterialExtensionStatus(mat.id, 'Granulasi');
+        .map((mat) => {
+          const colorChips = (mat.colors || [])
+            .map((c) => {
+              const dot = TARGET_COLOR_HEX[c] || '#CCCCCC';
+              return `<span class="chip"><span class="chip-color-dot" style="background-color: ${escapeHtml(dot)};"></span>${escapeHtml(c)}</span>`;
+            })
+            .join('');
+          const phStr =
+            mat.ph?.min !== null && mat.ph?.max !== null
+              ? `pH ${formatNumberId(mat.ph.min)}–${formatNumberId(mat.ph.max)}`
+              : null;
+          const granStatus = getMaterialExtensionStatus(mat.id, 'Granulasi');
 
-                  return `
+          return `
                     <article class="card card-interactive" style="padding: 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px;">
                       <div style="display: flex; align-items: flex-start; gap: 12px;">
-                        <div class="swatch-box" style="background-color: ${escapeHtml(mat.hex ? getCalibratedMaterialHex(mat) : '#F3F4F6')};">
+                        <div class="swatch-box" style="background-color: ${escapeHtml(mat.hex || '#F3F4F6')};">
                           ${mat.hex ? '' : '—'}
                         </div>
                         <div style="flex: 1; min-width: 0;">
@@ -389,25 +394,24 @@ export function renderBookletGroupPage(data, requestedGroup) {
                       </div>
                     </article>
                   `;
-                })
-                .join('')}
+        })
+        .join('')}
             </div>
           </section>
         `
-            : ''
-        }
+      : ''
+    }
 
         <!-- Daftar Rujukan (Bagian 10) -->
-        ${
-          Array.isArray(currentEntry.refs) && currentEntry.refs.length > 0
-            ? `
+        ${refsListHtml
+      ? `
           <section id="sec-rujukan" class="card">
-            <h2 class="detail-section-title">Rujukan</h2>
-            ${renderReferencesList(currentEntry.refs, refMap)}
+            <h2 class="detail-section-title">Rujukan Jurnal</h2>
+            ${refsListHtml}
           </section>
         `
-            : ''
-        }
+      : ''
+    }
       </div>
     </div>
   `;

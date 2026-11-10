@@ -12,22 +12,21 @@ import { renderCombinationCard } from './mix.js';
 
 export function renderReferencesList(refCodes, refMap) {
   if (!Array.isArray(refCodes) || refCodes.length === 0) return '';
-  const items = refCodes
-    .map((code) => {
-      const refObj = refMap?.get(code);
-      const title = refObj ? refObj.title : code;
-      const url = refObj?.url && refObj.url.startsWith('http') ? refObj.url : null;
-      return `
+  const validItems = refCodes
+    .map((code) => refMap?.get(code))
+    .filter((refObj) => refObj && typeof refObj.url === 'string' && refObj.url.startsWith('http'));
+
+  if (validItems.length === 0) return '';
+
+  const items = validItems
+    .map(
+      (refObj) => `
         <li>
-          <strong>[${escapeHtml(code)}]</strong> ${escapeHtml(title)}
-          ${
-            url
-              ? ` — <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="no-print">Buka tautan ↗</a>`
-              : ''
-          }
+          <strong>[${escapeHtml(refObj.code)}]</strong> ${escapeHtml(refObj.title)}
+          — <a href="${escapeHtml(refObj.url)}" target="_blank" rel="noopener noreferrer" class="no-print">Buka jurnal ↗</a>
         </li>
-      `;
-    })
+      `
+    )
     .join('');
 
   return `<ul class="ref-list">${items}</ul>`;
@@ -425,16 +424,17 @@ export function renderDetailPage(data, materialId) {
     }
 
     <!-- Daftar Rujukan -->
-    ${
-      Array.isArray(material.refs) && material.refs.length > 0
+    ${(() => {
+      const refsHtml = renderReferencesList(material.refs, refMap);
+      return refsHtml
         ? `
       <section class="card detail-section">
-        <h2 class="detail-section-title">Daftar Rujukan</h2>
-        ${renderReferencesList(material.refs, refMap)}
+        <h2 class="detail-section-title">Daftar Rujukan Jurnal</h2>
+        ${refsHtml}
       </section>
     `
-        : ''
-    }
+        : '';
+    })()}
 
     <!-- Hingga Lima Kombinasi Teratas (Bagian 8.2) -->
     ${

@@ -8,27 +8,25 @@ import {
   EXTENSION_PROCESSES,
   getMaterialExtensionStatus,
 } from '../engine/process-extensions.js';
-import { getCalibratedMaterialHex } from '../engine/color-science.js';
 import { renderCombinationCard } from './mix.js';
 
 export function renderReferencesList(refCodes, refMap) {
   if (!Array.isArray(refCodes) || refCodes.length === 0) return '';
-  const items = refCodes
-    .map((code) => {
-      const refObj = refMap?.get(code);
-      const title = refObj ? refObj.title : code;
-      const url = refObj?.url && refObj.url.startsWith('http') ? refObj.url : null;
-      return `
+  const validItems = refCodes
+    .map((code) => refMap?.get(code))
+    .filter((refObj) => refObj && typeof refObj.url === 'string' && refObj.url.startsWith('http'));
+
+  if (validItems.length === 0) return '';
+
+  const items = validItems
+    .map(
+      (refObj) => `
         <li>
-          <strong>[${escapeHtml(code)}]</strong> ${escapeHtml(title)}
-          ${
-            url
-              ? ` — <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="no-print">Buka tautan ↗</a>`
-              : ''
-          }
+          <strong>[${escapeHtml(refObj.code)}]</strong> ${escapeHtml(refObj.title)}
+          — <a href="${escapeHtml(refObj.url)}" target="_blank" rel="noopener noreferrer" class="no-print">Buka jurnal ↗</a>
         </li>
-      `;
-    })
+      `
+    )
     .join('');
 
   return `<ul class="ref-list">${items}</ul>`;
@@ -55,11 +53,10 @@ export function renderDetailPage(data, materialId) {
     ? `#/booklet/${encodeURIComponent(bookletGroup)}`
     : '#/booklet';
 
-  const calibratedHex = material.hex ? getCalibratedMaterialHex(material) : null;
-  const swatchStyle = calibratedHex
-    ? `background-color: ${escapeHtml(calibratedHex)};`
+  const swatchStyle = material.hex
+    ? `background-color: ${escapeHtml(material.hex)};`
     : 'background-color: #F3F4F6;';
-  const swatchContent = calibratedHex ? escapeHtml(calibratedHex) : '—';
+  const swatchContent = material.hex ? escapeHtml(material.hex) : '—';
 
   const colorChips = (material.colors || [])
     .map((c) => {
@@ -237,14 +234,14 @@ export function renderDetailPage(data, materialId) {
         : ''
     }
 
-    <!-- Profil Kompatibilitas Proses Granulasi (Ekstensi Teknis) -->
+    <!-- Profil Kompatibilitas Proses Granulasi (Fluid-Bed Top-Spray Granulation) -->
     ${
-      granulationProfile && granulationProfile.recommendedMethod
+      granulationProfile && granulationProfile.maxProductTemp
         ? `
       <section class="card detail-section" id="sec-profil-granulasi">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
           <h2 class="detail-section-title" style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">
-            Profil Kompatibilitas Proses Granulasi (Ekstensi Teknis)
+            Profil Kompatibilitas Proses Granulasi (Fluid-Bed Top-Spray Granulation)
           </h2>
           <span class="status-badge ${
             granulationProfile.status === 'Compatible'
@@ -268,10 +265,6 @@ export function renderDetailPage(data, materialId) {
             <tr>
               <th scope="row">Status Kompatibilitas</th>
               <td><strong>${escapeHtml(granulationProfile.status)}</strong></td>
-            </tr>
-            <tr>
-              <th scope="row">Metode Granulasi yang Disarankan</th>
-              <td>${escapeHtml(granulationProfile.recommendedMethod)}</td>
             </tr>
             ${
               granulationProfile.maxProductTemp
@@ -431,16 +424,17 @@ export function renderDetailPage(data, materialId) {
     }
 
     <!-- Daftar Rujukan -->
-    ${
-      Array.isArray(material.refs) && material.refs.length > 0
+    ${(() => {
+      const refsHtml = renderReferencesList(material.refs, refMap);
+      return refsHtml
         ? `
       <section class="card detail-section">
-        <h2 class="detail-section-title">Daftar Rujukan</h2>
-        ${renderReferencesList(material.refs, refMap)}
+        <h2 class="detail-section-title">Daftar Rujukan Jurnal</h2>
+        ${refsHtml}
       </section>
     `
-        : ''
-    }
+        : '';
+    })()}
 
     <!-- Hingga Lima Kombinasi Teratas (Bagian 8.2) -->
     ${
