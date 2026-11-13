@@ -160,20 +160,20 @@ const GRANULATION_PROFILES = {
       'Meskipun memiliki ketahanan lebih baik dari bit standar, pigmen betalain tetap memerlukan kontrol suhu unggun rendah (< 50 °C) pada Fluid-Bed Top-Spray Granulation.',
   },
 
-  // 9. Klorofilin Tembaga Larut Air / WSP (Tahan Panas & Cahaya Tinggi)
+  // 9. Klorofilin Tembaga Larut Air / WSP (Tahan Panas, Asam & Cahaya Tinggi)
   CHLOROPHYLLIN_COPPER_WS: {
     status: 'Compatible',
     recommendedMethod: 'Fluid-Bed Top-Spray Granulation',
     maxProductTemp:
-      'Suhu produk ≤ 70–80 °C (kompleks tembaga-porfirin sangat tahan suhu fluid-bed)',
+      'Suhu produk ≤ 70–80 °C (kompleks tembaga-porfirin sangat tahan suhu fluid-bed serta stabil pada pH asam hingga netral-basa)',
     moistureAwLimit:
       'Stabil selama penyemprotan top-spray dan pengeringan; jaga a_w granul akhir < 0,35',
     binderAndMatrix:
-      'Gunakan pada larutan pengikat pH netral hingga sedikit basa (pH 6,0–9,0). Pada matriks asam, tambahkan penyangga (natrium sitrat) atau hidrokoloid pelindung agar asam lokal tidak mengendapkan asam klorofilin',
+      'Dapat diaplikasikan pada rentang pH luas dari kondisi asam hingga netral/basa (pH 3,0–9,0). Pada matriks ber-pH asam, Sodium Copper Chlorophyllin mempertahankan rona hijau stabil tanpa degradasi menjadi feofitin cokelat',
     specklingRisk:
-      'Rendah bila disemprotkan melalui nozzle top-spray menggunakan cairan pengikat ber-pH netral',
+      'Rendah bila dilarutkan sempurna dalam larutan pengikat top-spray berair pada rentang pH asam hingga netral',
     evidence:
-      'Natrium tembaga klorofilin memiliki ketahanan panas, cahaya, dan oksidasi yang sangat baik pada proses Fluid-Bed Top-Spray Granulation.',
+      'Natrium tembaga klorofilin memiliki ketahanan panas, cahaya, asam, dan oksidasi yang sangat baik pada proses Fluid-Bed Top-Spray Granulation.',
   },
 
   // 10. Klorofil Larut Minyak (Inkompatibel dengan Binder Berair Top-Spray)

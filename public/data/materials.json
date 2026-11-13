@@ -2674,8 +2674,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -2689,8 +2689,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Hijau standar",
@@ -2725,8 +2725,8 @@
       "14.0"
     ],
     "ph": {
-      "min": null,
-      "max": null
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -2740,8 +2740,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": null,
@@ -2872,8 +2872,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -2887,8 +2887,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Hijau seperti lumut/matcha",
@@ -2923,8 +2923,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -2938,8 +2938,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Hijau lumut pekat, dengan sedikit nuansa kekuningan/olive (dosis 0,01 g/100 ml)",
@@ -2974,8 +2974,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -2989,8 +2989,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Hijau daun",
@@ -3025,8 +3025,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -3040,8 +3040,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Warna hijau muda dengan tone green-soft.",
@@ -3076,8 +3076,8 @@
       "14.0"
     ],
     "ph": {
-      "min": 6,
-      "max": 10
+      "min": 3,
+      "max": 9
     },
     "heat": "Tinggi",
     "light": "Tinggi",
@@ -3091,8 +3091,8 @@
     "packaging": "Tidak spesifik",
     "storage": "Tidak ada catatan khusus",
     "dosage": null,
-    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, dan rentang pH lebih luas dibanding klorofil biasa.",
-    "cons": "Mengendap pada pH sangat asam (< 4,0) kecuali varian terstabilkan/emulsi; memerlukan kestabilan dispersi jika diaplikasikan pada produk berlemak/minyak.",
+    "pros": "Pigmen Sodium Copper Chlorophyllin (E141) larut air dengan stabilitas tinggi terhadap panas, cahaya, serta rentang pH luas (dapat digunakan pada pH asam hingga netral-basa 3,0–9,0).",
+    "cons": "Stabil pada rentang pH luas (pH asam hingga basa 3,0–9,0); pada kondisi asam sangat kuat (< 3,0) disarankan penambahan stabilizer/buffer sitrat; memerlukan penanganan khusus jika diaplikasikan pada fase minyak murni.",
     "animal": false,
     "evaluation": {
       "baseColor": "Hijau sangat gelap hingga tampak kehitaman; intensitas warna sangat pekat (dosis 0,01 g/100 ml)",
