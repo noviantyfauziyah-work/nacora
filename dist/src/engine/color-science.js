@@ -1,3 +1,4 @@
+
 /**
  * Modul Ilmu Warna & Kalibrasi Kombinasi Pigmen Alami NACORA
  *
@@ -26,8 +27,8 @@ export function ensureEnhancedCombinations(combinations, materials = null) {
   if (!Array.isArray(combinations) || combinations.length === 0) {
     return combinations || [];
   }
-  // Bila sudah terkalibrasi (memiliki properti shadeName), langsung kembalikan
-  if (combinations[0]?.shadeName) {
+  // Bila sudah terkalibrasi (memiliki penanda _enhanced), langsung kembalikan
+  if (combinations[0]?._enhanced) {
     return combinations;
   }
   if (enhancedComboCache.has(combinations)) {
@@ -295,26 +296,24 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
         return null;
       }
       if (isPureYellowA && isPureYellowB) {
-        const h = 50 + (seed % 7); // 50..56 (Bright / Lemon / Canary Yellow)
+        const h = 50 + (seed % 7); // 50..56
         const s = 90 + (seed % 7); // 90..96%
         const l = 55 + (seed % 9); // 55..63%
         return {
           valid: true,
           resultColor: 'Yellow',
           resultHex: hslToHex(h, s, l),
-          shadeName: h >= 54 ? 'Bright Lemon Yellow' : 'Sunny Canary Yellow',
         };
       }
       if ((hasYellowA && (hasYellowB || hasOrangeB)) || (hasYellowB && (hasYellowA || hasOrangeA))) {
         // Golden / Warm Yellow (pastikan proporsi Yellow cukup tinggi)
-        const h = 44 + Math.round(wA * 6) + (seed % 5); // 44..53 (Golden / Warm Yellow)
+        const h = 44 + Math.round(wA * 6) + (seed % 5); // 44..53
         const s = 88 + (seed % 8); // 88..95%
         const l = 52 + (seed % 8); // 52..59%
         return {
           valid: true,
           resultColor: 'Yellow',
           resultHex: hslToHex(h, s, l),
-          shadeName: h >= 49 ? 'Golden Yellow' : 'Warm Amber Yellow',
         };
       }
       return null;
@@ -351,7 +350,6 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
           valid: true,
           resultColor: 'Orange',
           resultHex: hslToHex(h, s, l),
-          shadeName: h >= 30 ? 'Bright Mandarin Orange' : h <= 21 ? 'Deep Coral Orange' : 'Vibrant Tangerine',
         };
       }
       return null;
@@ -376,9 +374,9 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
       if (bothRed || redWithWarm || redWithPurple) {
         let h = 356;
         if (redWithWarm && !bothRed) {
-          h = 4 + (seed % 8); // 4..11 (Scarlet / Tomato Red)
+          h = 4 + (seed % 8); // 4..11
         } else if (redWithPurple) {
-          h = 346 + (seed % 8); // 346..353 (Crimson / Ruby Red)
+          h = 346 + (seed % 8); // 346..353
         } else {
           h = (352 + (seed % 12)) % 360;
         }
@@ -388,7 +386,6 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
           valid: true,
           resultColor: 'Red',
           resultHex: hslToHex(h, s, l),
-          shadeName: h > 300 ? 'Ruby Crimson Red' : 'Bright Scarlet Red',
         };
       }
       return null;
@@ -406,22 +403,43 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
       }
       const h = 330 + (seed % 18); // 330..347
       const s = 72 + (seed % 16); // 72..87%
-      const l = 62 + (seed % 12); // 62..73% (Lightness tinggi khas Pink/Rose)
+      const l = 62 + (seed % 12); // 62..73%
       return {
         valid: true,
         resultColor: 'Pink',
         resultHex: hslToHex(h, s, l),
-        shadeName: h < 338 ? 'Berry Rose Pink' : 'Soft Flamingo Pink',
       };
     }
 
     case 'Purple': {
-      // Definisi Purple: Royal Purple, Violet, Plum, Magenta-Purple.
-      // Dari: Red/Purple + Blue, atau Purple + Purple/Red.
-      // Tidak boleh melibatkan Green, Yellow, Orange, atau Black!
-      if (hasGreenA || hasGreenB || hasYellowA || hasYellowB || hasOrangeA || hasOrangeB || hasBlackA || hasBlackB) {
+      // Definisi Purple: Royal Purple, Violet, Plum, Magenta-Purple, Dark Grape Purple.
+      // Dari: Red/Purple + Blue, Purple + Purple/Red,
+      // atau Purple dominan + sedikit Black (mis. Shade Purple Plum + Cuttle Fish Ink untuk warna anggur/deep grape purple).
+      // Tidak boleh melibatkan Green, Yellow, atau Orange!
+      if (hasGreenA || hasGreenB || hasYellowA || hasYellowB || hasOrangeA || hasOrangeB) {
         return null;
       }
+
+      // Kasus Purple + Black: jika Purple lebih dominan (rasio Black <= 45%), menghasilkan deep grape purple
+      const isPurpleWithBlack =
+        (hasPurpleA && hasBlackB && (wA >= 0.55 || ratioA >= 50)) ||
+        (hasPurpleB && hasBlackA && (wB >= 0.55 || ratioA <= 50));
+
+      if (isPurpleWithBlack) {
+        const h = 278 + (seed % 16); // 278..293 (deep grape purple)
+        const s = 48 + (seed % 14); // 48..61%
+        const l = 24 + (seed % 8); // 24..31% (shade gelap pekat khas anggur)
+        return {
+          valid: true,
+          resultColor: 'Purple',
+          resultHex: hslToHex(h, s, l),
+        };
+      }
+
+      if (hasBlackA || hasBlackB) {
+        return null;
+      }
+
       const isRedPurpleWithBlue =
         ((hasRedA || hasPurpleA) && hasBlueB) ||
         (hasBlueA && (hasRedB || hasPurpleB));
@@ -437,7 +455,6 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
           valid: true,
           resultColor: 'Purple',
           resultHex: hslToHex(h, s, l),
-          shadeName: h < 282 ? 'Deep Royal Violet' : 'Rich Plum Purple',
         };
       }
       return null;
@@ -460,15 +477,14 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
 
       if (bothBlue || blueWithGreen || blueWithPurple) {
         let h = 210 + (seed % 14);
-        if (blueWithGreen) h = 196 + (seed % 12); // Ocean / Teal Blue
-        if (blueWithPurple) h = 224 + (seed % 12); // Cobalt / Indigo Blue
+        if (blueWithGreen) h = 196 + (seed % 12);
+        if (blueWithPurple) h = 224 + (seed % 12);
         const s = 70 + (seed % 16); // 70..85%
         const l = 45 + (seed % 13); // 45..57%
         return {
           valid: true,
           resultColor: 'Blue',
           resultHex: hslToHex(h, s, l),
-          shadeName: h < 205 ? 'Ocean Turquoise Blue' : h > 222 ? 'Royal Cobalt Blue' : 'Bright Sky Blue',
         };
       }
       return null;
@@ -476,7 +492,7 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
 
     case 'Green': {
       // Definisi Green: Lime Green, Leaf Green, Emerald Green, Mint Green.
-      // Dari: Yellow + Blue (campuran klasik hijau alami), Green + Yellow, Green + Blue, atau Green + Green.
+      // Dari: Yellow + Blue, Green + Yellow, Green + Blue, atau Green + Green.
       // Tidak boleh melibatkan Red, Purple, atau Black!
       if (hasRedA || hasRedB || hasPurpleA || hasPurpleB || hasBlackA || hasBlackB) {
         return null;
@@ -494,9 +510,9 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
       if (isYellowAndBlue || isGreenWithYellow || isGreenWithBlue || isBothGreen) {
         let h = 115 + (seed % 20);
         if (isGreenWithYellow || (isYellowAndBlue && wA >= 0.65 && hasYellowA)) {
-          h = 88 + (seed % 18); // Lime / Apple Green
+          h = 88 + (seed % 18);
         } else if (isGreenWithBlue) {
-          h = 134 + (seed % 16); // Emerald / Forest Green
+          h = 134 + (seed % 16);
         }
         const s = 64 + (seed % 20); // 64..83%
         const l = 42 + (seed % 12); // 42..53%
@@ -504,7 +520,6 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
           valid: true,
           resultColor: 'Green',
           resultHex: hslToHex(h, s, l),
-          shadeName: h < 105 ? 'Fresh Lime Green' : h > 130 ? 'Emerald Mint Green' : 'Natural Leaf Green',
         };
       }
       return null;
@@ -513,9 +528,8 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
     case 'Brown': {
       // Definisi Brown: Caramel Brown, Cocoa/Chocolate Brown, Coffee Brown, Bronze.
       // Dihasilkan dari pencampuran komplementer alami:
-      // 1. Red + Green (komplementer merah-hijau -> cokelat kakao/terracotta)
-      // 2. Orange + Blue/Purple, atau Yellow + Purple (komplementer kuning-ungu / oranye-biru -> cokelat karamel)
-      //    Catatan: Murni Yellow + Blue adalah Green, BUKAN Brown!
+      // 1. Red + Green
+      // 2. Orange + Blue/Purple, atau Yellow + Purple
       // 3. Orange/Red/Yellow + Black (pada rasio 70:30 - 85:15 -> cokelat kopi/gelap)
       const isPureYellowAndBlue =
         (isPureYellowA && hasBlueB && !hasPurpleB) ||
@@ -536,14 +550,13 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
         (hasBlackA && (hasOrangeB || hasRedB || hasYellowB));
 
       if (isRedAndGreen || isOrangeAndBlueOrPurple || isYellowAndPurple || isWarmAndBlack) {
-        const h = 20 + (seed % 15); // 20..34 (Warm Cocoa / Caramel / Terracotta Brown)
+        const h = 20 + (seed % 15); // 20..34
         const s = 46 + (seed % 20); // 46..65%
         const l = 28 + (seed % 13); // 28..40%
         return {
           valid: true,
           resultColor: 'Brown',
           resultHex: hslToHex(h, s, l),
-          shadeName: l >= 35 ? 'Warm Caramel Brown' : 'Rich Cocoa Brown',
         };
       }
       return null;
@@ -566,7 +579,6 @@ export function evaluatePairForTargetColor(matA, matB, targetColor, ratioA = 50)
           valid: true,
           resultColor: 'Black',
           resultHex: hslToHex(h, s, l),
-          shadeName: l <= 17 ? 'Deep Jet Black' : 'Neutral Charcoal Black',
         };
       }
       return null;
@@ -659,7 +671,11 @@ export function computeInteractiveMix(matA, matB, ratioA = 50) {
   const colsB = new Set(matB.colors || []);
 
   let preferredOrder = candidateTargets;
-  if (colsA.has('Black') || colsB.has('Black')) {
+  if ((colsA.has('Purple') && colsB.has('Black')) || (colsA.has('Black') && colsB.has('Purple'))) {
+    // Ungu + Hitam: bila Ungu lebih dominan / seimbang, hasilkan Purple (warna anggur / deep grape purple)
+    const isPurpleDominant = (colsA.has('Purple') && wA >= 0.5) || (colsB.has('Purple') && wB >= 0.5);
+    preferredOrder = isPurpleDominant ? ['Purple', 'Black', 'Brown'] : ['Black', 'Purple', 'Brown'];
+  } else if (colsA.has('Black') || colsB.has('Black')) {
     preferredOrder = wA >= 0.45 && colsA.has('Black') ? ['Black', 'Brown'] : wB >= 0.45 && colsB.has('Black') ? ['Black', 'Brown'] : ['Brown', 'Black'];
   } else if ((colsA.has('Yellow') && colsB.has('Blue')) || (colsA.has('Blue') && colsB.has('Yellow'))) {
     preferredOrder = ['Green', 'Blue', 'Brown'];
@@ -773,16 +789,16 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
       seenColorPair.add(pairKey);
       enhanced.push({
         ...combo,
+        _enhanced: true,
         a: { ...combo.a, hex: hexA },
         b: { ...combo.b, hex: hexB },
         resultHex: checkOrig.resultHex,
-        shadeName: checkOrig.shadeName,
       });
       continue;
     }
 
     // Jika tidak valid untuk warna aslinya (misal Red+Green atau Orange+Blue yang dulunya dilabeli Yellow),
-    // periksa apakah pasangan ini secara alami cocok untuk Brown, Pink, atau Black!
+    // periksa apakah pasangan ini secara alami cocok untuk Brown, Pink, Black, atau Purple!
     for (const altColor of ['Brown', 'Pink', 'Black', 'Green', 'Purple']) {
       const checkAlt = evaluatePairForTargetColor(matA, matB, altColor, ratioA);
       if (checkAlt && checkAlt.valid) {
@@ -791,11 +807,11 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
           seenColorPair.add(pairKey);
           enhanced.push({
             ...combo,
+            _enhanced: true,
             resultColor: altColor,
             a: { ...combo.a, hex: hexA },
             b: { ...combo.b, hex: hexB },
             resultHex: checkAlt.resultHex,
-            shadeName: checkAlt.shadeName,
           });
         }
         break;
@@ -803,7 +819,7 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
     }
   }
 
-  // 2. Lengkapi kombinasi autentik yang belum tercakup (terutama Yellow+Yellow, Red+Red, Pink, Brown, Black, Blue+Blue, Green+Green)
+  // 2. Lengkapi kombinasi autentik yang belum tercakup (terutama Yellow+Yellow, Red+Red, Pink, Brown, Black, Blue+Blue, Green+Green, Purple)
   const targetConfigs = [
     {
       color: 'Yellow',
@@ -863,11 +879,11 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
     },
     {
       color: 'Purple',
-      ratio: '55:45',
-      ratioRange: '35:65 s.d. 75:25',
+      ratio: '65:35',
+      ratioRange: '50:50 s.d. 85:15',
       filterA: (m) => m.colors?.includes('Purple') || m.colors?.includes('Red'),
-      filterB: (m) => m.colors?.includes('Blue') || m.colors?.includes('Purple'),
-      maxPairs: 60,
+      filterB: (m) => m.colors?.includes('Blue') || m.colors?.includes('Purple') || m.colors?.includes('Black'),
+      maxPairs: 500,
     },
   ];
 
@@ -887,7 +903,11 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
         if (seenColorPair.has(pairKey)) continue;
 
         const compat = computePairCompatibility(matA, matB);
-        if (!compat.solubilityCompatible || !compat.phValid || compat.processes.length === 0) continue;
+        const hasProcesses =
+          compat.processes.length > 0 ||
+          (Array.isArray(matA.processes) && matA.processes.length === 0) ||
+          (Array.isArray(matB.processes) && matB.processes.length === 0);
+        if (!compat.solubilityCompatible || !compat.phValid || !hasProcesses) continue;
 
         const ratioParts = cfg.ratio.split(':');
         const ratioA = parseInt(ratioParts[0], 10) || 55;
@@ -906,6 +926,7 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
         const score = Math.round(rawScore * 10) / 10;
 
         enhanced.push({
+          _enhanced: true,
           id: `KM-A${String(autoCounter++).padStart(3, '0')}`,
           resultColor: cfg.color,
           score,
@@ -922,7 +943,6 @@ export function buildEnhancedCombinations(rawCombinations, materials) {
           ratio: cfg.ratio,
           ratioRange: cfg.ratioRange,
           resultHex: evalRes.resultHex,
-          shadeName: evalRes.shadeName,
           ph: compat.ph,
           processes: compat.processes,
           notes: compat.notes,

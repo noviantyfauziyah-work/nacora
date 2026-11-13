@@ -98,11 +98,6 @@ export function renderCombinationCard(combo) {
             <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
               <span class="chip-color-dot" style="background-color: ${escapeHtml(resColorDot)};"></span>
               <strong>${escapeHtml(combo.resultColor)}</strong>
-              ${
-                combo.shadeName
-                  ? `<span class="chip" style="font-size: 0.75rem; padding: 2px 8px;">${escapeHtml(combo.shadeName)}</span>`
-                  : ''
-              }
             </div>
             <code style="font-size: 0.8125rem; color: var(--color-muted);">${escapeHtml(resHex)}</code>
           </div>
@@ -435,7 +430,6 @@ export function attachMixPageEvents(data) {
               <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
                 <span class="chip-color-dot" style="background-color: ${escapeHtml(dotHex)};"></span>
                 <strong>${escapeHtml(mix.resultColor)}</strong>
-                <span class="chip" style="font-size: 0.75rem; padding: 2px 8px;">${escapeHtml(mix.shadeName)}</span>
               </div>
               <code style="font-size: 0.8125rem; color: var(--color-muted);">${escapeHtml(mix.resultHex)}</code>
             </div>
@@ -448,7 +442,7 @@ export function attachMixPageEvents(data) {
             ${procChips || '<span class="chip">Perlu uji kompatibilitas proses</span>'}
           </div>
           <button type="button" id="btn-apply-direct-color" class="btn btn-secondary btn-sm" data-target-color="${escapeHtml(mix.resultColor)}">
-            Tampilkan Semua Shade ${escapeHtml(mix.resultColor)} ↓
+            Tampilkan Semua Kombinasi ${escapeHtml(mix.resultColor)} ↓
           </button>
         </div>
         ${

@@ -588,9 +588,9 @@ export const BOOKLET_GRANULATION_GUIDES = {
   },
   'Klorofil / klorofilin': {
     summary:
-      'Kompleks Klorofilin Tembaga tahan terhadap proses Tanpa Pemanasan, Pasteurisasi, UHT, Baking, Pembekuan, dan Fluid-Bed Top-Spray Granulation pada matriks ber-pH netral hingga asam lemah.',
+      'Seluruh sampel pewarna hijau adalah Sodium Copper Chlorophyllin (E141). Bentuk garam natrium tembaga ini sangat stabil terhadap panas (Pasteurisasi, UHT, Baking, Pembekuan, dan Fluid-Bed Top-Spray Granulation) serta cahaya, dengan ketahanan jauh melampaui klorofil biasa.',
     keyParameters:
-      '• Pasteurisasi, UHT & Baking: Stabil terhadap panas; pada pH < 4,0 gunakan sistem terstabilkan atau penyangga agar tidak mengendap.\n• Fluid-Bed Top-Spray Granulation: Varian larut air/WSP berstatus Compatible (suhu produk ≤ 70–80 °C, larutan pengikat pH ≥ 6,0), sedangkan varian larut minyak murni (OS) berstatus Incompatible dengan cairan pengikat berair.',
+      '• Pasteurisasi, UHT & Baking: Sangat stabil terhadap suhu tinggi; pada pH < 4,0 gunakan sistem terstabilkan atau penyangga sitrat agar asam klorofilin tidak mengendap.\n• Fluid-Bed Top-Spray Granulation: Varian larut air/WSP berstatus Compatible (suhu produk ≤ 70–80 °C, larutan pengikat pH ≥ 6,0), sedangkan varian larut minyak murni (OS) berstatus Incompatible dengan cairan pengikat berair.',
   },
   'Fikosianin (spirulina)': {
     summary:

@@ -74,12 +74,12 @@
   },
   {
     "group": "Klorofil / klorofilin",
-    "introduction": "Pigmen hijau alami dari tumbuhan; dalam industri pangan umumnya digunakan dalam bentuk Kompleks Klorofilin Tembaga (Copper Chlorophyllin) atau Klorofil Tembaga yang jauh lebih stabil dibandingkan klorofil alami. Pemilihannya bergantung pada jenis produk, pH, proses produksi, jenis kemasan, dan penyimpanan produk.",
-    "colorCharacteristics": "Hijau daun alami, hijau zamrud, hingga hijau tua pekat tergantung tipe (klorofilin larut air vs klorofil larut minyak) dan dosis.",
-    "solubility": "Tersedia dalam tipe Larut Air (Water-Soluble / WS — Na/K Copper Chlorophyllin), Larut Minyak (Oil-Soluble / OS — Copper Chlorophyll), Terdispersi (WD), dan Emulsi (Emulsion).",
-    "stabilityFactors": "Kompleks klorofilin tembaga memiliki ketahanan panas yang baik (tahan pasteurisasi, pemanggangan, dan perebusan) serta ketahanan cahaya yang jauh lebih tinggi dibandingkan klorofil alami (yang mudah kehilangan ion magnesium menjadi feofitin berwarna cokelat-zaitun). Faktor pembatas pada varian larut air standar adalah pH asam (< 4,0) yang dapat memicu pengendapan asam klorofilin, sehingga untuk produk asam disarankan menggunakan varian terstabilkan asam (emulsi/dispersi).",
-    "foodApplications": "Es krim, permen dan jelly, produk bakeri, saus, produk olahan susu, minyak/lemak, dan minuman.",
-    "prosAndCons": "Memberikan warna hijau alami yang tahan panas. Varian larut air standar perlu dijaga dari pengendapan pada matriks ber-pH asam rendah.",
+    "introduction": "Seluruh sampel pewarna hijau klorofil yang digunakan merupakan Sodium Copper Chlorophyllin (E141), yaitu turunan klorofil semi-sintetis yang telah dimodifikasi dengan mengganti ion magnesium pusat (Mg2+) menjadi tembaga (Cu2+) dan menambahkan garam natrium. Pemilihannya bergantung pada jenis produk, pH, proses produksi, jenis kemasan, dan penyimpanan produk.",
+    "colorCharacteristics": "Menghasilkan warna hijau daun alami, hijau zamrud, hingga hijau lumut/matcha yang pekat dan stabil.",
+    "solubility": "Tersedia terutama dalam bentuk Larut Air (Water-Soluble / WS — Sodium Copper Chlorophyllin) untuk aplikasi pangan berair, serta bentuk Larut Minyak (OS), Terdispersi (WD), dan Emulsi (Emulsion). Berbeda dengan klorofil alami yang hidrofobik/larut minyak, sodium copper chlorophyllin mudah larut dan terdispersi merata dalam produk pangan berbasis air.",
+    "stabilityFactors": "Sodium copper chlorophyllin memiliki ketahanan yang jauh lebih unggul terhadap panas (tahan pasteurisasi, UHT, pemanggangan, dan perebusan), cahaya, dan rentang pH lebih luas dibandingkan klorofil biasa yang rentan rusak/berubah menjadi kecokelatan (feofitin). Faktor pembatas utamanya adalah kondisi sangat asam (pH < 4,0) di mana asam klorofilin dapat mulai mengendap, sehingga untuk minuman asam tinggi diperlukan varian terstabilkan/emulsi atau penambahan penyangga natrium sitrat.",
+    "foodApplications": "Minuman, permen keras dan jelly/gummy, es krim, produk olahan susu (dairy), produk bakeri, olahan daging dan boga bahari, saus, hingga sediaan farmasi.",
+    "prosAndCons": "Stabilitas panas, cahaya, dan pH jauh lebih kokoh dibanding klorofil biasa, serta larut air dengan kejernihan baik. Pada pH sangat asam (< 4,0) perlu formulasi terstabilkan agar tidak mengendap.",
     "refs": [
       "R9"
     ]

@@ -648,7 +648,6 @@ export const testSuite = [
 
         for (const c of list) {
           assert.equal(c.resultColor, col);
-          assert.ok(c.shadeName, `Kombinasi ${c.id} pada ${col} harus memiliki nama shade`);
           const hsl = hexToHsl(c.resultHex);
           const colsA = matMap.get(c.a.id)?.colors || [];
           const colsB = matMap.get(c.b.id)?.colors || [];
@@ -678,10 +677,18 @@ export const testSuite = [
               `Shade Green (${c.resultHex}) harus hijau segar, bukan abu-abu`
             );
           } else if (col === 'Purple') {
-            assert.ok(
-              hsl.h >= 265 && hsl.h <= 310 && hsl.s >= 55 && hsl.l >= 38,
-              `Shade Purple (${c.resultHex}) harus ungu jelas, bukan abu-abu`
-            );
+            const hasBlack = colsA.includes('Black') || colsB.includes('Black');
+            if (hasBlack) {
+              assert.ok(
+                hsl.h >= 265 && hsl.h <= 310 && hsl.s >= 40 && hsl.l >= 20,
+                `Shade Deep Purple/Anggur (${c.resultHex}) harus ungu tua anggur`
+              );
+            } else {
+              assert.ok(
+                hsl.h >= 265 && hsl.h <= 310 && hsl.s >= 55 && hsl.l >= 38,
+                `Shade Purple (${c.resultHex}) harus ungu jelas, bukan abu-abu`
+              );
+            }
           }
         }
       }
@@ -691,7 +698,6 @@ export const testSuite = [
       const matYellow2 = matMap.get('NC-014');
       const liveMix = computeInteractiveMix(matYellow1, matYellow2, 60);
       assert.equal(liveMix.resultColor, 'Yellow');
-      assert.ok(liveMix.shadeName.includes('Yellow'));
     },
   },
 ];
